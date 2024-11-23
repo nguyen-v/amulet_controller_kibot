@@ -56,9 +56,9 @@ jobs:
 
   generate_outputs:
     runs-on: ubuntu-latest
+    needs: generate_testpoints
     steps:
       - name: Generate outputs
-        needs: generate_testpoints
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           additional_args: -i testpoints
