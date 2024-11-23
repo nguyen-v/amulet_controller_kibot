@@ -45,6 +45,7 @@ jobs:
           file_pattern: CHANGELOG.md
 
   generate_testpoints:
+    runs-on: ubuntu-latest
     steps:
       - name: Generate testpoints
         uses: INTI-CMNB/KiBot@v2_dk8
@@ -54,6 +55,7 @@ jobs:
           config: kibot_yaml/kibot/main.kibot.yaml
 
   generate_outputs:
+    runs-on: ubuntu-latest
     steps:
       - name: Generate outputs
         needs: generate_testpoints
