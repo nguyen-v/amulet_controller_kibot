@@ -4,7 +4,7 @@
 
 ### Fixed
 
-- Replace non-stocked components.
+- Replace non-stocked components. 
 
 ## [v1.1] - 2024-04-13
 
