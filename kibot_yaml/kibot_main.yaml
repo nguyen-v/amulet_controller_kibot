@@ -294,11 +294,11 @@ import:
       TITLE: @BOARD_NAME@ Assembly
 
   # CSV number of components report
-  - file: kibot_out_csv_report_comp.yaml
-    definitions:
-      NAME: @CSV_REPORT_COMP_OUPUT@
-      COMMENT: Component report (count) in CSV format
-      DIR: @ASSEMBLY_DIR@
+  # - file: kibot_out_csv_report_comp.yaml
+  #   definitions:
+  #     NAME: @CSV_REPORT_COMP_OUPUT@
+  #     COMMENT: Component report (count) in CSV format
+  #     DIR: @ASSEMBLY_DIR@
 
   # PNG 3D Viewer renders ------------------------------------------------------
   - file: kibot_out_png_3d_viewer.yaml
