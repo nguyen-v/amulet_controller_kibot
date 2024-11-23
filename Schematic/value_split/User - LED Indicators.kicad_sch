@@ -1306,7 +1306,7 @@
     (property "manf" "Vishay" (at 198.12 67.31 0)
       (effects (font (size 1.27 1.27)) (hide yes))
     )
-    (property "manf#" "CRCW0402150RFKEDHP" (at 198.12 67.31 0)
+    (property "manf#" "RCS0402150RFKED" (at 198.12 67.31 0)
       (effects (font (size 1.27 1.27)) (hide yes))
     )
     (property "Manufacturer" "Vishay" (at 198.12 67.31 0)

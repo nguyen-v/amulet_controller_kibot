@@ -1,32 +1,376 @@
-ERC report (2024-11-19T20:53:19+0100, Encoding UTF8)
+ERC report (2024-11-23T19:52:47+0000, Encoding UTF8)
 
 ***** Sheet /
 ***** Sheet /Block Diagram/
 ***** Sheet /Project Architecture/
-***** Sheet /Project Architecture/MCU - Power/
-***** Sheet /Project Architecture/MCU - IOs/
-***** Sheet /Project Architecture/Power - Generation/
-***** Sheet /Project Architecture/Power - Connectors/
-***** Sheet /Project Architecture/Motor Control - Top Level/
-***** Sheet /Project Architecture/Motor Control - Top Level/Motor Control - Inverter/
-***** Sheet /Project Architecture/Misc - Board Version, DAC/
-***** Sheet /Project Architecture/User - LED Indicators/
-***** Sheet /Project Architecture/Sensing - Temperature/
-***** Sheet /Project Architecture/Sensing - Battery/
-***** Sheet /Project Architecture/Sensing - Position/
-***** Sheet /Project Architecture/Interface - RS-422/
-***** Sheet /Project Architecture/Interface - FD-CAN/
-***** Sheet /Project Architecture/Interface - Fan Control/
-***** Sheet /Project Architecture/Interface - Interconnects/
-[lib_symbol_issues]: Symbol 'SW_DPDT_x2' has been modified in library 'Switch'
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
     ; warning
-    @(3.3401 mm, 0.8763 mm): Symbol SW1 [SW_DPDT_x2]
+    @(1.9431 mm, 0.4953 mm): Symbol #PWR05 [+3V3]
+
+[lib_symbol_issues]: Symbol '+5V' has been modified in library 'power'
+    ; warning
+    @(1.905 mm, 0.4318 mm): Symbol #PWR04 [+5V]
+
+[lib_symbol_issues]: Symbol '+12V' has been modified in library 'power'
+    ; warning
+    @(1.8669 mm, 0.4953 mm): Symbol #PWR03 [+12V]
+
+***** Sheet /Project Architecture/MCU - Power/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.4351 mm, 0.6223 mm): Symbol #PWR014 [GND]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(1.4351 mm, 0.4953 mm): Symbol #PWR013 [+3V3]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(1.5367 mm, 0.9398 mm): Symbol #FLG01 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.2827 mm, 1.0668 mm): Symbol #PWR011 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.0414 mm, 1.1684 mm): Symbol #PWR010 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.8128 mm, 0.8382 mm): Symbol #PWR08 [GND]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(0.8128 mm, 0.7112 mm): Symbol #PWR07 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.8542 mm, 1.3081 mm): Symbol #PWR015 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.2827 mm, 1.2573 mm): Symbol #PWR012 [GND]
+
+***** Sheet /Project Architecture/MCU - IOs/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.7018 mm, 1.778 mm): Symbol #PWR016 [GND]
+
+***** Sheet /Project Architecture/Power - Generation/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.3114 mm, 2.0574 mm): Symbol #PWR020 [GND]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(2.4257 mm, 1.143 mm): Symbol #FLG07 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.3114 mm, 2.2225 mm): Symbol #PWR021 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.3114 mm, 1.8923 mm): Symbol #PWR019 [GND]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(1.5875 mm, 1.143 mm): Symbol #FLG04 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.6477 mm, 1.524 mm): Symbol #PWR018 [GND]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(3.175 mm, 0.5207 mm): Symbol #FLG08 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(3.1115 mm, 1.5113 mm): Symbol #PWR023 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.7305 mm, 0.889 mm): Symbol #PWR022 [GND]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(0.4826 mm, 0.5207 mm): Symbol #FLG02 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.6477 mm, 0.889 mm): Symbol #PWR017 [GND]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(2.4257 mm, 0.5207 mm): Symbol #FLG06 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(1.9939 mm, 0.8509 mm): Symbol #FLG05 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(1.524 mm, 0.5207 mm): Symbol #FLG03 [PWR_FLAG]
+
+***** Sheet /Project Architecture/Power - Connectors/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.3589 mm, 0.9271 mm): Symbol #PWR024 [GND]
+
+***** Sheet /Project Architecture/Motor Control - Top Level/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.4605 mm, 1.9685 mm): Symbol #PWR033 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.7399 mm, 0.9652 mm): Symbol #PWR034 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.2573 mm, 1.0922 mm): Symbol #PWR032 [GND]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(0.8255 mm, 1.7907 mm): Symbol #PWR026 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.0541 mm, 0.762 mm): Symbol #PWR029 [GND]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(1.0287 mm, 1.016 mm): Symbol #PWR028 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.1049 mm, 1.5875 mm): Symbol #PWR031 [GND]
+
+***** Sheet /Project Architecture/Motor Control - Top Level/Motor Control - Inverter/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.3556 mm, 1.4224 mm): Symbol #PWR036 [GND]
+
+***** Sheet /Project Architecture/Misc - Board Version, DAC/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.4986 mm, 0.8128 mm): Symbol #PWR038 [GND]
+
+***** Sheet /Project Architecture/User - LED Indicators/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.7653 mm, 1.1176 mm): Symbol #PWR040 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.2827 mm, 1.1176 mm): Symbol #PWR039 [GND]
+
+[lib_symbol_issues]: Symbol '+5V' has been modified in library 'power'
+    ; warning
+    @(1.9812 mm, 0.5588 mm): Symbol #PWR041 [+5V]
+
+***** Sheet /Project Architecture/Sensing - Temperature/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.7653 mm, 1.1176 mm): Symbol #PWR044 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.9779 mm, 1.1176 mm): Symbol #PWR042 [GND]
+
+***** Sheet /Project Architecture/Sensing - Battery/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.3462 mm, 0.9271 mm): Symbol #PWR046 [GND]
+
+***** Sheet /Project Architecture/Sensing - Position/
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(0.508 mm, 0.6604 mm): Symbol #PWR047 [+3V3]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(0.8001 mm, 0.6858 mm): Symbol #FLG09 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.508 mm, 1.1049 mm): Symbol #PWR048 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.2098 mm, 0.8001 mm): Symbol #PWR051 [GND]
+
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(2.2098 mm, 0.6858 mm): Symbol #FLG010 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(1.7526 mm, 0.6604 mm): Symbol #PWR049 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.7526 mm, 1.1176 mm): Symbol #PWR050 [GND]
+
+***** Sheet /Project Architecture/Interface - RS-422/
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(1.4732 mm, 0.5334 mm): Symbol #PWR054 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.4605 mm, 1.0922 mm): Symbol #PWR053 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.2827 mm, 0.6477 mm): Symbol #PWR052 [GND]
+
+***** Sheet /Project Architecture/Interface - FD-CAN/
+[lib_symbol_issues]: Symbol '+5V' has been modified in library 'power'
+    ; warning
+    @(1.7018 mm, 0.6477 mm): Symbol #PWR058 [+5V]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(1.3462 mm, 0.6477 mm): Symbol #PWR056 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.7018 mm, 0.7747 mm): Symbol #PWR059 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.2954 mm, 1.1303 mm): Symbol #PWR055 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.3462 mm, 0.7747 mm): Symbol #PWR057 [GND]
+
+***** Sheet /Project Architecture/Interface - Fan Control/
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.3589 mm, 1.0795 mm): Symbol #PWR062 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.0414 mm, 0.7874 mm): Symbol #PWR060 [GND]
+
+[lib_symbol_issues]: Symbol '+5V' has been modified in library 'power'
+    ; warning
+    @(1.3589 mm, 0.6477 mm): Symbol #PWR061 [+5V]
+
+***** Sheet /Project Architecture/Interface - Interconnects/
+[lib_symbol_issues]: Symbol '+12V' has been modified in library 'power'
+    ; warning
+    @(1.7653 mm, 2.5146 mm): Symbol #PWR077 [+12V]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.6797 mm, 2.2733 mm): Symbol #PWR081 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.6924 mm, 0.7493 mm): Symbol #PWR082 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.7051 mm, 0.9906 mm): Symbol #PWR083 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(3.5941 mm, 0.8636 mm): Symbol #PWR089 [GND]
 
 [lib_symbol_issues]: Symbol 'SW_DPDT_x2' has been modified in library 'Switch'
     ; warning
     @(3.3401 mm, 0.6985 mm): Symbol SW1 [SW_DPDT_x2]
 
+[lib_symbol_issues]: Symbol 'SW_DPDT_x2' has been modified in library 'Switch'
+    ; warning
+    @(3.3401 mm, 0.8763 mm): Symbol SW1 [SW_DPDT_x2]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(2.8194 mm, 1.3716 mm): Symbol #PWR086 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.8575 mm, 1.4224 mm): Symbol #PWR088 [GND]
+
+[lib_symbol_issues]: Symbol '+5V' has been modified in library 'power'
+    ; warning
+    @(2.6797 mm, 1.8923 mm): Symbol #PWR080 [+5V]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.7178 mm, 1.9558 mm): Symbol #PWR085 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(2.8194 mm, 1.6764 mm): Symbol #PWR087 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.8288 mm, 2.6035 mm): Symbol #PWR078 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.6604 mm, 1.0922 mm): Symbol #PWR070 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.6604 mm, 2.0447 mm): Symbol #PWR071 [GND]
+
+[lib_symbol_issues]: Symbol '+5V' has been modified in library 'power'
+    ; warning
+    @(0.5715 mm, 0.5334 mm): Symbol #PWR066 [+5V]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.8255 mm, 0.6223 mm): Symbol #PWR074 [GND]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(0.7747 mm, 0.5334 mm): Symbol #PWR072 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.6223 mm, 0.6223 mm): Symbol #PWR068 [GND]
+
+[lib_symbol_issues]: Symbol '+5V' has been modified in library 'power'
+    ; warning
+    @(0.5715 mm, 1.5113 mm): Symbol #PWR067 [+5V]
+
+[lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
+    ; warning
+    @(0.7747 mm, 1.5113 mm): Symbol #PWR073 [+3V3]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.6223 mm, 1.6002 mm): Symbol #PWR069 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.8255 mm, 1.6002 mm): Symbol #PWR075 [GND]
+
 ***** Sheet /Project Architecture/Misc - Holes, Fiducials/
+[lib_symbol_issues]: Symbol 'PWR_FLAG' has been modified in library 'power'
+    ; warning
+    @(1.1049 mm, 0.8636 mm): Symbol #FLG011 [PWR_FLAG]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.7907 mm, 1.016 mm): Symbol #PWR095 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(1.3843 mm, 1.016 mm): Symbol #PWR093 [GND]
+
+[lib_symbol_issues]: Symbol 'GND' has been modified in library 'power'
+    ; warning
+    @(0.9906 mm, 1.016 mm): Symbol #PWR091 [GND]
+
 ***** Sheet /Power - Sequencing/
 ***** Sheet /Revision History/
- ** ERC messages: 2  Errors 0  Warnings 2
+ ** ERC messages: 88  Errors 0  Warnings 88

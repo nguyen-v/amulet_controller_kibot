@@ -1540,7 +1540,7 @@
     (property "manf" "KYOCERA AVX" (at 133.35 118.11 0)
       (effects (font (size 1.27 1.27)) (hide yes))
     )
-    (property "manf#" "04023D475MAT2A" (at 133.35 118.11 0)
+    (property "manf#" "CM05X5R475M25AH" (at 133.35 118.11 0)
       (effects (font (size 1.27 1.27)) (hide yes))
     )
     (property "Manufacturer" "KYOCERA AVX" (at 133.35 118.11 0)
