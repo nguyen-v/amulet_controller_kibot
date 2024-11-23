@@ -101,7 +101,7 @@ groups:
       - @CSV_BOM_OUTPUT@
       # - @XLSX_BOM_OUTPUT@
       - @HTML_BOM_OUTPUT@
-      - @CSV_REPORT_COMP_OUPUT@
+      # - @CSV_REPORT_COMP_OUPUT@
 
   - name: testpoints
     outputs:

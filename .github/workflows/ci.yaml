@@ -58,7 +58,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate testpoints
+      - name: Generate testpoints and check ERC/DRC
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           targets: testpoints
@@ -66,7 +66,7 @@ jobs:
           variant: RELEASED
           config: ${{ env.kibot_config }}
 
-  out_3d_render:
+  out_3d_render_top:
     runs-on: ubuntu-latest
     needs: out_testpoints
     steps:
@@ -76,17 +76,71 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate 3D renders PNG
+      - name: Generate 3D renders PNG (Top)
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
-          targets: 3d_render
+          targets: png_3d_viewer_top
           skip: all
           variant: RELEASED
           config: ${{ env.kibot_config }}   
 
+  out_3d_render_bottom:
+    runs-on: ubuntu-latest
+    needs: out_testpoints
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate 3D renders PNG (Bottom)
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: png_3d_viewer_bottom
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
+  out_3d_render_angled_top:
+    runs-on: ubuntu-latest
+    needs: out_testpoints
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate 3D renders PNG (Angled Top)
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: png_3d_viewer_angled_top
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
+  out_3d_render_angled_bottom:
+    runs-on: ubuntu-latest
+    needs: out_testpoints
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate 3D renders PNG (Angled Bottom)
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: png_3d_viewer_angled_bottom
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
   out_schematic:
     runs-on: ubuntu-latest
-    needs: out_3d_render
+    needs: [out_3d_render_angled_top, out_3d_render_angled_bottom]
     steps:
 
       - name: Checkout Repository
@@ -104,7 +158,7 @@ jobs:
 
   out_netlist:
     runs-on: ubuntu-latest
-    needs: out_3d_render
+    needs: out_testpoints
     steps:
 
       - name: Checkout Repository
@@ -140,7 +194,7 @@ jobs:
 
   out_pdf_assembly:
     runs-on: ubuntu-latest
-    needs: out_3d_render
+    needs: [out_3d_render_top, out_3d_render_bottom, out_3d_render_angled_top, out_3d_render_angled_bottom]
     steps:
 
       - name: Checkout Repository
@@ -205,14 +259,14 @@ jobs:
       - name: Generate Position file CSV
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
-          targets: csv_pos
+          targets: csv_position
           skip: all
           variant: RELEASED
           config: ${{ env.kibot_config }}   
 
   publish:
     runs-on: ubuntu-latest
-    needs: [out_3d_render, out_schematic, out_netlist, out_fab, out_pdf_assembly, out_3d, out_bom, out_pos]
+    needs: [out_schematic, out_netlist, out_fab, out_pdf_assembly, out_3d, out_bom, out_pos]
       
     steps:
       - name: Commit updated Outputs
