@@ -216,10 +216,10 @@ jobs:
         
       steps:
         - name: Commit updated Outputs
-                uses: stefanzweifel/git-auto-commit-action@v5
-                with:
-                  branch: ${{ github.ref }}
-                  commit_message: Update Outputs
+          uses: stefanzweifel/git-auto-commit-action@v5
+          with:
+            branch: ${{ github.ref }}
+            commit_message: Update Outputs
   
   # generate_testpoints:
   #   runs-on: ubuntu-latest
