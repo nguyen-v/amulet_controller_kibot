@@ -53,7 +53,8 @@ jobs:
           targets: testpoints
           skip: all
           variant: RELEASED
-          config: kibot_yaml/kibot_main.yaml
+          config: .github/kibot_yaml/kibot_main.yaml
+          dir: .
 
   generate_outputs:
     runs-on: ubuntu-latest
@@ -64,4 +65,5 @@ jobs:
         with:
           additional_args: -i testpoints
           variant: RELEASED
-          config: kibot_yaml/kibot_main.yaml
+          config: .github/kibot_yaml/kibot_main.yaml
+          dir: .
