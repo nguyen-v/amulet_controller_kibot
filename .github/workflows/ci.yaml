@@ -12,6 +12,7 @@ on:
 
 env:
   kibot_config: kibot_yaml/kibot_main.yaml
+  kibot_variant: RELEASED
 
 permissions:
   contents: write
@@ -63,7 +64,7 @@ jobs:
         with:
           targets: testpoints
           # skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
   out_3d_render_top:
@@ -81,7 +82,7 @@ jobs:
         with:
           targets: png_3d_viewer_top
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}   
 
   out_3d_render_bottom:
@@ -99,7 +100,7 @@ jobs:
         with:
           targets: png_3d_viewer_bottom
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_3d_render_angled_top:
@@ -117,7 +118,7 @@ jobs:
         with:
           targets: png_3d_viewer_angled_top
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_3d_render_angled_bottom:
@@ -135,7 +136,7 @@ jobs:
         with:
           targets: png_3d_viewer_angled_bottom
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_schematic:
@@ -153,7 +154,7 @@ jobs:
         with:
           targets: pdf_schematic
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_netlist:
@@ -171,7 +172,7 @@ jobs:
         with:
           targets: netlist
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_fab:
@@ -189,7 +190,7 @@ jobs:
         with:
           targets: fab
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_pdf_assembly:
@@ -207,7 +208,7 @@ jobs:
         with:
           targets: pdf_assembly
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_bom:
@@ -225,7 +226,7 @@ jobs:
         with:
           targets: bom
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_3d:
@@ -243,7 +244,7 @@ jobs:
         with:
           targets: 3d
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}
 
   out_pos:
@@ -261,7 +262,7 @@ jobs:
         with:
           targets: csv_position
           skip: all
-          variant: RELEASED
+          variant: ${{ env.kibot_config }}
           config: ${{ env.kibot_config }}   
 
   publish:
@@ -269,6 +270,11 @@ jobs:
     needs: [out_schematic, out_netlist, out_fab, out_pdf_assembly, out_3d, out_bom, out_pos]
       
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
       - name: Commit updated Outputs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
