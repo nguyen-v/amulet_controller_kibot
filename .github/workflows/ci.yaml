@@ -7,6 +7,11 @@ on:
     branches:
       - master
       - dev
+    paths-ignore:
+      - '**.md'
+
+env:
+  kibot_config: kibot_yaml/kibot_main.yaml
 
 permissions:
   contents: write
@@ -44,7 +49,7 @@ jobs:
           commit_message: Update CHANGELOG
           file_pattern: CHANGELOG.md
 
-  generate_testpoints:
+  out_testpoints:
     runs-on: ubuntu-latest
     steps:
 
@@ -57,19 +62,13 @@ jobs:
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           targets: testpoints
-          skip: all
+          # skip: all
           variant: RELEASED
-          config: kibot_yaml/kibot_main.yaml
+          config: ${{ env.kibot_config }}
 
-      # - name: Commit updated Testpoints
-      #   uses: stefanzweifel/git-auto-commit-action@v5
-      #   with:
-      #     branch: ${{ github.ref }}
-      #     commit_message: Update Testpoints
-
-  generate_outputs:
+  out_3d_render:
     runs-on: ubuntu-latest
-    needs: generate_testpoints
+    needs: out_testpoints
     steps:
 
       - name: Checkout Repository
@@ -77,15 +76,187 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate outputs
+      - name: Generate 3D renders PNG
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
-          additional_args: -i testpoints
+          targets: 3d_render
+          skip: all
           variant: RELEASED
-          config: kibot_yaml/kibot_main.yaml
+          config: ${{ env.kibot_config }}   
 
-      - name: Commit updated Outputs
-        uses: stefanzweifel/git-auto-commit-action@v5
+  out_schematic:
+    runs-on: ubuntu-latest
+    needs: out_3d_render
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          branch: ${{ github.ref }}
-          commit_message: Update Outputs
+          fetch-depth: 0
+
+      - name: Generate Schematic PDF
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: pdf_schematic
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
+  out_netlist:
+    runs-on: ubuntu-latest
+    needs: out_3d_render
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Netlist
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: netlist
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
+  out_fab:
+    runs-on: ubuntu-latest
+    needs: out_testpoints
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Fabrication Document PDF
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: fab
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
+  out_pdf_assembly:
+    runs-on: ubuntu-latest
+    needs: out_3d_render
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Assembly Document PDF
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: pdf_assembly
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
+  out_bom:
+    runs-on: ubuntu-latest
+    needs: out_testpoints
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate BoM files
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: bom
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
+  out_3d:
+    runs-on: ubuntu-latest
+    needs: out_testpoints
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate STEP file
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: 3d
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}
+
+  out_pos:
+    runs-on: ubuntu-latest
+    needs: out_testpoints
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Position file CSV
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          targets: csv_pos
+          skip: all
+          variant: RELEASED
+          config: ${{ env.kibot_config }}   
+
+    publish:
+      runs-on: ubuntu-latest
+      needs: [out_3d_render, out_schematic, out_netlist, out_fab, out_pdf_assembly, out_3d, out_bom, out_pos]
+        
+      steps:
+        - name: Commit updated Outputs
+                uses: stefanzweifel/git-auto-commit-action@v5
+                with:
+                  branch: ${{ github.ref }}
+                  commit_message: Update Outputs
+  
+  # generate_testpoints:
+  #   runs-on: ubuntu-latest
+  #   steps:
+
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+
+  #     - name: Generate testpoints
+  #       uses: INTI-CMNB/KiBot@v2_dk8
+  #       with:
+  #         targets: testpoints
+  #         skip: all
+  #         variant: RELEASED
+  #         config: kibot_yaml/kibot_main.yaml
+
+  # generate_outputs:
+  #   runs-on: ubuntu-latest
+  #   needs: generate_testpoints
+  #   steps:
+
+  #     - name: Checkout Repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         fetch-depth: 0
+
+  #     - name: Generate outputs
+  #       uses: INTI-CMNB/KiBot@v2_dk8
+  #       with:
+  #         additional_args: -i testpoints
+  #         variant: RELEASED
+  #         config: kibot_yaml/kibot_main.yaml
+
+  #     - name: Commit updated Outputs
+  #       uses: stefanzweifel/git-auto-commit-action@v5
+  #       with:
+  #         branch: ${{ github.ref }}
+  #         commit_message: Update Outputs
