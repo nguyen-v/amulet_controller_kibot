@@ -45,20 +45,20 @@ jobs:
           file_pattern: CHANGELOG.md
 
   generate_testpoints:
-    - uses: actions/checkout@v4
-
-    - name: Generate testpoints
-      uses: INTI-CMNB/KiBot@v2_dk8
-      with:
-        additional_args: --skip-pre all -c kibot_yaml/kibot_main.yaml testpoints
-        variant: RELEASED
-        config: kibot_yaml/kibot/main.kibot.yaml
+    steps:
+      - name: Generate testpoints
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          additional_args: --skip-pre all -c kibot_yaml/kibot_main.yaml testpoints
+          variant: RELEASED
+          config: kibot_yaml/kibot/main.kibot.yaml
 
   generate_outputs:
-    - name: Generate outputs
-      needs: generate_testpoints
-      uses: INTI-CMNB/KiBot@v2_dk8
-      with:
-        additional_args: -i testpoints
-        variant: RELEASED
-        config: kibot_yaml/kibot/main.kibot.yaml
+    steps:
+      - name: Generate outputs
+        needs: generate_testpoints
+        uses: INTI-CMNB/KiBot@v2_dk8
+        with:
+          additional_args: -i testpoints
+          variant: RELEASED
+          config: kibot_yaml/kibot/main.kibot.yaml
