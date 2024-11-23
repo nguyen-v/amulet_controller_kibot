@@ -47,23 +47,33 @@ jobs:
   generate_testpoints:
     runs-on: ubuntu-latest
     steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Generate testpoints
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           targets: testpoints
           skip: all
           variant: RELEASED
-          config: .github/kibot_yaml/kibot_main.yaml
-          dir: .
+          config: kibot_yaml/kibot_main.yaml
 
   generate_outputs:
     runs-on: ubuntu-latest
     needs: generate_testpoints
     steps:
+    
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Generate outputs
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           additional_args: -i testpoints
           variant: RELEASED
-          config: .github/kibot_yaml/kibot_main.yaml
-          dir: .
+          config: kibot_yaml/kibot_main.yaml
