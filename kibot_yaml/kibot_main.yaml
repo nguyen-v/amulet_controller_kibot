@@ -159,8 +159,8 @@ import:
       BOARD_NAME: @BOARD_NAME@
       COMPANY: @COMPANY@
       DESIGNER: @DESIGNER@
-      REVISION: @REVISION@
-      RELEASE_DATE: @RELEASE_DATE@
+      # REVISION: @REVISION@
+      # RELEASE_DATE: @RELEASE_DATE@
 
   # Generate ERC Report
   - file: kibot_pre_erc_report.yaml
@@ -413,8 +413,8 @@ definitions:
   BOARD_NAME: Λmulet Motion Controller
   COMPANY: EPFL Xplore Research
   DESIGNER: Vincent Nguyen
-  REVISION: 1.1
-  RELEASE_DATE: 13-APR-2024
+  # REVISION: 1.1
+  # RELEASE_DATE: 13-APR-2024
 
   # Output directories =========================================================
 
