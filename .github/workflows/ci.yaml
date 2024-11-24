@@ -57,7 +57,7 @@ jobs:
           branch: master
           commit_message: Update CHANGELOG
           file_pattern: CHANGELOG.md
-          push_options: '--force'
+          # push_options: '--force'
 
   # generate_tables:
   #   runs-on: ubuntu-latest
