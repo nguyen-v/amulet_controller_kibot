@@ -49,14 +49,14 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           git fetch
-          git pull --tags -f origin ${{ github.ref_name }}
+          git pull origin master
 
-      - name: Commit updated CHANGELOG
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: master
-          commit_message: Update CHANGELOG
-          file_pattern: CHANGELOG.md
+      # - name: Commit updated CHANGELOG
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: master
+      #     commit_message: Update CHANGELOG
+      #     file_pattern: CHANGELOG.md
           # push_options: '--force'
 
   # generate_tables:
