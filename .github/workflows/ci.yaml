@@ -134,9 +134,9 @@ jobs:
       # git commit -m "Update Outputs"
       # git push origin ${{ github.ref_name }}
 
-      # - name: Commit updated Outputs
-      #   uses: stefanzweifel/git-auto-commit-action@v5
-      #   with:
-      #     branch: ${{ github.ref }}
-      #     commit_message: Update Outputs
+      - name: Commit updated Outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: ${{ github.ref }}
+          commit_message: Update Outputs
           # push_options: '--force'
