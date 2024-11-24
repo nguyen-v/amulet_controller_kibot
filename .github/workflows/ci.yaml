@@ -34,22 +34,22 @@ jobs:
         with:
           prerelease: true
 
-      - name: Create release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create ${{ github.ref_name }} --notes '${{ steps.extract-release-notes.outputs.release_notes }}'
+      # - name: Create release
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: gh release create ${{ github.ref_name }} --notes '${{ steps.extract-release-notes.outputs.release_notes }}'
       
-      - name: Update changelog
-        uses: thomaseizinger/keep-a-changelog-new-release@v2
-        with:
-          tag: ${{ github.ref_name }}
+      # - name: Update changelog
+      #   uses: thomaseizinger/keep-a-changelog-new-release@v2
+      #   with:
+      #     tag: ${{ github.ref_name }}
 
-      - name: Pull latest changes
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-          git fetch
-          git pull origin master
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git fetch
+      #     git pull origin master
 
       # - name: Commit updated CHANGELOG
       #   uses: stefanzweifel/git-auto-commit-action@v5
