@@ -127,9 +127,12 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
 
-          # Determine if triggered by a tag or branch
           if [[ "${{ github.ref_type }}" == "tag" ]]; then
-            echo "Triggered by a tag, checking out the master branch"
+            echo "Triggered by a tag, committing changes in detached HEAD state"
+            git add -A
+            git commit -m "Save changes before switching branches"
+
+            echo "Checking out the master branch"
             git fetch origin master
             git checkout master
           else
@@ -138,7 +141,7 @@ jobs:
           fi
 
           # Make changes and commit
-          git commit -a -m "Update Outputs"
+          git commit -a -m "Update Outputs" || echo "No changes to commit"
 
           # Push changes to the appropriate target
           if [[ "${{ github.ref_type }}" == "tag" ]]; then
@@ -148,6 +151,7 @@ jobs:
             echo "Pushing to ${{ github.ref_name }}"
             git push origin ${{ github.ref_name }}
           fi
+
 
       # git fetch
       # git pull --tags -f origin ${{ github.ref_name }}
