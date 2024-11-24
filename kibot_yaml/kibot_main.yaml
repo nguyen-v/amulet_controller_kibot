@@ -190,11 +190,11 @@ import:
 # Generated outputs ============================================================
 
   # Schematic variant with split fields ----------------------------------------
-  - file: kibot_out_sch_variant.yaml
-    definitions:
-      NAME: @SCH_VARIANT_OUTPUT@
-      COMMENT: Split component Value field of components
-      DIR: '@SCHEMATIC_DIR@/value_split'
+  # - file: kibot_out_sch_variant.yaml
+  #   definitions:
+  #     NAME: @SCH_VARIANT_OUTPUT@
+  #     COMMENT: Split component Value field of components
+  #     DIR: '@SCHEMATIC_DIR@/value_split'
 
   # Netlist --------------------------------------------------------------------
   - file: kibot_out_netlist.yaml
