@@ -77,13 +77,21 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Cache 3D models data
+        id: models-cache
+        uses: set-soft/cache@main
+        with:
+          path: ~/cache_3d
+          key: cache_3d
+
       - name: Generate 3D renders PNG (Top)
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           targets: png_3d_viewer_top
           skip: all
-          variant: ${{ env.kibot_config }}
-          config: ${{ env.kibot_config }}   
+          variant: ${{ env.kibot_variant }}
+          config: ${{ env.kibot_config }}
+          cache3D: YES 
 
   out_3d_render_bottom:
     runs-on: ubuntu-latest
@@ -95,13 +103,21 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Cache 3D models data
+        id: models-cache
+        uses: set-soft/cache@main
+        with:
+          path: ~/cache_3d
+          key: cache_3d
+
       - name: Generate 3D renders PNG (Bottom)
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           targets: png_3d_viewer_bottom
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
+          cache3D: YES
 
   out_3d_render_angled_top:
     runs-on: ubuntu-latest
@@ -113,13 +129,21 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Cache 3D models data
+        id: models-cache
+        uses: set-soft/cache@main
+        with:
+          path: ~/cache_3d
+          key: cache_3d
+
       - name: Generate 3D renders PNG (Angled Top)
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           targets: png_3d_viewer_angled_top
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
+          cache3D: YES
 
   out_3d_render_angled_bottom:
     runs-on: ubuntu-latest
@@ -131,13 +155,21 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Cache 3D models data
+        id: models-cache
+        uses: set-soft/cache@main
+        with:
+          path: ~/cache_3d
+          key: cache_3d
+
       - name: Generate 3D renders PNG (Angled Bottom)
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           targets: png_3d_viewer_angled_bottom
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
+          cache3D: YES
 
   out_schematic:
     runs-on: ubuntu-latest
@@ -154,7 +186,7 @@ jobs:
         with:
           targets: pdf_schematic
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
   out_netlist:
@@ -172,7 +204,7 @@ jobs:
         with:
           targets: netlist
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
   out_fab:
@@ -190,7 +222,7 @@ jobs:
         with:
           targets: fab
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
   out_pdf_assembly:
@@ -208,7 +240,7 @@ jobs:
         with:
           targets: pdf_assembly
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
   out_bom:
@@ -226,7 +258,7 @@ jobs:
         with:
           targets: bom
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
   out_3d:
@@ -244,7 +276,7 @@ jobs:
         with:
           targets: 3d
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
   out_pos:
@@ -262,7 +294,7 @@ jobs:
         with:
           targets: csv_position
           skip: all
-          variant: ${{ env.kibot_config }}
+          variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}   
 
   publish:
