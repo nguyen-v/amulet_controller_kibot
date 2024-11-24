@@ -126,8 +126,8 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git commit -a -m "Update Outputs"
-          git push origin ${{ github.ref_name }}
+        # git commit -a -m "Update Outputs"
+        # git push origin ${{ github.ref_name }}
       # git fetch
       # git pull --tags -f origin ${{ github.ref_name }}
       # git add .
