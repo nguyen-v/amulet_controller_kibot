@@ -6,7 +6,7 @@
 
 - Replace non-stocked components. 
 
-## [v1.1] - 2024-04-13
+## [1.1] - 2024-04-13
 
 ### Added
 
@@ -23,13 +23,13 @@
 
 ### Removed
 
-## [v1.0.2] - 2024-03-12
+## [1.0.2] - 2024-03-12
 
 ### Changed
 
 - Power sequencing graph according to experimental data.
 
-## [v1.0.1] - 2024-01-25
+## [1.0.1] - 2024-01-25
 
 ### Added
 
@@ -50,7 +50,7 @@
 - 5V 300 mA buck converter with 600 mA version.
 - Chassis-GND capacitor by 1nF 1kV.
 
-## [v1.0.0] - 2023-12-12
+## [1.0.0] - 2023-12-12
 
 ### Added
 
