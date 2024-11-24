@@ -88,12 +88,6 @@ jobs:
           build_date_num=$(date +"%Y-%m-%d")
           echo "build_date_num=$build_date_num" >> $GITHUB_ENV
 
-          echo "Extract latest tag as build version"
-          build_version=$(git describe --tags --abbrev=0)
-          echo "build_version=$build_version" >> $GITHUB_ENV
-          echo "::set-output name=build_version::$build_version"
-          echo "::set-output name=build_date::$build_date"
-
       - name: Create definition file for version/date
         uses: "DamianReeves/write-file-action@master"
         with:
@@ -106,10 +100,15 @@ jobs:
             # ### Changes will be overwritten on the next workflow run               ###
             # ##########################################################################
             definition:
-              build_version: "${{ steps.build_info.outputs.build_version }}"
+              
               build_date: "${{ steps.build_info.outputs.build_date }}"
               build_date_num: "${{ steps.build_info.outputs.build_date_num }}"
-
+# build_version: "${{ steps.build_info.outputs.build_version }}"
+          # echo "Extract latest tag as build version"
+          # build_version=$(git describe --tags --abbrev=0)
+          # echo "build_version=$build_version" >> $GITHUB_ENV
+          # echo "::set-output name=build_version::$build_version"
+          # echo "::set-output name=build_date::$build_date"
       - name: Verify Saved Build info
         run: |
           cat .github/kibot/version.yaml
