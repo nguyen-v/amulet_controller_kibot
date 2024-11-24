@@ -132,9 +132,13 @@ jobs:
             git add -A
             git commit -m "Save changes before switching branches"
 
+            DETACHED_COMMIT=$(git rev-parse HEAD)
             echo "Checking out the master branch"
             git fetch origin master
             git checkout master
+
+            echo "Merging detached HEAD commit into master"
+            git merge --no-ff $DETACHED_COMMIT -m "Merge outputs from tag-triggered workflow"
           else
             echo "Triggered by a branch, using the current branch"
             git pull origin ${{ github.ref_name }} --tags --force
@@ -151,6 +155,7 @@ jobs:
             echo "Pushing to ${{ github.ref_name }}"
             git push origin ${{ github.ref_name }}
           fi
+
 
 
       # git fetch
