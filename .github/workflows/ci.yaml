@@ -103,7 +103,7 @@ jobs:
           git pull origin ${{ github.ref_name }}
           git add .
           git commit -m "Update Outputs"
-          git push origin HEAD
+          git push origin ${{ github.ref_name }}
 
       # - name: Commit updated Outputs
       #   uses: stefanzweifel/git-auto-commit-action@v5
