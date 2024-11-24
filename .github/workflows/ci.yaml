@@ -43,6 +43,12 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
 
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -66,6 +72,12 @@ jobs:
           # skip: all
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
+
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
 
       - name: Commit Updated Testpoints
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -99,6 +111,12 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit Updated 3D renders
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -131,6 +149,12 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit Updated 3D renders
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -162,7 +186,13 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
           cache3D: YES
-          
+
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit Updated 3D renders
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -195,6 +225,12 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit Updated 3D renders
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -218,6 +254,12 @@ jobs:
           skip: all
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
+
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
 
       - name: Commit Updated PDF Schematic
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -243,6 +285,12 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit Updated Netlist
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -266,6 +314,12 @@ jobs:
           skip: all
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
+
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
 
       - name: Commit Updated PDF Fabrication Document
         uses: stefanzweifel/git-auto-commit-action@v5
@@ -291,6 +345,12 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit Updated PDF Assembly Document
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -315,6 +375,12 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit BoM files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -338,6 +404,12 @@ jobs:
           skip: all
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
+
+      - name: Pull latest changes
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
 
       - name: Commit Updated STEP file
         uses: stefanzweifel/git-auto-commit-action@v5
