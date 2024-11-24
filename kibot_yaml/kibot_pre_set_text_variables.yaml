@@ -9,9 +9,11 @@ preflight:
 
     # Git related information
     - variable: 'REVISION'
-      text: '@REVISION@'
+      command: 'git describe --tags --abbrev=0 || echo ""'
     - variable: 'RELEASE_DATE'
-      text: '@RELEASE_DATE@'
+      command: 'git log -1 --format="%ad" --date="format:%d-%b-%Y"'
+    - variable: 'RELEASE_DATE_NUM'
+      command: 'git log -1 --format="%ad" --date=short'
     - variable: 'GIT_HASH_SCH'
       command: 'git log -1 --format="%h" $KIBOT_SCH_NAME'
     - variable: 'GIT_HASH_PCB'
@@ -37,3 +39,4 @@ definitions:
   DESIGNER: ""
   REVISION: ""
   RELEASE_DATE: ""
+  RELEASE_DATE_NUM: ""

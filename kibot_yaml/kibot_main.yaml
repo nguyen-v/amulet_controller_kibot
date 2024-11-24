@@ -116,8 +116,6 @@ groups:
 
 import:
 
-  - file: kibot_version_date.yaml
-
   # Global parameters ==========================================================
   
   - file: kibot_globals.yaml
@@ -155,6 +153,7 @@ import:
   # Preflights =================================================================
 
   # Set text variables
+
   - file: kibot_pre_set_text_variables.yaml
     definitions:
       PROJECT_NAME: @PROJECT_NAME@
@@ -163,7 +162,6 @@ import:
       DESIGNER: @DESIGNER@
       # REVISION: @REVISION@
       # RELEASE_DATE: @RELEASE_DATE@
-      RELEASE_DATE: @build_date@
 
   # Generate ERC Report
   - file: kibot_pre_erc_report.yaml
