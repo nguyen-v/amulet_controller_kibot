@@ -15,6 +15,7 @@ permissions:
 
 jobs:
   release:
+    needs: generate_outputs
     runs-on: ubuntu-latest
     if: github.ref_type == 'tag'  # Ensures this job only runs on tag pushes
     steps:
