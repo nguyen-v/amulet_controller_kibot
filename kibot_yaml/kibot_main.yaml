@@ -116,6 +116,8 @@ groups:
 
 import:
 
+  - file: kibot_version_date.yaml
+
   # Global parameters ==========================================================
   
   - file: kibot_globals.yaml
@@ -161,6 +163,7 @@ import:
       DESIGNER: @DESIGNER@
       # REVISION: @REVISION@
       # RELEASE_DATE: @RELEASE_DATE@
+      RELEASE_DATE: @build_date@
 
   # Generate ERC Report
   - file: kibot_pre_erc_report.yaml
@@ -404,6 +407,7 @@ import:
       FABRICATION_OUTPUT: @PDF_FABRICATION_OUTPUT@
 
 # ==============================================================================
+
 ...
 definitions:
 
@@ -413,8 +417,8 @@ definitions:
   BOARD_NAME: Λmulet Motion Controller
   COMPANY: EPFL Xplore Research
   DESIGNER: Vincent Nguyen
-  # REVISION: 1.1
-  # RELEASE_DATE: 13-APR-2024
+  REVISION: 1.1
+  RELEASE_DATE: 13-APR-2024
 
   # Output directories =========================================================
 
