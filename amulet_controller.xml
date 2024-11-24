@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/home/vincent/amulet_controller/amulet_controller.kicad_sch</source>
+    <source>/github/workspace/amulet_controller.kicad_sch</source>
     <date>Date1</date>
-    <tool>Eeschema 8.0.6-8.0.6-0~ubuntu22.04.1</tool>
+    <tool>Eeschema 8.0.6+1</tool>
     <textvar name="BOARD_NAME">Λmulet Motion Controller</textvar>
     <textvar name="COMPANY">EPFL Xplore Research</textvar>
     <textvar name="DESIGNER">Vincent Nguyen</textvar>
-    <textvar name="GIT_HASH_PCB">df87299</textvar>
+    <textvar name="GIT_HASH_PCB">6ba84af</textvar>
     <textvar name="GIT_HASH_SCH">38f2a13</textvar>
     <textvar name="PROJECT_NAME">Chienpanzé</textvar>
     <textvar name="RELEASE_DATE">24-Nov-2024</textvar>
@@ -9988,61 +9988,61 @@
   </libparts>
   <libraries>
     <library logical="0_connectors">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_connectors.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_connectors.kicad_sym</uri>
     </library>
     <library logical="0_diode">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_diode.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_diode.kicad_sym</uri>
     </library>
     <library logical="0_gate_driver">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_gate_driver.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_gate_driver.kicad_sym</uri>
     </library>
     <library logical="0_interface_can">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_interface_can.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_interface_can.kicad_sym</uri>
     </library>
     <library logical="0_interface_uart">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_interface_uart.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_interface_uart.kicad_sym</uri>
     </library>
     <library logical="0_linear_regulator">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_linear_regulator.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_linear_regulator.kicad_sym</uri>
     </library>
     <library logical="0_mcu">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_mcu.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_mcu.kicad_sym</uri>
     </library>
     <library logical="0_motor_driver">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_motor_driver.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_motor_driver.kicad_sym</uri>
     </library>
     <library logical="0_power_protection">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_power_protection.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_power_protection.kicad_sym</uri>
     </library>
     <library logical="0_sensor">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_sensor.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_sensor.kicad_sym</uri>
     </library>
     <library logical="0_switching_regulator">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_switching_regulator.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_switching_regulator.kicad_sym</uri>
     </library>
     <library logical="0_transistor_fet">
-      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_transistor_fet.kicad_sym</uri>
+      <uri>/github/workspace/lib/lib_sym/0_transistor_fet.kicad_sym</uri>
     </library>
     <library logical="Connector">
-      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols/Connector.kicad_sym</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols/Connector_Generic.kicad_sym</uri>
     </library>
     <library logical="Device">
-      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols/Device.kicad_sym</uri>
     </library>
     <library logical="Mechanical">
-      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols/Mechanical.kicad_sym</uri>
     </library>
     <library logical="Regulator_Switching">
-      <uri>/usr/share/kicad/symbols//Regulator_Switching.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols/Regulator_Switching.kicad_sym</uri>
     </library>
     <library logical="Sensor_Magnetic">
-      <uri>/usr/share/kicad/symbols//Sensor_Magnetic.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols/Sensor_Magnetic.kicad_sym</uri>
     </library>
     <library logical="Switch">
-      <uri>/usr/share/kicad/symbols//Switch.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols/Switch.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
