@@ -40,6 +40,12 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
 
+      - name: Pull latest changes and push outputs
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull origin ${{ github.ref_name }}
+
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -64,11 +70,11 @@ jobs:
           variant: RELEASED
           config: kibot_yaml/kibot_main.yaml
 
-      - name: Commit updated Tables
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update Testpoints
+      # - name: Commit updated Tables
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update Testpoints
 
   generate_outputs:
     runs-on: ubuntu-latest
@@ -90,15 +96,21 @@ jobs:
       - name: Generate outputs
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
-          additional_args: -i testpoints
+          # additional_args: -i testpoints
+          additional_args: pdf_schematic
           variant: RELEASED
           config: kibot_yaml/kibot_main.yaml
           cache3D: YES
 
-      - name: Pull latest changes and push outputs
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
-          git commit -a -m "Update outputs"
-          git push
+      # - name: Pull latest changes and push outputs
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+      #     git commit -a -m "Update outputs"
+      #     git push
+      - name: Commit updated Outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: ${{ github.ref }}
+          commit_message: Update Outputs
