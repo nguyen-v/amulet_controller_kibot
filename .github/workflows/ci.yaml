@@ -59,35 +59,6 @@ jobs:
           file_pattern: CHANGELOG.md
           push_options: '--force'
 
-  # generate_tables:
-  #   runs-on: ubuntu-latest
-  #   steps:
-
-  #     - name: Checkout Repository
-  #       uses: actions/checkout@v4
-  #       with:
-  #         fetch-depth: 0
-
-  #     - name: Generate testpoints
-  #       uses: INTI-CMNB/KiBot@v2_dk8
-  #       with:
-  #         targets: testpoints
-  #         skip: all
-  #         variant: RELEASED
-  #         config: kibot_yaml/kibot_main.yaml
-
-  #     - name: Pull latest changes
-  #       run: |
-  #         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-  #         git config --global user.name "GitHub Actions"
-  #         git pull --tags -f origin ${{ github.ref_name }}
-
-  #     - name: Commit updated Tables
-  #       uses: stefanzweifel/git-auto-commit-action@v5
-  #       with:
-  #         branch: ${{ github.ref }}
-  #         commit_message: Update Testpoints
-
   generate_outputs:
     runs-on: ubuntu-latest
     # needs: generate_tables
@@ -116,8 +87,7 @@ jobs:
       - name: Generate outputs
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
-          # additional_args: -i testpoints
-          additional_args: pdf_schematic
+          additional_args: -i testpoints
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
           cache3D: YES
@@ -155,18 +125,3 @@ jobs:
             echo "Pushing to ${{ github.ref_name }}"
             git push origin ${{ github.ref_name }}
           fi
-
-
-
-      # git fetch
-      # git pull --tags -f origin ${{ github.ref_name }}
-      # git add .
-      # git commit -m "Update Outputs"
-      # git push origin ${{ github.ref_name }}
-
-      # - name: Commit updated Outputs
-      #   uses: stefanzweifel/git-auto-commit-action@v5
-      #   with:
-      #     branch: ${{ github.ref }}
-      #     commit_message: Update Outputs
-          # push_options: '--force'
