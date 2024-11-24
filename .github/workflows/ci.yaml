@@ -96,19 +96,17 @@ jobs:
       - name: Generate outputs
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
-          # additional_args: -i testpoints
-          additional_args: pdf_schematic
+          additional_args: -i testpoints
+          # additional_args: pdf_schematic
           variant: RELEASED
           config: kibot_yaml/kibot_main.yaml
           cache3D: YES
 
-      # - name: Pull latest changes and push outputs
-      #   run: |
-      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
-      #     git config --global user.name "GitHub Actions"
-      #     git pull origin ${{ github.ref_name }}
-      #     git commit -a -m "Update outputs"
-      #     git push
+      - name: Pull latest changes and push outputs
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          git pull --tags -f origin ${{ github.ref_name }}
       - name: Commit updated Outputs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
