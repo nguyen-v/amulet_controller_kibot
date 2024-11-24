@@ -43,18 +43,42 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit updated CHANGELOG
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: master
+      #     commit_message: Update CHANGELOG
+      #     file_pattern: CHANGELOG.md
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit updated CHANGELOG
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: master
-          commit_message: Update CHANGELOG
-          file_pattern: CHANGELOG.md
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_testpoints:
     runs-on: ubuntu-latest
@@ -73,17 +97,41 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated Testpoints
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update Testpoints
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated Testpoints
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update Testpoints
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_3d_render_top:
     runs-on: ubuntu-latest
@@ -111,17 +159,41 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated 3D renders
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update 3D renders
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated 3D renders
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update 3D renders
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_3d_render_bottom:
     runs-on: ubuntu-latest
@@ -149,17 +221,41 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated 3D renders
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update 3D renders
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated 3D renders
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update 3D renders
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_3d_render_angled_top:
     runs-on: ubuntu-latest
@@ -187,17 +283,41 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated 3D renders
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update 3D renders
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated 3D renders
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update 3D renders
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_3d_render_angled_bottom:
     runs-on: ubuntu-latest
@@ -225,17 +345,41 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated 3D renders
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update 3D renders
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated 3D renders
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update 3D renders
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_schematic:
     runs-on: ubuntu-latest
@@ -255,17 +399,41 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated PDF Schematic
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update PDF Schematic
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated PDF Schematic
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update PDF Schematic
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_netlist:
     runs-on: ubuntu-latest
@@ -285,17 +453,41 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated Netlist
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update Netlist
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated Netlist
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update Netlist
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_fab:
     runs-on: ubuntu-latest
@@ -315,17 +507,41 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated PDF Fabrication Document
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update PDF Fabrication Document
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated PDF Fabrication Document
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update PDF Fabrication Document
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_pdf_assembly:
     runs-on: ubuntu-latest
@@ -345,17 +561,41 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated PDF Assembly Document
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update PDF Assembly Document
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated PDF Assembly Document
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update PDF Assembly Document
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_bom:
     runs-on: ubuntu-latest
@@ -375,17 +615,40 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit BoM files
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update BoM files
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit BoM files
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update BoM files
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_3d:
     runs-on: ubuntu-latest
@@ -405,17 +668,41 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
 
-      - name: Pull latest changes
+      # - name: Pull latest changes
+      #   run: |
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     git config --global user.name "GitHub Actions"
+      #     git pull origin ${{ github.ref_name }}
+
+      # - name: Commit Updated STEP file
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update STEP file
+
+      - name: Pull, Commit and Push
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-          git pull origin ${{ github.ref_name }}
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
 
-      - name: Commit Updated STEP file
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update STEP file
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
 
   out_pos:
     runs-on: ubuntu-latest
@@ -435,9 +722,32 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}   
 
-      - name: Commit Updated Testpoints
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: ${{ github.ref }}
-          commit_message: Update Testpoints
+      # - name: Commit Updated Testpoints
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     branch: ${{ github.ref }}
+      #     commit_message: Update Testpoints
+      - name: Pull, Commit and Push
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+          
+          # Retry loop
+          for i in {1..5}; do
+            if git add . && git commit -m "Update Outputs"; then
+              echo "Commit successful."
+              git push origin ${{ github.ref }}
+              break
+            else
+              echo "Commit failed, retrying..."
+              git pull origin ${{ github.ref_name }}
+              sleep 5
+            fi
+          done
+
+          # If commit still fails after retries
+          if [ $? -ne 0 ]; then
+            echo "Commit failed after multiple retries."
+            exit 1
+          fi
   
