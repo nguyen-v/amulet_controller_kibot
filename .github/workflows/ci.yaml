@@ -27,22 +27,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-          
-      - name: Extract release notes
-        uses: ffurrer2/extract-release-notes@v2
-        id: extract-release-notes
-        with:
-          prerelease: true
-
-      - name: Create release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create ${{ github.ref_name }} --notes '${{ steps.extract-release-notes.outputs.release_notes }}'
-      
-      - name: Update changelog
-        uses: thomaseizinger/keep-a-changelog-new-release@v2
-        with:
-          tag: ${{ github.ref_name }}
 
       - name: Pull latest changes
         run: |
@@ -50,6 +34,35 @@ jobs:
           git config --global user.name "GitHub Actions"
           git fetch
           git pull origin master
+          
+      - name: Extract release notes
+        uses: ffurrer2/extract-release-notes@v2
+        id: extract-release-notes
+        with:
+          prerelease: true
+
+      # - name: Create release
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: gh release create ${{ github.ref_name }} --notes '${{ steps.extract-release-notes.outputs.release_notes }}'
+      
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          body: ${{ steps.extract-release-notes.outputs.release_notes }}
+          draft: false
+          prerelease: false
+
+
+      - name: Update changelog
+        uses: thomaseizinger/keep-a-changelog-new-release@v2
+        with:
+          tag: ${{ github.ref_name }}
 
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v5
