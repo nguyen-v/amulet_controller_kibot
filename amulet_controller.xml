@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/vincent/amulet_controller/amulet_controller.kicad_sch</source>
-    <date>2024-11-24T12:46:48+0100</date>
+    <date>Date1</date>
     <tool>Eeschema 8.0.6-8.0.6-0~ubuntu22.04.1</tool>
     <textvar name="BOARD_NAME">Λmulet Motion Controller</textvar>
     <textvar name="COMPANY">EPFL Xplore Research</textvar>
@@ -19,7 +19,7 @@
         <title>Cover Page</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2024-04-13</date>
+        <date>Date2</date>
         <source>amulet_controller.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -37,7 +37,7 @@
         <title>Block Diagram</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2024-04-13</date>
+        <date>Date2</date>
         <source>Block Diagram.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -55,7 +55,7 @@
         <title>Project Architecture</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-12-22</date>
+        <date>Date2</date>
         <source>Project Architecture.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -73,7 +73,7 @@
         <title>MCU - Power</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-12-18</date>
+        <date>Date2</date>
         <source>MCU - Power.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -91,7 +91,7 @@
         <title>MCU - I/Os</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-12-20</date>
+        <date>Date2</date>
         <source>MCU - IOs.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -109,7 +109,7 @@
         <title>Power - Generation</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2024-04-13</date>
+        <date>Date2</date>
         <source>Power - Generation.kicad_sch</source>
         <comment number="1" value="+12V (600 mA): Fan power"/>
         <comment number="2" value="+5V (600 mA): Gate Driver, LEDs"/>
@@ -127,7 +127,7 @@
         <title>Power - Connectors</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-12-31</date>
+        <date>Date2</date>
         <source>Power - Connectors.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -145,7 +145,7 @@
         <title>Motor Control - Top Level</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-12-20</date>
+        <date>Date2</date>
         <source>Motor Control - Top Level.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -163,7 +163,7 @@
         <title>Motor Control - Inverter</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2024-01-25</date>
+        <date>Date2</date>
         <source>Motor Control - Inverter.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -181,7 +181,7 @@
         <title>Misc - Board Version, DAC</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2024-04-13</date>
+        <date>Date2</date>
         <source>Misc - Board Version DAC.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -199,7 +199,7 @@
         <title>User - LED Indicators</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-12-19</date>
+        <date>Date2</date>
         <source>User - LED Indicators.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -217,7 +217,7 @@
         <title>Sensing - Temperature</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2024-04-13</date>
+        <date>Date2</date>
         <source>Sensing - Temperature.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -235,7 +235,7 @@
         <title>Sensing - Battery</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-10-14</date>
+        <date>Date2</date>
         <source>Sensing - Battery.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -253,7 +253,7 @@
         <title>Sensing - Position</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-10-14</date>
+        <date>Date2</date>
         <source>Sensing - Position.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -271,7 +271,7 @@
         <title>Interface - RS-422</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-10-15</date>
+        <date>Date2</date>
         <source>Interface - RS-422.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -289,7 +289,7 @@
         <title>Interface - FD-CAN</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-10-15</date>
+        <date>Date2</date>
         <source>Interface - FD-CAN.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -307,7 +307,7 @@
         <title>Interface - Fan Control</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-11-19</date>
+        <date>Date2</date>
         <source>Interface - Fan Control.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -325,7 +325,7 @@
         <title>Interface - Interconnects</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-12-31</date>
+        <date>Date2</date>
         <source>Interface - Interconnects.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -343,7 +343,7 @@
         <title>Misc - Holes, Fiducials</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2023-10-22</date>
+        <date>Date2</date>
         <source>Misc - Holes Fiducials.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -361,7 +361,7 @@
         <title>Power - Sequencing</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2024-03-12</date>
+        <date>Date2</date>
         <source>Power - Sequencing.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -379,7 +379,7 @@
         <title>Revision History</title>
         <company>EPFL Xplore Research</company>
         <rev/>
-        <date>2024-01-03</date>
+        <date>Date2</date>
         <source>Revision History.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
