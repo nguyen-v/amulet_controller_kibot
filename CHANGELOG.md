@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [1.2] - 2024-11-24
+
 ### Fixed
 
 -   Replace non-stocked components. 
@@ -76,3 +78,5 @@
 -   Buck regulators to optimize for low noise.
 
 [Unreleased]: https://github.com/nguyen-v/amulet_controller_kibot/compare/1.2...HEAD
+
+[1.2]: https://github.com/nguyen-v/amulet_controller_kibot/compare/19de39bfdf192dd60275ae40ffe4d9570566b90e...1.2
