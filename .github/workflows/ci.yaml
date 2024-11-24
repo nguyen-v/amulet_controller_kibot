@@ -48,6 +48,7 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
+          git fetch
           git pull --tags -f origin ${{ github.ref_name }}
 
       - name: Commit updated CHANGELOG
@@ -115,8 +116,8 @@ jobs:
       - name: Generate outputs
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
-          additional_args: -i testpoints
-          # additional_args: pdf_schematic
+          # additional_args: -i testpoints
+          additional_args: pdf_schematic
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
           cache3D: YES
@@ -125,6 +126,7 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
+          git fetch
           git pull --tags -f origin ${{ github.ref_name }}
 
       - name: Commit updated Outputs
