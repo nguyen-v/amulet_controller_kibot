@@ -100,6 +100,5 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
           git pull origin ${{ github.ref_name }}
-          git add .
-          git commit -m "Update Outputs"
-          git push origin ${{ github.ref_name }}
+          git commit -a -m "Update outputs"
+          git push
