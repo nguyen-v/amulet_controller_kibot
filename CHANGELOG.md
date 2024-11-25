@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+-   Automatic 'Unreleased' text with REVISION variable
+
 ## [1.2] - 2024-11-24
 
 ### Fixed
