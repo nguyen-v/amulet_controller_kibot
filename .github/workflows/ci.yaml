@@ -107,10 +107,10 @@ jobs:
               additional_args="--skip-pre draw_fancy_stackup,erc,drc,include_table ${version_arg} draft_group"
               ;;
             "PRELIMINARY")
-              additional_args="--skip-pre erc,drc ${version_arg} -i testpoints"
+              additional_args="--skip-pre erc,drc ${version_arg} -i testpoints xlsx_bom"
               ;;
             "CHECKED"|"RELEASED")
-              additional_args="${version_arg} -i testpoints"
+              additional_args="${version_arg} -i testpoints xlsx_bom"
               ;;
             *)
               echo "Unknown variant: $variant"
