@@ -87,9 +87,9 @@ jobs:
         run: |
           last_tag=$(git describe --tags --abbrev=0 || echo "")
           if [[ "${{ github.ref_type }}" == "tag" ]]; then
-            version_arg="-E VERSION=${last_tag}"
+            version_arg="-E VERSION='${last_tag}'"
           else
-            version_arg="-E VERSION=${last_tag}+ (Unreleased)"
+            version_arg="-E VERSION=$'{last_tag}+ (Unreleased)'"
           fi
           echo "version_arg=${version_arg}" >> $GITHUB_ENV
 
