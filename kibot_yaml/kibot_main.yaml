@@ -70,6 +70,14 @@ variants:
     exclude_filter: '_null'
 
 groups:
+
+  - name: draft_group
+    outputs:
+      - @NETLIST_OUTPUT@
+      - @PDF_SCHEMATIC_OUTPUT@
+      - @CSV_BOM_OUTPUT@
+      - @HTML_BOM_OUTPUT@
+
   - name: fab
     outputs:
       - @GERBER_OUTPUT@
@@ -279,11 +287,11 @@ import:
       DIR: @ASSEMBLY_DIR@
 
   # XLSX Bill of Materials (BoM)
-  # - file: kibot_out_xlsx_bom.yaml
-  #   definitions:
-  #     NAME: @XLSX_BOM_OUTPUT@
-  #     COMMENT: Bill of Materials in XLSX format
-  #     DIR: @ASSEMBLY_DIR@
+  - file: kibot_out_xlsx_bom.yaml
+    definitions:
+      NAME: @XLSX_BOM_OUTPUT@
+      COMMENT: Bill of Materials in XLSX format
+      DIR: @ASSEMBLY_DIR@
 
   # Interactive HTML BOM. Needs netlist.
   - file: kibot_out_html_bom.yaml
