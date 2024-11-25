@@ -19,7 +19,7 @@ env:
   # CHECKED: will generate both schematic and PCB documents, with ERC/DRC
   # RELEASED: similar to CHECKED, automatically selected when pushing a tag to master
 
-  kibot_variant: DRAFT  
+  kibot_variant: CHECKED  
 
 permissions:
   contents: write
@@ -48,17 +48,30 @@ jobs:
         with:
           prerelease: true
 
+      # - name: Create Release
+      #   id: create_release
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ github.ref }}
+      #     release_name: ${{ github.ref }}
+      #     body: ${{ steps.extract-release-notes.outputs.release_notes }}
+      #     draft: false
+      #     prerelease: false
       - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          body_path: ${{ steps.extract-release-notes.outputs.release_notes }}
+          name: ${{ github.ref }}
           tag_name: ${{ github.ref }}
-          release_name: ${{ github.ref }}
-          body: ${{ steps.extract-release-notes.outputs.release_notes }}
-          draft: false
-          prerelease: false
+          files: |
+            Schematic/*.pdf
+            Manufacturing/*
+            3D/*
+            Testing/Testpoints/*.csv
 
       - name: Update changelog
         uses: thomaseizinger/keep-a-changelog-new-release@v2
