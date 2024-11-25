@@ -654,7 +654,7 @@
 	)
 	(tbtext "Revision:"
 		(name "")
-		(pos 17.989 21.002)
+		(pos 25.989 21.002)
 		(font
 			(face "Arial")
 			(color 0 0 255 1)
@@ -663,7 +663,7 @@
 	)
 	(tbtext "${REVISION}"
 		(name "")
-		(pos 17.989 16.502)
+		(pos 25.989 16.502)
 		(font
 			(face "Times New Roman")
 			(color 0 0 127 1)
@@ -672,8 +672,8 @@
 	)
 	(line
 		(name "")
-		(start 19.489 23.0022)
-		(end 19.489 12.5022)
+		(start 27.489 23.002)
+		(end 27.489 12.502)
 	)
 	(tbtext "Date:"
 		(name "")
@@ -1035,11 +1035,6 @@
 			(color 0 0 255 1)
 		)
 		(comment "Sheet id")
-	)
-	(line
-		(name "")
-		(start 19.489 23.0022)
-		(end 19.489 12.5022)
 	)
 	(line
 		(name "")
