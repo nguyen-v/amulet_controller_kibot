@@ -12,7 +12,14 @@ on:
 
 env:
   kibot_config: kibot_yaml/kibot_main.yaml
-  kibot_variant: DRAFT  # Default variant
+
+  # Used variant. We assume:
+  # DRAFT: only schematic in progress, will only generate schematic PDF and BoM
+  # PRELIMINARY: will generate both schematic and PCB documents, but no ERC/DRC
+  # CHECKED: will generate both schematic and PCB documents, with ERC/DRC
+  # RELEASED: similar to CHECKED, automatically selected when pushing a tag to master
+
+  kibot_variant: DRAFT  
 
 permissions:
   contents: write
@@ -97,7 +104,7 @@ jobs:
           # Determine additional_args based on the variant
           case "$variant" in
             "DRAFT")
-              additional_args="--skip-pre draw_fancy_stackup,erc,drc,include_table ${version_arg} netlist,pdf_schematic,bom"
+              additional_args="--skip-pre draw_fancy_stackup,erc,drc,include_table ${version_arg} draft_group"
               ;;
             "PRELIMINARY")
               additional_args="--skip-pre erc,drc ${version_arg} -i testpoints"

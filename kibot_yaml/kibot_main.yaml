@@ -70,6 +70,15 @@ variants:
     exclude_filter: '_null'
 
 groups:
+  - name: draft_group
+    outputs:
+      - @NETLIST_OUTPUT@
+      - @PDF_SCHEMATIC_OUTPUT@
+      - @CSV_BOM_OUTPUT@
+      - @HTML_BOM_OUTPUT@
+
+    netlist,pdf_schematic,bom
+
   - name: fab
     outputs:
       - @GERBER_OUTPUT@
