@@ -89,7 +89,8 @@ jobs:
           args: |
             Schematic/*.pdf
             Manufacturing/Assembly/*
-            Manufacturing/Fabrication/*
+            Manufacturing/Fabrication/*.pdf
+            Manufacturing/Fabrication/*.zip
             3D/*
             Testing/Testpoints/*.csv
 
