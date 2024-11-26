@@ -64,7 +64,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          body_path: ${{ steps.extract-release-notes.outputs.release_notes }}
+          body: ${{ steps.extract-release-notes.outputs.release_notes }}
           name: ${{ github.ref }}
           tag_name: ${{ github.ref }}
           files: |
