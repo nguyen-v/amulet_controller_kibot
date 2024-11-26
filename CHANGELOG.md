@@ -2,13 +2,11 @@
 
 ## [Unreleased]
 
-## [1.2.0] - 2024-11-26
-
 ### Fixed
 
 -   Replace non-stocked components. 
 
-## [1.1] - 2024-04-13
+## [1.1.0] - 2024-04-13
 
 ### Added
 
@@ -76,7 +74,3 @@
 -   PWM_PHASEA with PWM_PHASEC on STM32G474 pinout for easier routing.
 -   RS422 pinout on connector.
 -   Buck regulators to optimize for low noise.
-
-[Unreleased]: https://github.com/nguyen-v/amulet_controller_kibot/compare/1.2.0...HEAD
-
-[1.2.0]: https://github.com/nguyen-v/amulet_controller_kibot/compare/71e9598f64e0fcbf33a1cb9cb7534ea90c970917...1.2.0
