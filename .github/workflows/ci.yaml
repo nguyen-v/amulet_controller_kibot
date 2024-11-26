@@ -29,7 +29,7 @@ jobs:
   release:
     needs: generate_outputs
     runs-on: ubuntu-latest
-    if: github.ref_type == 'tag' || github.event_name == 'workflow_dispatch'
+    if: github.ref_type == 'tag'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -80,6 +80,14 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
 
+      - name: Commit updated CHANGELOG
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: master
+          commit_message: Update CHANGELOG
+          file_pattern: CHANGELOG.md
+          push_options: '--force'
+
       - name: Release
         uses: docker://antonyurchenko/git-release:v5
         env:
@@ -91,14 +99,6 @@ jobs:
             Manufacturing/Fabrication/*
             3D/*
             Testing/Testpoints/*.csv
-
-      - name: Commit updated CHANGELOG
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          branch: master
-          commit_message: Update CHANGELOG
-          file_pattern: CHANGELOG.md
-          push_options: '--force'
 
   generate_outputs:
     runs-on: ubuntu-latest
