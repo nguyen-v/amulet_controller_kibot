@@ -69,7 +69,8 @@ jobs:
           tag_name: ${{ github.ref }}
           files: |
             Schematic/*.pdf
-            Manufacturing/*
+            Manufacturing/Assembly/*
+            Manufacturing/Fabrication/*
             3D/*
             Testing/Testpoints/*.csv
 
