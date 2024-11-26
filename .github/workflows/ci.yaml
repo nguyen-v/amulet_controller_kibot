@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - '*.*'
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+'
     branches:
       - master
       - dev
@@ -84,7 +85,7 @@ jobs:
         uses: docker://antonyurchenko/git-release:v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TAG_PREFIX_REGEX: "*"
+          TAG_PREFIX_REGEX: ""
         with:
           args: |
             Schematic/*.pdf
