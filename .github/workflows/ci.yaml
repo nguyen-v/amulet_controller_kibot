@@ -85,7 +85,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          TAG_PREFIX_REGEX: "*"
+          TAG_PREFIX_REGEX: ""
           args: |
             Schematic/*.pdf
             Manufacturing/Assembly/*
@@ -138,7 +138,7 @@ jobs:
               additional_args="--skip-pre erc,drc ${version_arg} -i testpoints xlsx_bom"
               ;;
             "CHECKED"|"RELEASED")
-              additional_args="${version_arg} -i testpoints xlsx_bom"
+              additional_args="${version_arg} pdf_schematic"
               ;;
             *)
               echo "Unknown variant: $variant"
