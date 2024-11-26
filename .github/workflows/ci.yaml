@@ -124,10 +124,10 @@ jobs:
           if [[ "${{ github.ref_type }}" == "tag" ]]; then
             version_arg="-E REVISION='${last_tag}'"
             echo "Overriding kibot_variant to 'RELEASED' for tag"
-            kibot_variant="RELEASED"
+            echo "kibot_variant=RELEASED" >> $GITHUB_ENV
           else
             version_arg="-E REVISION='${last_tag}+ (Unreleased)'"
-            kibot_variant="${{ env.kibot_variant }}"  # Use default for normal pushes
+            echo "kibot_variant=${{ env.kibot_variant }}" >> $GITHUB_ENV
           fi
 
           # Determine additional_args based on the variant
@@ -149,7 +149,7 @@ jobs:
 
           echo "version_arg=${version_arg}" >> $GITHUB_ENV
           echo "additional_args=${additional_args}" >> $GITHUB_ENV
-          echo "kibot_variant=${kibot_variant}" >> $GITHUB_ENV
+
 
       - name: Generate testpoints (Skipped for PRELIMINARY variant)
         if: ${{ env.kibot_variant != 'PRELIMINARY' }}
