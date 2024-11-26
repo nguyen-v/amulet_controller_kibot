@@ -29,7 +29,7 @@ jobs:
   release:
     needs: generate_outputs
     runs-on: ubuntu-latest
-    if: github.ref_type == 'tag'  # Ensures this job only runs on tag pushes
+    if: github.ref_type == 'tag' || github.event_name == 'workflow_dispatch'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
