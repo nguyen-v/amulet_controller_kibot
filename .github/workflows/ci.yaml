@@ -80,6 +80,19 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
 
+      - name: Release
+        uses: docker://antonyurchenko/git-release:v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          TAG_PREFIX_REGEX: "*"
+          args: |
+            Schematic/*.pdf
+            Manufacturing/Assembly/*
+            Manufacturing/Fabrication/*
+            3D/*
+            Testing/Testpoints/*.csv
+
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -87,18 +100,6 @@ jobs:
           commit_message: Update CHANGELOG
           file_pattern: CHANGELOG.md
           push_options: '--force'
-
-      - name: Release
-        uses: docker://antonyurchenko/git-release:v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          args: |
-            Schematic/*.pdf
-            Manufacturing/Assembly/*
-            Manufacturing/Fabrication/*
-            3D/*
-            Testing/Testpoints/*.csv
 
   generate_outputs:
     runs-on: ubuntu-latest
