@@ -105,7 +105,6 @@ jobs:
   generate_outputs:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
@@ -118,20 +117,21 @@ jobs:
           path: ~/cache_3d
           key: cache_3d
 
-      - name: Determine VERSION Argument and Additional Args
+      - name: Determine VERSION Argument and Override Variant if Tag
         id: determine-version-and-args
         run: |
           last_tag=$(git describe --tags --abbrev=0 || echo "")
           if [[ "${{ github.ref_type }}" == "tag" ]]; then
             version_arg="-E REVISION='${last_tag}'"
-            variant="RELEASED"
+            echo "Overriding kibot_variant to 'RELEASED' for tag"
+            kibot_variant="RELEASED"
           else
             version_arg="-E REVISION='${last_tag}+ (Unreleased)'"
-            variant="${{ env.kibot_variant }}"
+            kibot_variant="${{ env.kibot_variant }}"  # Use default for normal pushes
           fi
 
           # Determine additional_args based on the variant
-          case "$variant" in
+          case "$kibot_variant" in
             "DRAFT")
               additional_args="--skip-pre draw_fancy_stackup,erc,drc,include_table ${version_arg} draft_group"
               ;;
@@ -142,14 +142,14 @@ jobs:
               additional_args="${version_arg} -i testpoints xlsx_bom"
               ;;
             *)
-              echo "Unknown variant: $variant"
+              echo "Unknown variant: $kibot_variant"
               exit 1
               ;;
           esac
 
           echo "version_arg=${version_arg}" >> $GITHUB_ENV
           echo "additional_args=${additional_args}" >> $GITHUB_ENV
-          echo "variant=${variant}" >> $GITHUB_ENV
+          echo "kibot_variant=${kibot_variant}" >> $GITHUB_ENV
 
       - name: Generate testpoints (Skipped for PRELIMINARY variant)
         if: ${{ env.kibot_variant != 'PRELIMINARY' }}
@@ -167,37 +167,3 @@ jobs:
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
           cache3D: YES
-
-      - name: Pull latest changes and push outputs
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-
-          if [[ "${{ github.ref_type }}" == "tag" ]]; then
-            echo "Triggered by a tag, committing changes in detached HEAD state"
-            git add -A
-            git commit -m "Save changes before switching branches"
-
-            DETACHED_COMMIT=$(git rev-parse HEAD)
-            echo "Checking out the master branch"
-            git fetch origin master
-            git checkout master
-
-            echo "Merging detached HEAD commit into master"
-            git merge --no-ff $DETACHED_COMMIT -m "Merge outputs from tag-triggered workflow" -X theirs
-          else
-            echo "Triggered by a branch, using the current branch"
-            git pull origin ${{ github.ref_name }} --tags --force
-          fi
-
-          # Make changes and commit
-          git commit -a -m "Update Outputs" || echo "No changes to commit"
-
-          # Push changes to the appropriate target
-          if [[ "${{ github.ref_type }}" == "tag" ]]; then
-            echo "Pushing to master branch"
-            git push origin master
-          else
-            echo "Pushing to ${{ github.ref_name }}"
-            git push origin ${{ github.ref_name }}
-          fi
