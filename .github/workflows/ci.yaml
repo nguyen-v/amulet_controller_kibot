@@ -1,6 +1,7 @@
 name: CI
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - '*.*'
@@ -59,25 +60,37 @@ jobs:
       #     body: ${{ steps.extract-release-notes.outputs.release_notes }}
       #     draft: false
       #     prerelease: false
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          body: ${{ steps.extract-release-notes.outputs.release_notes }}
-          name: ${{ github.ref }}
-          tag_name: ${{ github.ref }}
-          files: |
-            Schematic/*.pdf
-            Manufacturing/Assembly/*
-            Manufacturing/Fabrication/*
-            3D/*
-            Testing/Testpoints/*.csv
+      # - name: Create Release
+      #   uses: softprops/action-gh-release@v2
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     body: ${{ steps.extract-release-notes.outputs.release_notes }}
+      #     name: ${{ github.ref }}
+      #     tag_name: ${{ github.ref }}
+      #     files: |
+      #       Schematic/*.pdf
+      #       Manufacturing/Assembly/*
+      #       Manufacturing/Fabrication/*
+      #       3D/*
+      #       Testing/Testpoints/*.csv
 
       - name: Update changelog
         uses: thomaseizinger/keep-a-changelog-new-release@v2
         with:
           tag: ${{ github.ref_name }}
+
+      - name: Release
+        uses: docker://antonyurchenko/git-release:v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: |
+            Schematic/*.pdf
+            Manufacturing/Assembly/*
+            Manufacturing/Fabrication/*
+            3D/*
+            Testing/Testpoints/*.csv
 
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v5
