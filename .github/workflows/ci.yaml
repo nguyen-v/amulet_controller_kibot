@@ -84,8 +84,8 @@ jobs:
         uses: docker://antonyurchenko/git-release:v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG_PREFIX_REGEX: "*"
         with:
-          TAG_PREFIX_REGEX: ""
           args: |
             Schematic/*.pdf
             Manufacturing/Assembly/*
@@ -138,7 +138,7 @@ jobs:
               additional_args="--skip-pre erc,drc ${version_arg} -i testpoints xlsx_bom"
               ;;
             "CHECKED"|"RELEASED")
-              additional_args="${version_arg} pdf_schematic"
+              additional_args="${version_arg} -i testpoints xlsx_bom"
               ;;
             *)
               echo "Unknown variant: $variant"
