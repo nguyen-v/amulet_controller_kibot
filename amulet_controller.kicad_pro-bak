@@ -1245,12 +1245,12 @@
     "BOARD_NAME": "\u039bmulet Motion Controller",
     "COMPANY": "EPFL Xplore Research",
     "DESIGNER": "Vincent Nguyen",
-    "GIT_HASH_PCB": "a2bf809",
+    "GIT_HASH_PCB": "a52dd2f",
     "GIT_HASH_SCH": "38f2a13",
     "PROJECT_NAME": "Chienpanz\u00e9",
     "RELEASE_DATE": "25-Nov-2024",
     "RELEASE_DATE_NUM": "2024-11-25",
-    "REVISION": "+ (Unreleased)",
+    "REVISION": "1.2",
     "VARIANT": "CHECKED"
   }
 }
