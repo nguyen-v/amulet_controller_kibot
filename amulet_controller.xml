@@ -7,7 +7,7 @@
     <textvar name="BOARD_NAME">Λmulet Motion Controller</textvar>
     <textvar name="COMPANY">EPFL Xplore Research</textvar>
     <textvar name="DESIGNER">Vincent Nguyen</textvar>
-    <textvar name="GIT_HASH_PCB">fcbd46a</textvar>
+    <textvar name="GIT_HASH_PCB">50c27cd</textvar>
     <textvar name="GIT_HASH_SCH">38f2a13</textvar>
     <textvar name="PROJECT_NAME">Chienpanzé</textvar>
     <textvar name="RELEASE_DATE">29-Nov-2024</textvar>
