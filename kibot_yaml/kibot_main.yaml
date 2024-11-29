@@ -116,6 +116,7 @@ groups:
       - @CSV_TP_OUTPUT@
       - @CSV_TP_TOP_OUTPUT@
       - @CSV_TP_BOTTOM_OUTPUT@
+      - @CSV_REPORT_COMP_OUPUT@
 
   - name: 3d
     outputs:
@@ -194,6 +195,7 @@ import:
     definitions:
       NAME_TP_TOP: @CSV_TP_TOP_OUTPUT@
       NAME_TP_BOTTOM: @CSV_TP_BOTTOM_OUTPUT@
+      NAME_REPORT_COMP: @CSV_REPORT_COMP_OUPUT@
 
 
 # Generated outputs ============================================================
