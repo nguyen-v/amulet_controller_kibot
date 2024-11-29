@@ -1242,7 +1242,7 @@
     ]
   ],
   "text_variables": {
-    "BOARD_NAME": "\u039bmulet Motion Controller",
+    "BOARD_NAME": "Λmulet Motion Controller",
     "COMPANY": "EPFL Xplore Research",
     "DESIGNER": "Vincent Nguyen",
     "GIT_HASH_PCB": "ba0e686",
