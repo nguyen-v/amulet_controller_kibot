@@ -32,8 +32,10 @@ outputs:
         name: Net 
       - field: Footprint X
         name: X
+        right_digits: 2
       - field: Footprint Y
         name: Y
+        right_digits: 2
 
 ...
 definitions:

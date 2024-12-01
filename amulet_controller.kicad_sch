@@ -873,7 +873,7 @@
 		)
 		(uuid "718e4830-a352-43f0-b9c5-1495032b5970")
 	)
-	(text "${CURRENT_DATE}"
+	(text "${RELEASE_DATE_NUM}"
 		(exclude_from_sim no)
 		(at 388.62 40.64 0)
 		(effects

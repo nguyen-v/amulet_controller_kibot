@@ -13,6 +13,7 @@ outputs:
   options:
     format: 'CSV'
     only_smd: false
+    include_virtual: false
     output: '%f-CPL%I%v.%x'
     separate_files_for_front_and_back: false
 

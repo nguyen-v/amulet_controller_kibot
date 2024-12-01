@@ -124,8 +124,8 @@ jobs:
           echo "additional_args=${additional_args}" >> $GITHUB_ENV
 
 
-      - name: Generate testpoints (Skipped for PRELIMINARY variant)
-        if: ${{ env.kibot_variant != 'PRELIMINARY' }}
+      - name: Generate testpoints (Skipped for DRAFT variant)
+        if: ${{ env.kibot_variant != 'DRAFT' }}
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
           targets: testpoints
