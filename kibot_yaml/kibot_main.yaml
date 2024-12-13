@@ -20,7 +20,7 @@ kibot:
 
 variants:
 
-  # Project progress variants
+  # Project variants
 
   - name: 'DRAFT'
     comment: "Very early stage of schematic, ignore details."
