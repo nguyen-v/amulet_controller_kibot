@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/github/workspace/amulet_controller.kicad_sch</source>
-    <date>Date1</date>
-    <tool>Eeschema 8.0.6+1</tool>
+    <source>/home/vincent/amulet_controller/amulet_controller.kicad_sch</source>
+    <date>2024-12-16T18:53:12+0100</date>
+    <tool>Eeschema 8.0.7-8.0.7-0~ubuntu22.04.1</tool>
     <textvar name="BOARD_NAME">Λmulet Motion Controller</textvar>
     <textvar name="COMPANY">EPFL Xplore Research</textvar>
     <textvar name="DESIGNER">Vincent Nguyen</textvar>
-    <textvar name="GIT_HASH_PCB">ba0e686</textvar>
+    <textvar name="GIT_HASH_PCB">cade255</textvar>
     <textvar name="GIT_HASH_SCH">0f75bcb</textvar>
     <textvar name="PROJECT_NAME">Chienpanzé</textvar>
-    <textvar name="RELEASE_DATE">02-Dec-2024</textvar>
-    <textvar name="RELEASE_DATE_NUM">2024-12-02</textvar>
-    <textvar name="REVISION">1.1.1+ (Unreleased)</textvar>
-    <textvar name="VARIANT">CHECKED</textvar>
+    <textvar name="RELEASE_DATE">13-Dec-2024</textvar>
+    <textvar name="RELEASE_DATE_NUM">2024-12-13</textvar>
+    <textvar name="REVISION">1.1</textvar>
+    <textvar name="VARIANT"/>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Cover Page</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2024-04-13</date>
         <source>amulet_controller.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -36,8 +36,8 @@
       <title_block>
         <title>Block Diagram</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2024-04-13</date>
         <source>Block Diagram.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -54,8 +54,8 @@
       <title_block>
         <title>Project Architecture</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-12-22</date>
         <source>Project Architecture.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -72,8 +72,8 @@
       <title_block>
         <title>MCU - Power</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-12-18</date>
         <source>MCU - Power.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -90,8 +90,8 @@
       <title_block>
         <title>MCU - I/Os</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-12-20</date>
         <source>MCU - IOs.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -108,8 +108,8 @@
       <title_block>
         <title>Power - Generation</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2024-04-13</date>
         <source>Power - Generation.kicad_sch</source>
         <comment number="1" value="+12V (600 mA): Fan power"/>
         <comment number="2" value="+5V (600 mA): Gate Driver, LEDs"/>
@@ -126,8 +126,8 @@
       <title_block>
         <title>Power - Connectors</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-12-31</date>
         <source>Power - Connectors.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -144,8 +144,8 @@
       <title_block>
         <title>Motor Control - Top Level</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-12-20</date>
         <source>Motor Control - Top Level.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -162,8 +162,8 @@
       <title_block>
         <title>Motor Control - Inverter</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2024-01-25</date>
         <source>Motor Control - Inverter.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -180,8 +180,8 @@
       <title_block>
         <title>Misc - Board Version, DAC</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2024-04-13</date>
         <source>Misc - Board Version DAC.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -198,8 +198,8 @@
       <title_block>
         <title>User - LED Indicators</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-12-19</date>
         <source>User - LED Indicators.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -216,8 +216,8 @@
       <title_block>
         <title>Sensing - Temperature</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2024-04-13</date>
         <source>Sensing - Temperature.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -234,8 +234,8 @@
       <title_block>
         <title>Sensing - Battery</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-10-14</date>
         <source>Sensing - Battery.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -252,8 +252,8 @@
       <title_block>
         <title>Sensing - Position</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-10-14</date>
         <source>Sensing - Position.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -270,8 +270,8 @@
       <title_block>
         <title>Interface - RS-422</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-10-15</date>
         <source>Interface - RS-422.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -288,8 +288,8 @@
       <title_block>
         <title>Interface - FD-CAN</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-10-15</date>
         <source>Interface - FD-CAN.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -306,8 +306,8 @@
       <title_block>
         <title>Interface - Fan Control</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-11-19</date>
         <source>Interface - Fan Control.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -324,8 +324,8 @@
       <title_block>
         <title>Interface - Interconnects</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-12-31</date>
         <source>Interface - Interconnects.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -342,8 +342,8 @@
       <title_block>
         <title>Misc - Holes, Fiducials</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2023-10-22</date>
         <source>Misc - Holes Fiducials.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -360,8 +360,8 @@
       <title_block>
         <title>Power - Sequencing</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2024-03-12</date>
         <source>Power - Sequencing.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -378,8 +378,8 @@
       <title_block>
         <title>Revision History</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1+ (Unreleased)</rev>
-        <date>Date2</date>
+        <rev>1.1</rev>
+        <date>2024-01-03</date>
         <source>Revision History.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -9988,61 +9988,61 @@
   </libparts>
   <libraries>
     <library logical="0_connectors">
-      <uri>/github/workspace/lib/lib_sym/0_connectors.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_connectors.kicad_sym</uri>
     </library>
     <library logical="0_diode">
-      <uri>/github/workspace/lib/lib_sym/0_diode.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_diode.kicad_sym</uri>
     </library>
     <library logical="0_gate_driver">
-      <uri>/github/workspace/lib/lib_sym/0_gate_driver.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_gate_driver.kicad_sym</uri>
     </library>
     <library logical="0_interface_can">
-      <uri>/github/workspace/lib/lib_sym/0_interface_can.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_interface_can.kicad_sym</uri>
     </library>
     <library logical="0_interface_uart">
-      <uri>/github/workspace/lib/lib_sym/0_interface_uart.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_interface_uart.kicad_sym</uri>
     </library>
     <library logical="0_linear_regulator">
-      <uri>/github/workspace/lib/lib_sym/0_linear_regulator.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_linear_regulator.kicad_sym</uri>
     </library>
     <library logical="0_mcu">
-      <uri>/github/workspace/lib/lib_sym/0_mcu.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_mcu.kicad_sym</uri>
     </library>
     <library logical="0_motor_driver">
-      <uri>/github/workspace/lib/lib_sym/0_motor_driver.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_motor_driver.kicad_sym</uri>
     </library>
     <library logical="0_power_protection">
-      <uri>/github/workspace/lib/lib_sym/0_power_protection.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_power_protection.kicad_sym</uri>
     </library>
     <library logical="0_sensor">
-      <uri>/github/workspace/lib/lib_sym/0_sensor.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_sensor.kicad_sym</uri>
     </library>
     <library logical="0_switching_regulator">
-      <uri>/github/workspace/lib/lib_sym/0_switching_regulator.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_switching_regulator.kicad_sym</uri>
     </library>
     <library logical="0_transistor_fet">
-      <uri>/github/workspace/lib/lib_sym/0_transistor_fet.kicad_sym</uri>
+      <uri>/home/vincent/amulet_controller/lib/lib_sym/0_transistor_fet.kicad_sym</uri>
     </library>
     <library logical="Connector">
-      <uri>/usr/share/kicad/symbols/Connector.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Connector.kicad_sym</uri>
     </library>
     <library logical="Connector_Generic">
-      <uri>/usr/share/kicad/symbols/Connector_Generic.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Connector_Generic.kicad_sym</uri>
     </library>
     <library logical="Device">
-      <uri>/usr/share/kicad/symbols/Device.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
     </library>
     <library logical="Mechanical">
-      <uri>/usr/share/kicad/symbols/Mechanical.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Mechanical.kicad_sym</uri>
     </library>
     <library logical="Regulator_Switching">
-      <uri>/usr/share/kicad/symbols/Regulator_Switching.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Regulator_Switching.kicad_sym</uri>
     </library>
     <library logical="Sensor_Magnetic">
-      <uri>/usr/share/kicad/symbols/Sensor_Magnetic.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Sensor_Magnetic.kicad_sym</uri>
     </library>
     <library logical="Switch">
-      <uri>/usr/share/kicad/symbols/Switch.kicad_sym</uri>
+      <uri>/usr/share/kicad/symbols//Switch.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
