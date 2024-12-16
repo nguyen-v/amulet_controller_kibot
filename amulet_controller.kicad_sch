@@ -339,7 +339,7 @@
 		)
 		(uuid "041ff709-0f5e-466e-adab-d03afffd90b7")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_23}"
 		(exclude_from_sim no)
 		(at 243.84 99.06 0)
 		(effects
@@ -367,7 +367,7 @@
 		)
 		(uuid "09a9f005-609a-4854-9ba5-f5a5e7b8d7c7")
 	)
-	(text "Misc - Board Version, DAC"
+	(text "${SHEET_NAME_10}"
 		(exclude_from_sim no)
 		(at 45.72 152.4 0)
 		(effects
@@ -396,7 +396,7 @@
 		)
 		(uuid "10cbc67f-d688-44d7-9e2b-bee41b99ad5c")
 	)
-	(text "Sensing - Battery"
+	(text "${SHEET_NAME_13}"
 		(exclude_from_sim no)
 		(at 144.78 99.06 0)
 		(effects
@@ -452,7 +452,7 @@
 		)
 		(uuid "1dd16a1b-b3b8-42a1-b678-3a7b261e7284")
 	)
-	(text "Interface - RS-422"
+	(text "${SHEET_NAME_15}"
 		(exclude_from_sim no)
 		(at 144.78 114.3 0)
 		(effects
@@ -466,7 +466,7 @@
 		)
 		(uuid "2967c8d5-e25a-46f9-b010-e57505c00503")
 	)
-	(text "Power - Connectors"
+	(text "${SHEET_NAME_7}"
 		(exclude_from_sim no)
 		(at 45.72 129.54 0)
 		(effects
@@ -521,7 +521,7 @@
 		)
 		(uuid "3e121d9b-11e9-4895-9779-ade93d5b2a88")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_30}"
 		(exclude_from_sim no)
 		(at 243.84 152.4 0)
 		(effects
@@ -591,7 +591,7 @@
 		)
 		(uuid "48cae9b2-9935-4ee2-a962-685c04325434")
 	)
-	(text "Interface - Interconnects"
+	(text "${SHEET_NAME_18}"
 		(exclude_from_sim no)
 		(at 144.78 137.16 0)
 		(effects
@@ -677,7 +677,7 @@
 		)
 		(uuid "5216de6a-28ab-4e49-a422-9fd32d8fed67")
 	)
-	(text "MCU - Power"
+	(text "${SHEET_NAME_4}"
 		(exclude_from_sim no)
 		(at 45.72 106.68 0)
 		(effects
@@ -691,7 +691,7 @@
 		)
 		(uuid "547bb3ec-bec4-4b68-a38e-2ac56be29bd3")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_27}"
 		(exclude_from_sim no)
 		(at 243.84 129.54 0)
 		(effects
@@ -705,7 +705,7 @@
 		)
 		(uuid "598c6218-39d7-40a8-878a-842531c6a754")
 	)
-	(text "Power - Sequencing"
+	(text "${SHEET_NAME_20}"
 		(exclude_from_sim no)
 		(at 144.78 152.4 0)
 		(effects
@@ -747,7 +747,7 @@
 		)
 		(uuid "5e529423-56be-4ad0-9794-38b960fa0634")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_38}"
 		(exclude_from_sim no)
 		(at 342.9 137.16 0)
 		(effects
@@ -761,7 +761,7 @@
 		)
 		(uuid "5ec61f31-3c66-4623-97e5-d26d3b9bb1be")
 	)
-	(text "Motor Control - Inverter"
+	(text "${SHEET_NAME_9}"
 		(exclude_from_sim no)
 		(at 45.72 144.78 0)
 		(effects
@@ -775,7 +775,7 @@
 		)
 		(uuid "607a7a91-0d45-4b17-b215-0aa2e93c43df")
 	)
-	(text "Sensing - Temperature"
+	(text "${SHEET_NAME_12}"
 		(exclude_from_sim no)
 		(at 144.78 91.44 0)
 		(effects
@@ -789,7 +789,7 @@
 		)
 		(uuid "65bf4757-626d-44ff-b85b-b93aacb9b31d")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_40}"
 		(exclude_from_sim no)
 		(at 342.9 152.4 0)
 		(effects
@@ -817,7 +817,7 @@
 		)
 		(uuid "68aaa364-f788-45fb-b731-7b1eda7a6c6c")
 	)
-	(text "Misc - Holes, Fiducials"
+	(text "${SHEET_NAME_19}"
 		(exclude_from_sim no)
 		(at 144.78 144.78 0)
 		(effects
@@ -845,7 +845,7 @@
 		)
 		(uuid "6eee427d-5608-4f64-99d8-6d8e4391a6b0")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_32}"
 		(exclude_from_sim no)
 		(at 342.9 91.44 0)
 		(effects
@@ -987,7 +987,7 @@
 		)
 		(uuid "832c6231-94ea-4718-8f70-96006b71efdf")
 	)
-	(text "User - LED Indicators"
+	(text "${SHEET_NAME_11}"
 		(exclude_from_sim no)
 		(at 144.78 83.82 0)
 		(effects
@@ -1029,7 +1029,7 @@
 		)
 		(uuid "8d827c06-285c-46bc-8024-d46f4098d9e5")
 	)
-	(text "Motor Control - Top Level"
+	(text "${SHEET_NAME_8}"
 		(exclude_from_sim no)
 		(at 45.72 137.16 0)
 		(effects
@@ -1058,7 +1058,7 @@
 		)
 		(uuid "9008c96f-82fa-4b3f-88a3-9ae35f59090b")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_24}"
 		(exclude_from_sim no)
 		(at 243.84 106.68 0)
 		(effects
@@ -1086,7 +1086,7 @@
 		)
 		(uuid "9310b062-10e2-49af-a22c-1c9854a7f3f0")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_29}"
 		(exclude_from_sim no)
 		(at 243.84 144.78 0)
 		(effects
@@ -1100,7 +1100,7 @@
 		)
 		(uuid "93713c73-3aba-4b0b-9f3c-b37ab3721f94")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_22}"
 		(exclude_from_sim no)
 		(at 243.84 91.44 0)
 		(effects
@@ -1114,7 +1114,7 @@
 		)
 		(uuid "93b242cb-0b6a-48cc-a920-659ba5a2d4b9")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_39}"
 		(exclude_from_sim no)
 		(at 342.9 144.78 0)
 		(effects
@@ -1128,7 +1128,7 @@
 		)
 		(uuid "9413d17b-fd74-4a56-8014-ec2904184d8a")
 	)
-	(text "MCU - I/Os"
+	(text "${SHEET_NAME_5}"
 		(exclude_from_sim no)
 		(at 45.72 114.3 0)
 		(effects
@@ -1156,7 +1156,7 @@
 		)
 		(uuid "959ea2a5-595d-4c64-a44e-f0c1c6497852")
 	)
-	(text "Interface - Fan Control"
+	(text "${SHEET_NAME_17}"
 		(exclude_from_sim no)
 		(at 144.78 129.54 0)
 		(effects
@@ -1198,7 +1198,7 @@
 		)
 		(uuid "a95a57c3-0ec4-4b96-8edf-d46ee18a4a8e")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_28}"
 		(exclude_from_sim no)
 		(at 243.84 137.16 0)
 		(effects
@@ -1226,7 +1226,7 @@
 		)
 		(uuid "ada746a9-1ac8-4ba5-b1f0-e040d6c0fa14")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_31}"
 		(exclude_from_sim no)
 		(at 342.9 83.82 0)
 		(effects
@@ -1269,7 +1269,7 @@
 		)
 		(uuid "b5491481-138f-4748-8f60-dc51e3284b98")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_26}"
 		(exclude_from_sim no)
 		(at 243.84 121.92 0)
 		(effects
@@ -1283,7 +1283,7 @@
 		)
 		(uuid "b55022f1-bde3-45d1-ab63-474a18aef763")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_34}"
 		(exclude_from_sim no)
 		(at 342.9 106.68 0)
 		(effects
@@ -1325,7 +1325,7 @@
 		)
 		(uuid "beb5ee3d-ad62-4c0c-ab18-390f8e3c78c4")
 	)
-	(text "Power - Generation"
+	(text "${SHEET_NAME_6}"
 		(exclude_from_sim no)
 		(at 45.72 121.92 0)
 		(effects
@@ -1339,7 +1339,7 @@
 		)
 		(uuid "c067acf3-7bff-4cf1-970e-a7854060a23e")
 	)
-	(text "Revision History"
+	(text "${SHEET_NAME_21}"
 		(exclude_from_sim no)
 		(at 243.84 83.82 0)
 		(effects
@@ -1382,7 +1382,7 @@
 		)
 		(uuid "c52bc9e5-2c42-41e6-ae08-fabef868928a")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_36}"
 		(exclude_from_sim no)
 		(at 342.9 121.92 0)
 		(effects
@@ -1396,7 +1396,7 @@
 		)
 		(uuid "c8a13f8e-6347-4971-97e9-3bbacc8fb0b5")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_35}"
 		(exclude_from_sim no)
 		(at 342.9 114.3 0)
 		(effects
@@ -1410,7 +1410,7 @@
 		)
 		(uuid "c932f64b-e011-46ca-8efc-bb2f186e8b13")
 	)
-	(text "Block Diagram"
+	(text "${SHEET_NAME_2}"
 		(exclude_from_sim no)
 		(at 45.72 91.44 0)
 		(effects
@@ -1452,7 +1452,7 @@
 		)
 		(uuid "cea38a57-40f7-465f-b054-ff626e3218d0")
 	)
-	(text "Interface - FD-CAN"
+	(text "${SHEET_NAME_16}"
 		(exclude_from_sim no)
 		(at 144.78 121.92 0)
 		(effects
@@ -1480,7 +1480,7 @@
 		)
 		(uuid "cf9779c0-4a62-4a6f-9127-07f6919e9e8d")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_25}"
 		(exclude_from_sim no)
 		(at 243.84 114.3 0)
 		(effects
@@ -1564,7 +1564,7 @@
 		)
 		(uuid "e216870b-45fe-49b3-8e55-d9668eb9df44")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_33}"
 		(exclude_from_sim no)
 		(at 342.9 99.06 0)
 		(effects
@@ -1606,7 +1606,7 @@
 		)
 		(uuid "e83f0c3e-ac1d-4432-a8de-ba5a2be8aa4a")
 	)
-	(text "Cover Page"
+	(text "${SHEET_NAME_1}"
 		(exclude_from_sim no)
 		(at 45.72 83.82 0)
 		(effects
@@ -1620,7 +1620,7 @@
 		)
 		(uuid "e9964413-67ff-4f53-b58c-608277db6779")
 	)
-	(text "Sensing - Position"
+	(text "${SHEET_NAME_14}"
 		(exclude_from_sim no)
 		(at 144.78 106.68 0)
 		(effects
@@ -1648,7 +1648,7 @@
 		)
 		(uuid "ecd14d51-7267-460d-9460-6bae137b0c37")
 	)
-	(text "Project Architecture"
+	(text "${SHEET_NAME_3}"
 		(exclude_from_sim no)
 		(at 45.72 99.06 0)
 		(effects
@@ -1705,7 +1705,7 @@
 		)
 		(uuid "f7f416e4-86a9-4d8f-ac0d-80443c165632")
 	)
-	(text "..........................................."
+	(text "${SHEET_NAME_37}"
 		(exclude_from_sim no)
 		(at 342.9 129.54 0)
 		(effects
