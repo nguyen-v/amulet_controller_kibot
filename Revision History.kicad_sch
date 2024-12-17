@@ -55,10 +55,10 @@
 		)
 		(uuid "fe21cbb6-f53c-41a1-bc1c-520e82f71f78")
 	)
-	(text_box "- Added RC snubber passive values.\n\n- Added more vias for VBUS and LMR36006 GND pads.\n\n- Changed board version voltage reference from +3V3 to +A3V3.\n\n- Changed motor thermistor resistor divider to 2kOhm for a 10k 3950K thermistor.\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________"
+	(text_box "${RELEASE_BODY_1.1.0}"
 		(exclude_from_sim no)
-		(at 220.98 40.64 0)
-		(size 58.42 115.57)
+		(at 220.98 33.02 0)
+		(size 58.42 85.09)
 		(stroke
 			(width -0.0001)
 			(type default)
@@ -98,9 +98,9 @@
 		)
 		(uuid "20a0a094-ac98-46df-bdac-21d5721f7697")
 	)
-	(text_box "- Changed CPH-CPL capacitor to 47nF (gate driver).\n\n- Changed FD-CAN transceiver IC.\n\n- Changed FETs for top cooled variant.\n\n- Added TVS protection and termination switch to FD-CAN.\n\n- Added low-side switched 12V 600mA source for external fan.\n\n- Added LDO for analog supply.\n\n- Changed input power TVS diode to bidirectional and added one diode per connector.\n\n- Moved SOx low-pass filter to MCU section. \nShould be placed near MCU to avoid noise coupling into ADC lines.\n\n- Added second onboard I2C magnetic encoder for disambiguation.\n\n- Switched PWM_PHASEA with PWM_PHASEC on STM32G474 pinout for easier routing.\n\n- Changed RS422 pinout on connector.\n\n- Added ESD protection to all interfaces.\n\n- Added overvoltage protection on thermistor ADC inputs.\n\n- Changed buck regulators to optimize for low noise.\n\n- Added Pi filters to inputs of buck regulators and MCU analog supply.\n\n- Added decoupling caps next to power pins of connectors."
+	(text_box "${RELEASE_BODY_1.0.0}"
 		(exclude_from_sim no)
-		(at 22.86 40.64 0)
+		(at 22.86 34.29 0)
 		(size 58.42 149.86)
 		(stroke
 			(width -0.0001)
@@ -119,7 +119,7 @@
 		)
 		(uuid "212b625e-4169-46f2-a2fc-afc6cbef07cd")
 	)
-	(text_box "12-MAR-2024 - First Revision\nVariant: v1.0 Released"
+	(text_box "${RELEASE_TITLE_1.0.2}"
 		(exclude_from_sim no)
 		(at 152.4 31.75 0)
 		(size 57.15 7.62)
@@ -141,9 +141,52 @@
 		)
 		(uuid "61447e65-3862-4ca7-a61e-5d8506cb38bb")
 	)
-	(text_box "- Modified power sequencing graph according to experimental data.\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________"
+	(text_box "${RELEASE_BODY_1.1.1}"
 		(exclude_from_sim no)
-		(at 154.94 40.64 0)
+		(at 220.98 123.19 0)
+		(size 58.42 27.94)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "716541ae-5b9a-47ea-90b1-4a234e4502c5")
+	)
+	(text_box "${RELEASE_TITLE_1.1.1}"
+		(exclude_from_sim no)
+		(at 218.44 120.65 0)
+		(size 57.15 7.62)
+		(stroke
+			(width -0.0001)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(face "Arial")
+				(size 1.905 1.905)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "83804459-d785-46b8-af72-10fc9895a6a5")
+	)
+	(text_box "${RELEASE_BODY_1.0.2}"
+		(exclude_from_sim no)
+		(at 154.94 34.29 0)
 		(size 58.42 115.57)
 		(stroke
 			(width -0.0001)
@@ -162,9 +205,9 @@
 		)
 		(uuid "8ad0acb7-8a2e-40a2-87c7-888a93359ccd")
 	)
-	(text_box "- Added controller target specifications.\n\n- Replaced 5V 300mA buck converter with 600mA version.\n\n- Added credits to moteus on cover page.\n\n- Added optional RC-Snubber to power stage.\n\n- Increased chassis length to go around the board.\n\n- CAN and power TVS diodes now go to chassis.\n\n- Changed clearance between nets to respect IEC60664-1 where possible.\n\n- Rectified comment on precharge.\n\n- Changed power TVS diode reference designator from \"U\" to \"D\".\n\n- Replaced chassis-GND capacitor by 1nF 1kV.\n"
+	(text_box "${RELEASE_BODY_1.0.1}"
 		(exclude_from_sim no)
-		(at 88.9 40.64 0)
+		(at 88.9 34.29 0)
 		(size 58.42 109.22)
 		(stroke
 			(width -0.0001)
@@ -183,7 +226,7 @@
 		)
 		(uuid "9af8400a-3034-4071-a364-608020db49d5")
 	)
-	(text_box "12-DEC-2023 - Initial Release\nVariant: v1.0 Preliminary"
+	(text_box "${RELEASE_TITLE_1.0.0}"
 		(exclude_from_sim no)
 		(at 20.32 31.75 0)
 		(size 57.15 7.62)
@@ -205,7 +248,7 @@
 		)
 		(uuid "d183a6b7-e8a2-46ec-8c3c-ec3041423bc1")
 	)
-	(text_box "25-JAN-2024 - First Revision\nVariant: v1.0 Checked"
+	(text_box "${RELEASE_TITLE_1.0.1}"
 		(exclude_from_sim no)
 		(at 86.36 31.75 0)
 		(size 57.15 7.62)
@@ -227,9 +270,9 @@
 		)
 		(uuid "ed7f1ff6-56f6-4427-ab7f-2ffe27717c3d")
 	)
-	(text_box "13-APR-2024 - Second Revision\nVariant: v1.1 Released"
+	(text_box "${RELEASE_TITLE_1.1.0}"
 		(exclude_from_sim no)
-		(at 218.44 31.75 0)
+		(at 218.44 30.48 0)
 		(size 57.15 7.62)
 		(stroke
 			(width -0.0001)

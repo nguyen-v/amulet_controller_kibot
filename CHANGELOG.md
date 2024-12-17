@@ -23,8 +23,6 @@
 
 -   Motor thermistor resistor divider to 2kOhm for a 10k 3950K thermistor.
 
-### Removed
-
 ## [1.0.2] - 2024-03-12
 
 ### Changed
