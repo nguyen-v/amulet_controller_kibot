@@ -1,4 +1,4 @@
-Ref.,Net,X,Y
+Ref.,Net,X [mm],Y [mm]
 TP7,DRV_CS,31.90,20.10
 TP23,POS_SENSOR_CS,31.05,19.25
 TP29,RS422_~{RE},29.63,17.71
