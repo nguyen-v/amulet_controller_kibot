@@ -10,8 +10,7 @@ on:
       - dev
     paths-ignore:
       - '*.md'
-    types:
-      - pushed # Exclude pull request events, only trigger on direct pushes
+
 
 env:
   kibot_config: kibot_yaml/kibot_main.yaml
@@ -78,6 +77,7 @@ jobs:
 
   generate_outputs:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'Merge pull request')" # Skip merge commits
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
