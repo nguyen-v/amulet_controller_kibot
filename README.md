@@ -4,7 +4,11 @@
 
 <h1 align="center">Λmulet Motion Controller</h1>
 
-[![CI](https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml/badge.svg?branch=dev)](https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml)
+<p align="center" width="100%">
+  <a href="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml">
+    <img alt="CI Badge" src="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml/badge.svg?branch=dev">
+  </a>
+</p>
 
 ΛMULET is a high-power brushless motor controller, compatible with the [moteus firmware](https://github.com/mjbots/moteus). It was specifically designed to be integrated in [EPFL Xplore](https://github.com/EPFLXplore)'s Legged Robot actuators.
 
