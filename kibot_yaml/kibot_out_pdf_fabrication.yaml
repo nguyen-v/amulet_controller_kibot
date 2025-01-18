@@ -127,18 +127,18 @@ outputs:
           - layer: B.Dimensions
             color: '#000000'
 
-      # - scaling: @SCALING@
-      #   title: '@DOC_TITLE@'
-      #   sheet: 'Drill Drawing (%lp)'
-      #   layer_var: 'Drill Drawing %lp (Scale @SCALING@:1)'
-      #   sheet_reference_color: '#000000'
-      #   colored_holes: true
-      #   holes_color: "#FFFFFF"
-      #   repeat_for_layer: '@LAYER_DRILL_MAP@'
-      #   repeat_layers: 'drill_pairs'
-      #   layers:
-      #     - layer: '@LAYER_DRILL_MAP@'
-      #       color: '#000000'
+      - scaling: @SCALING@
+        title: '@DOC_TITLE@'
+        sheet: 'Drill Drawing (%lp)'
+        layer_var: 'Drill Drawing %lp (Scale @SCALING@:1)'
+        sheet_reference_color: '#000000'
+        colored_holes: true
+        holes_color: "#FFFFFF"
+        repeat_for_layer: '@LAYER_DRILL_MAP@'
+        repeat_layers: 'drill_pairs'
+        layers:
+          - layer: '@LAYER_DRILL_MAP@'
+            color: '#000000'
 
       - scaling: @SCALING@
         title: '@DOC_TITLE@'
