@@ -1243,7 +1243,7 @@
     "RELEASE_BODY_1.0.1": "___________________________________\n\nAdded\n\n-   Controller target specifications.\n\n-   Credits to moteus on cover page.\n\n-   Optional RC-Snubber to power stage.\n\n___________________________________\n\nFixed\n\n-   Chassis guard ring to go around the board.\n\n-   CAN and power TVS diodes now go to chassis.\n\n-   Clearance between nets to respect IEC60664-1 where possible.\n\n-   Comment on precharge.\n\n-   Power TVS diode reference designator from \"U\" to \"D\".\n\n___________________________________\n\nChanged\n\n-   5V 300 mA buck converter with 600 mA version.\n\n-   Chassis-GND capacitor by 1nF 1kV.",
     "RELEASE_BODY_1.0.2": "___________________________________\n\nChanged\n\n-   Power sequencing graph according to experimental data.",
     "RELEASE_BODY_1.1.0": "___________________________________\n\nAdded\n\n-   RC snubber passive values.\n\n___________________________________\n\nFixed\n\n-   More vias for VBUS and LMR36006 GND pads.\n\n-   Board version voltage reference from +3V3 to +A3V3.\n\n___________________________________\n\nChanged\n\n-   Motor thermistor resistor divider to 2kOhm for a 10k 3950K thermistor.",
-    "RELEASE_BODY_1.1.1": "___________________________________\n\nFixed\n\n-   Replace non-stocked components.",
+    "RELEASE_BODY_1.1.1": "Version 1.1.1 not found.",
     "RELEASE_BODY_UNRELEASED": "Version Unreleased not found.",
     "RELEASE_DATE": "18-Jan-2025",
     "RELEASE_DATE_NUM": "2025-01-18",
@@ -1251,9 +1251,9 @@
     "RELEASE_TITLE_1.0.1": "Version 1.0.1 - 2024-01-25",
     "RELEASE_TITLE_1.0.2": "Version 1.0.2 - 2024-03-12",
     "RELEASE_TITLE_1.1.0": "Version 1.1.0 - 2024-04-13",
-    "RELEASE_TITLE_1.1.1": "Version 1.1.1 - 2024-11-26",
+    "RELEASE_TITLE_1.1.1": "Version 1.1.1 not found.",
     "RELEASE_TITLE_UNRELEASED": "Version Unreleased not found.",
-    "REVISION": "1.1.1+ (Unreleased)",
+    "REVISION": "1.1.1",
     "SHEET_NAME_1": "Cover Page",
     "SHEET_NAME_10": "Misc - Board Version, DAC",
     "SHEET_NAME_11": "User - LED Indicators",
@@ -1294,6 +1294,6 @@
     "SHEET_NAME_7": "Power - Connectors",
     "SHEET_NAME_8": "Motor Control - Top Level",
     "SHEET_NAME_9": "Motor Control - Inverter",
-    "VARIANT": "CHECKED"
+    "VARIANT": "RELEASED"
   }
 }
