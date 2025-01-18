@@ -58,7 +58,38 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|129889289|83827869|40e614cd-f794-4c8a-96a4-edc577044a93|75a12556-b5ac-44de-93a6-edad9651569a",
+        "copper_edge_clearance|132800401|58204262|aa82e4e1-4d6b-4d06-86dd-8165664626b3|a5ca2eea-f08a-4e48-8f00-7d8c7523b9c8",
+        "courtyards_overlap|128090550|101985025|6442073d-c40f-4dc9-8c6d-62bd32083b71|ea25d7f2-bcc8-4b3c-9f4a-558df7741e5d",
+        "courtyards_overlap|142055400|60005100|3e7b8523-404b-4c6d-8bab-3e9b1f37f245|8cf38cac-3d21-46ed-b85a-4de9c5cef766",
+        "courtyards_overlap|158605400|60005100|1a00927a-0ba9-4625-a9c8-9246bb72022c|596e2607-2529-4476-8cfc-b8ffeed6f11b",
+        "courtyards_overlap|168760020|102700750|7460f8f0-c8ea-4a32-81b2-71d03b9a50fc|865196ab-4385-4006-a847-18e3cb3e5bfa",
+        "courtyards_overlap|172168587|89730103|6264d4b1-3957-4ac0-b5e5-e6de57edfd22|7460f8f0-c8ea-4a32-81b2-71d03b9a50fc",
+        "courtyards_overlap|172965400|89067666|1188f39b-8096-410e-8b13-39028ce41599|7460f8f0-c8ea-4a32-81b2-71d03b9a50fc",
+        "lib_footprint_mismatch|128472459|95992643|d17ff88b-46e1-4420-9ed0-e34d551f193b|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|129400000|65500000|b7d12f16-7fc9-4858-a625-1ca5f4098091|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|129866333|92694503|5e47c672-80c7-4892-8472-29915543646e|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|130493965|95036872|8ba1e245-bdbe-49d7-a534-355f5845366b|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|130701025|95809613|91a250a3-8ccb-4cd9-9a5e-00aa76dcf56a|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|131320291|98127833|f787e72d-04eb-4d34-a134-7ca47898c5c4|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|140250400|54325100|3e7b8523-404b-4c6d-8bab-3e9b1f37f245|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|149100000|117350000|2a32e65a-8109-4764-a183-94a461d69f6e|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|156750400|54325100|1a00927a-0ba9-4625-a9c8-9246bb72022c|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|165802015|98344758|0add8b82-0f13-4c93-8362-ca416835fb4b|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|166253518|100250000|b4f73bbe-1c01-40b4-b2b0-e061aae0969d|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|166413521|96023949|c8e60170-24f1-48a1-8bf2-0ac2373d116c|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|166620577|95251212|378e9acc-fedf-4a86-8487-5fff3209747e|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|167243984|92943938|56b67be7-5f50-48f0-aa80-dbfe961846a5|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|167451041|92171200|7ba56757-e3b2-47c5-8f00-c18e6a017cbc|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_mismatch|173330000|69800000|36d407a6-160a-4619-99da-949c12741b75|00000000-0000-0000-0000-000000000000",
+        "solder_mask_bridge|129889289|83827869|40e614cd-f794-4c8a-96a4-edc577044a93|75a12556-b5ac-44de-93a6-edad9651569a",
+        "solder_mask_bridge|129889289|85052133|01dc8597-524e-4c85-9ff2-cb1f84ce7e55|65f9dcb6-52b5-4b01-9996-a6a12d1e2b56",
+        "solder_mask_bridge|135570010|93900100|822ce985-0dc5-476f-9daf-9d858ea06bd4|ca60f5b6-7d86-4f00-a6ef-69a31e541505",
+        "solder_mask_bridge|151970311|83827768|46acf262-b316-4e3b-bf9e-446ff6c91e38|8a6ad48b-aa70-45d5-baf3-e2bd15677816",
+        "solder_mask_bridge|151970311|85052032|55e14d46-25fb-4c40-8e9f-bf6ccaca178b|684ad66d-c8ff-4050-8757-fd6acc39609c",
+        "solder_mask_bridge|157679689|85077132|91a0bc6f-f578-453c-a8f7-17d747dd4009|c9433144-703e-479c-b9e9-a6edf248e4d2"
+      ],
       "meta": {
         "version": 2
       },
@@ -1231,14 +1262,19 @@
   ],
   "text_variables": {
     "ASSEMBLY_NOTES": "ASSEMBLY NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)\tDO NOT POPULATE PARTS ARE MARKED WITH A RED CROSS.\n\n2)\tDO NOT POPULATE PARTS ARE NOT PRESENT IN THE BOM.\n\n3)\tIF CONFLICTING INFORMATION IS FOUND BETWEEN THE ASSEMBLY\n\tFILE AND BOM, BOM SHOULD BE USED AS THE MAIN SOURCE.\n\n4)\tCONFORMAL COATING IS NOT REQUIRED.\n\n5)\tDOT IDENTIFIES PIN #1 LOCATION AND DEVICE ORIENTATION\n\tWHEN VIEWED FROM THE TOP.",
-    "BOARD_NAME": "\u039bmulet Motion Controller",
+    "BOARD_NAME": "Λmulet Motion Controller",
     "COMPANY": "EPFL Xplore Research",
     "DESIGNER": "Vincent Nguyen",
+<<<<<<< HEAD
     "FABRICATION_NOTES": "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)\tFABRICATE PER IPC-6012A CLASS 2.\n\n2)\tOUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n\t\"Edge_Cuts.GBR\" SUFFIX.\n\n\tDIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n\tDRAWING FOR REFERENCE ONLY.\n\n3)\tSEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n\tFOR HOLE LOCATIONS.\n\n\tSELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n\tFOR REFERENCE ONLY.\n\n4)\tSURFACE FINISH: IMMERSION GOLD\n\n5)\tSOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n\tBE LPI, COLOR BLACK.\n\n6)\tSILK SCREEN LEGEND TO BE APPLIED PER LAYER \n\tSTACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)\tALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n\tSOLDERMASK OPENED IN GERBER.\n\n8)\tVENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n\tAND Pb FREE FOR MANUFACTURING\n\n9)\tPCB MATERIAL REQUIREMENTS:\n\n\tA.\tFLAMMABILITY RATING MUST MEET OR EXCEED \n\t\tUL94V-0 REQUIREMENTS.\n\tB.\tTg 170 C OR EQUIVALENT.\n\tC.\tEQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n\t\tHALOGEN FREE AND APPROVED BY EPFL XPLORE RESEARCH.\n\n10)\tDESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n\tBOARD SIZE\t\t\t\t69.666 \u00d7 76.700 mm\n\tBOARD THICKNESS\t\t1.660 mm\n\tTRACE WIDTH\t\t\t0.200 mm\n\tTRACE TO TRACE\t\t0.200 mm\n\tMIN. HOLE (PTH)\t\t\t0.250 mm\n\tMIN. HOLE (NPTH)\t\t0.700 mm\n\tANNULAR RING\t\t\t0.150 mm\n\tCOPPER TO HOLE\t\t0.254 mm\n\tCOPPER TO EDGE\t\t0.250 mm\n\tHOLE TO HOLE\t\t\t0.254 mm\n\n11)\tREFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)\tCONFIRM SPACE WIDTHS AND SPACINGS.",
     "GIT_HASH_PCB": "1ce4b6d",
+=======
+    "FABRICATION_NOTES": "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)\tFABRICATE PER IPC-6012A CLASS 2.\n\n2)\tOUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n\t\"Edge_Cuts.GBR\" SUFFIX.\n\n\tDIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n\tDRAWING FOR REFERENCE ONLY.\n\n3)\tSEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n\tFOR HOLE LOCATIONS.\n\n\tSELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n\tFOR REFERENCE ONLY.\n\n4)\tSURFACE FINISH: IMMERSION GOLD\n\n5)\tSOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n\tBE LPI, COLOR BLACK.\n\n6)\tSILK SCREEN LEGEND TO BE APPLIED PER LAYER \n\tSTACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)\tALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n\tSOLDERMASK OPENED IN GERBER.\n\n8)\tVENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n\tAND Pb FREE FOR MANUFACTURING\n\n9)\tPCB MATERIAL REQUIREMENTS:\n\n\tA.\tFLAMMABILITY RATING MUST MEET OR EXCEED \n\t\tUL94V-0 REQUIREMENTS.\n\tB.\tTg 170 C OR EQUIVALENT.\n\tC.\tEQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n\t\tHALOGEN FREE AND APPROVED BY EPFL XPLORE RESEARCH.\n\n10)\tDESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n\tBOARD SIZE\t\t\t\t69.666 × 76.700 mm\n\tBOARD THICKNESS\t\t1.660 mm\n\tTRACE WIDTH\t\t\t0.200 mm\n\tTRACE TO TRACE\t\t0.200 mm\n\tMIN. HOLE (PTH)\t\t\t0.250 mm\n\tMIN. HOLE (NPTH)\t\t0.700 mm\n\tANNULAR RING\t\t\t0.150 mm\n\tCOPPER TO HOLE\t\t0.254 mm\n\tCOPPER TO EDGE\t\t0.250 mm\n\tHOLE TO HOLE\t\t\t0.254 mm\n\n11)\tREFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)\tCONFIRM SPACE WIDTHS AND SPACINGS.",
+    "GIT_HASH_PCB": "84449e5",
+>>>>>>> 412c00a (Add Edge.Cuts to drill map)
     "GIT_HASH_SCH": "386a12d",
     "GIT_URL": "https://github.com/nguyen-v/amulet_controller_kibot",
-    "PROJECT_NAME": "Chienpanz\u00e9",
+    "PROJECT_NAME": "Chienpanzé",
     "RELEASE_BODY_1.0.0": "___________________________________\n\nAdded\n\n-   TVS protection and termination switch to FD-CAN.\n\n-   Low-side switched 12V 600 mA source for external fan.\n\n-   LDO for analog supply.\n\n-   One TVS diode per power connector.\n\n-   Second on-board I2C magnetic encoder for disambiguation.\n\n-   ESD protection to all interfaces.\n\n-   Over-voltage protection on thermistor ADC inputs.\n\n-   Pi filters to inputs of buck regulators and MCU analog supply.\n\n-   Decoupling caps next to power pins of connectors.\n\n___________________________________\n\nChanged\n\n-   CPH-CPL capacitor to 47 nF (gate driver).\n\n-   FD-CAN transceiver IC.\n\n-   FETs for top cooled variant.\n\n-   Input power TVS diode to bidirectional.\n\n-   Moved SOx low-pass filter to MCU section.\n\n-   PWM_PHASEA with PWM_PHASEC on STM32G474 pinout for easier routing.\n\n-   RS422 pinout on connector.\n\n-   Buck regulators to optimize for low noise.",
     "RELEASE_BODY_1.0.1": "___________________________________\n\nAdded\n\n-   Controller target specifications.\n\n-   Credits to moteus on cover page.\n\n-   Optional RC-Snubber to power stage.\n\n___________________________________\n\nFixed\n\n-   Chassis guard ring to go around the board.\n\n-   CAN and power TVS diodes now go to chassis.\n\n-   Clearance between nets to respect IEC60664-1 where possible.\n\n-   Comment on precharge.\n\n-   Power TVS diode reference designator from \"U\" to \"D\".\n\n___________________________________\n\nChanged\n\n-   5V 300 mA buck converter with 600 mA version.\n\n-   Chassis-GND capacitor by 1nF 1kV.",
     "RELEASE_BODY_1.0.2": "___________________________________\n\nChanged\n\n-   Power sequencing graph according to experimental data.",

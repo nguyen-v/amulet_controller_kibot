@@ -139,6 +139,8 @@ outputs:
         layers:
           - layer: '@LAYER_DRILL_MAP@'
             color: '#000000'
+          - layer: 'Edge.Cuts'
+            color: '#000000'
 
       - scaling: @SCALING@
         title: '@DOC_TITLE@'
