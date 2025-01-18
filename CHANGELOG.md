@@ -2,8 +2,6 @@
 
 ## [Unreleased]
 
-## [1.1.1] - 2024-11-26
-
 ### Fixed
 
 -   Replace non-stocked components. 
