@@ -19,14 +19,9 @@
 ***
 
 <p align="center">
-  <div style="display: inline-block; text-align: center; margin-right: 2%;">
-    <p style="margin: 0; font-weight: bold;">Top View</p>
-    <img alt="3D Top Angled" src="${png_3d_viewer_angled_top_outpath}" width="45%">
-  </div>
-  <div style="display: inline-block; text-align: center;">
-    <p style="margin: 0; font-weight: bold;">Bottom View</p>
-    <img alt="3D Bottom Angled" src="${png_3d_viewer_angled_bottom_outpath}" width="45%">
-  </div>
+  <img alt="3D Top Angled" src="${png_3d_viewer_angled_top_outpath}" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="3D Bottom Angled" src="${png_3d_viewer_angled_bottom_outpath}" width="45%">
 </p>
 
 ***
