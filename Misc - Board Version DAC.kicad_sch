@@ -1119,7 +1119,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "YAGEO"
+		(property "Manufacturer" "YAGEO"
 			(at 149.86 73.66 0)
 			(effects
 				(font
@@ -1128,7 +1128,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RT0402FRE07100KL"
+		(property "Manufacturer Part Number" "RT0402FRE07100KL"
 			(at 149.86 73.66 0)
 			(effects
 				(font
@@ -1232,7 +1232,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "YAGEO"
+		(property "Manufacturer" "YAGEO"
 			(at 149.86 55.88 0)
 			(effects
 				(font
@@ -1241,7 +1241,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RT0402FRE07100KL"
+		(property "Manufacturer Part Number" "RT0402FRE07100KL"
 			(at 149.86 55.88 0)
 			(effects
 				(font

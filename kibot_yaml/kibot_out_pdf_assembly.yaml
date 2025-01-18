@@ -22,7 +22,19 @@ outputs:
     dnf_filter: _kibom_dnf_Config
     # dnf_filter: '_null'
     sheet_reference_layout: '@SHEET_WKS@'
-
+    include_table:
+      outputs:
+        - name: '@NAME_COMP_COUNT@'
+          text_alignment: 'left'
+          invert_columns_order: false
+          border_width: 0.4
+          header_rule_width: 0.2
+          horizontal_rule_width: 0
+          vertical_rule_width: 0
+          top_rule_width: 0
+          bottom_rule_width: 0
+          row_spacing: 3
+          column_spacing: 2
     pages:
       - scaling: @SCALING@
         layer_var: ''
@@ -94,7 +106,7 @@ definitions:
   DIR: Manufacturing/Assembly
   DOC_TITLE: Assembly
   COLOR_THEME: Altium_Theme
-  SHEET_WKS: ${KIPRJMOD}/Templates/XRE_Legged_Template_PCB.kicad_wks
+  SHEET_WKS: ${KIPRJMOD}/Templates/KDT_Template_PCB_GIT_A4.kicad_wks
   SCALING: 1.0
   FAB_EXCLUDE_FILTER: exclude_testpoints
   LAYER_TITLE_PAGE: TitlePage
@@ -102,3 +114,4 @@ definitions:
   LAYER_ASSEMBLY_TEXT_BOTTOM: B.AssemblyText
   LAYER_DNP_CROSS_TOP: F.DNP
   LAYER_DNP_CROSS_BOTTOM: B.DNP
+  NAME_COMP_COUNT: csv_comp_count

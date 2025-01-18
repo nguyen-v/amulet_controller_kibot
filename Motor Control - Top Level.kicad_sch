@@ -4475,7 +4475,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 110.49 156.21 0)
 			(effects
 				(font
@@ -4484,7 +4484,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71C104KA55D"
+		(property "Manufacturer Part Number" "GCM155R71C104KA55D"
 			(at 110.49 156.21 0)
 			(effects
 				(font
@@ -4734,7 +4734,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Taiyo Yuden"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 125.73 68.58 0)
 			(effects
 				(font
@@ -4743,7 +4743,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HMK107B7104KAHT"
+		(property "Manufacturer Part Number" "HMK107B7104KAHT"
 			(at 125.73 68.58 0)
 			(effects
 				(font
@@ -4847,7 +4847,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Taiyo Yuden"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 125.73 104.14 0)
 			(effects
 				(font
@@ -4856,7 +4856,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TMK107AB7105KAHT"
+		(property "Manufacturer Part Number" "TMK107AB7105KAHT"
 			(at 125.73 104.14 0)
 			(effects
 				(font
@@ -5104,7 +5104,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 105.41 68.58 0)
 			(effects
 				(font
@@ -5113,7 +5113,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRJ31CZ72A475KE01L"
+		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
 			(at 105.41 68.58 0)
 			(effects
 				(font
@@ -5291,7 +5291,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 173.99 91.44 0)
 			(effects
 				(font
@@ -5300,7 +5300,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRT155R70J105KE01D"
+		(property "Manufacturer Part Number" "GRT155R70J105KE01D"
 			(at 173.99 91.44 0)
 			(effects
 				(font
@@ -5404,7 +5404,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 82.55 184.15 0)
 			(effects
 				(font
@@ -5413,7 +5413,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF2001X"
+		(property "Manufacturer Part Number" "ERJ-2RKF2001X"
 			(at 82.55 184.15 0)
 			(effects
 				(font
@@ -5592,7 +5592,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Taiyo Yuden"
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 85.09 73.66 0)
 			(effects
 				(font
@@ -5601,7 +5601,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TMK107AB7105KAHT"
+		(property "Manufacturer Part Number" "TMK107AB7105KAHT"
 			(at 85.09 73.66 0)
 			(effects
 				(font
@@ -5776,7 +5776,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "KEMET"
+		(property "Manufacturer" "KEMET"
 			(at 118.11 91.44 0)
 			(effects
 				(font
@@ -5785,7 +5785,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "C0603C473K1RECAUTO"
+		(property "Manufacturer Part Number" "C0603C473K1RECAUTO"
 			(at 118.11 91.44 0)
 			(effects
 				(font
@@ -6185,7 +6185,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 151.13 170.18 0)
 			(effects
 				(font
@@ -6194,7 +6194,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "DRV8353FSRTAR"
+		(property "Manufacturer Part Number" "DRV8353FSRTAR"
 			(at 151.13 170.18 0)
 			(effects
 				(font
@@ -6635,7 +6635,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 102.87 106.68 0)
 			(effects
 				(font
@@ -6644,7 +6644,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF2001X"
+		(property "Manufacturer Part Number" "ERJ-2RKF2001X"
 			(at 102.87 106.68 0)
 			(effects
 				(font

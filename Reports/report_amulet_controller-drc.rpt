@@ -1,66 +1,93 @@
 ** Drc report for amulet_controller.kicad_pcb **
-** Created on 2024-11-26T14:55:34+0000 **
+** Created on 2025-01-18T19:14:59+0000 **
 
-** Found 24 DRC violations **
+** Found 33 DRC violations **
 [clearance]: Clearance violation (board minimum clearance 0.2000 mm; actual 0.0379 mm)
-    ; error (excluded)
+    ; error
     @(129.96 mm, 84.040001 mm): Pad 1 [/Project Architecture/Motor Control - Top Level/SC_P] of NT11 on L1 (Sig, PWR)
     @(129.76 mm, 83.09 mm): Pad 2 [/Project Architecture/Motor Control - Top Level/Motor Control - Inverter/SRC_LS_C] of R18 on L1 (Sig, PWR)
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(170.8504 mm, 87.9001 mm): Footprint U10
     @(172.6404 mm, 96.4501 mm): Footprint J6
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(156.7504 mm, 54.1001 mm): Footprint J12
     @(160.2004 mm, 61.2501 mm): Footprint D24
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(140.2504 mm, 54.1001 mm): Footprint J13
     @(143.6504 mm, 61.2501 mm): Footprint D25
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(147.9 mm, 117.35 mm): Footprint C130
     @(148.5004 mm, 122.0001 mm): Footprint H1
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(171.650401 mm, 90.100103 mm): Footprint C108
     @(172.6404 mm, 96.4501 mm): Footprint J6
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(130.822731 mm, 107.70277 mm): Footprint J10
     @(124.3404 mm, 96.4701 mm): Footprint J7
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(172.6404 mm, 96.4501 mm): Footprint J6
     @(166.1754 mm, 107.6751 mm): Footprint J14
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(167.6 mm, 65.5 mm): Footprint D2
     @(153.1504 mm, 64.7501 mm): Footprint J1
 [courtyards_overlap]: Courtyards overlap
-    ; error (excluded)
+    ; error
     @(143.8504 mm, 64.7501 mm): Footprint J2
     @(129.4 mm, 65.5 mm): Footprint D1
 [copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.25 mm; actual 0.249999 mm)
-    ; error (excluded)
+    ; error
     @(132.3003 mm, 58.2043 mm): Arc on Edge.Cuts
     @(133.5004 mm, 58.7501 mm): PTH pad MP2 [CHASSIS] of J2
-[lib_footprint_mismatch]: Footprint 'SOT1176D' does not match copy in library '0_package_DFN_QFN'.
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
     ; warning
-    @(163.187874 mm, 104.68757 mm): Footprint D26
+    @(165.802015 mm, 98.344758 mm): Footprint C124
 [lib_footprint_mismatch]: Footprint '1054301203' does not match copy in library '0_connectors'.
     ; warning
     @(156.7504 mm, 54.1001 mm): Footprint J12
+[lib_footprint_mismatch]: Footprint 'R_0603_1608_DensityHigh' does not match copy in library '0_resistor_smd'.
+    ; warning
+    @(149.1 mm, 117.35 mm): Footprint R52
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
+    ; warning
+    @(166.620577 mm, 95.251212 mm): Footprint C120
 [lib_footprint_mismatch]: Footprint '1054301203' does not match copy in library '0_connectors'.
     ; warning
     @(140.2504 mm, 54.1001 mm): Footprint J13
-[lib_footprint_mismatch]: Footprint 'SOT1176D' does not match copy in library '0_package_DFN_QFN'.
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
     ; warning
-    @(169.106167 mm, 93.2751 mm): Footprint D16
+    @(167.243984 mm, 92.943938 mm): Footprint C118
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
+    ; warning
+    @(129.866333 mm, 92.694503 mm): Footprint C123
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
+    ; warning
+    @(167.451041 mm, 92.1712 mm): Footprint C116
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
+    ; warning
+    @(130.493965 mm, 95.036872 mm): Footprint C121
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
+    ; warning
+    @(130.701025 mm, 95.809613 mm): Footprint C119
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
+    ; warning
+    @(166.413521 mm, 96.023949 mm): Footprint C122
 [lib_footprint_mismatch]: Footprint 'SOT1176D' does not match copy in library '0_package_DFN_QFN'.
     ; warning
     @(128.472459 mm, 95.992643 mm): Footprint D17
+[lib_footprint_mismatch]: Footprint 'C_0402_1005_DensityHigh' does not match copy in library '0_capacitor_smd'.
+    ; warning
+    @(131.320291 mm, 98.127833 mm): Footprint C117
+[lib_footprint_mismatch]: Footprint 'R_0603_1608_DensityHigh' does not match copy in library '0_resistor_smd'.
+    ; warning
+    @(173.33 mm, 69.8 mm): Footprint R54
 [lib_footprint_mismatch]: Footprint 'SOP-14_4.4x5mm_P0.65mm_H1.2mm' does not match copy in library '0_package_SO'.
     ; warning
     @(166.253518 mm, 100.25 mm): Footprint U8
@@ -94,39 +121,6 @@
 
 ** Found 0 unconnected pads **
 
-** Found 11 Footprint errors **
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(167.451041 mm, 92.1712 mm): Footprint C116
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(131.320291 mm, 98.127833 mm): Footprint C117
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(167.243984 mm, 92.943938 mm): Footprint C118
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(130.701025 mm, 95.809613 mm): Footprint C119
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(166.620577 mm, 95.251212 mm): Footprint C120
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(130.493965 mm, 95.036872 mm): Footprint C121
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(166.413521 mm, 96.023949 mm): Footprint C122
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(129.866333 mm, 92.694503 mm): Footprint C123
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(165.802015 mm, 98.344758 mm): Footprint C124
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(149.1 mm, 117.35 mm): Footprint R52
-[footprint_symbol_mismatch]: Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ.
-    ; warning
-    @(173.33 mm, 69.8 mm): Footprint R54
+** Found 0 Footprint errors **
 
 ** End of Report **

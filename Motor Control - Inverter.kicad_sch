@@ -5753,7 +5753,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Toshiba Semiconductor and Storage"
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
 			(at 222.25 63.5 0)
 			(effects
 				(font
@@ -5762,7 +5762,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TPW1R306PL,L1Q"
+		(property "Manufacturer Part Number" "TPW1R306PL,L1Q"
 			(at 222.25 63.5 0)
 			(effects
 				(font
@@ -5892,7 +5892,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 69.85 63.5 0)
 			(effects
 				(font
@@ -5901,7 +5901,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CSRT0603FT5R00"
+		(property "Manufacturer Part Number" "CSRT0603FT5R00"
 			(at 69.85 63.5 0)
 			(effects
 				(font
@@ -6013,7 +6013,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 198.12 127 0)
 			(effects
 				(font
@@ -6022,7 +6022,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 198.12 127 0)
 			(effects
 				(font
@@ -6205,7 +6205,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 121.92 59.69 0)
 			(effects
 				(font
@@ -6214,7 +6214,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 121.92 59.69 0)
 			(effects
 				(font
@@ -6407,7 +6407,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 151.13 71.12 0)
 			(effects
 				(font
@@ -6416,7 +6416,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 151.13 71.12 0)
 			(effects
 				(font
@@ -6523,7 +6523,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 99.06 88.9 0)
 			(effects
 				(font
@@ -6532,7 +6532,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRJ31CZ72A475KE01L"
+		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
 			(at 99.06 88.9 0)
 			(effects
 				(font
@@ -6636,7 +6636,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 62.23 127 0)
 			(effects
 				(font
@@ -6645,7 +6645,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HCS1206FTL500"
+		(property "Manufacturer Part Number" "HCS1206FTL500"
 			(at 62.23 127 0)
 			(effects
 				(font
@@ -6751,7 +6751,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Toshiba Semiconductor and Storage"
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
 			(at 59.69 102.87 0)
 			(effects
 				(font
@@ -6760,7 +6760,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TPW1R306PL,L1Q"
+		(property "Manufacturer Part Number" "TPW1R306PL,L1Q"
 			(at 59.69 102.87 0)
 			(effects
 				(font
@@ -6953,7 +6953,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 121.92 63.5 0)
 			(effects
 				(font
@@ -6962,7 +6962,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CRCW08057R50FKEAHP"
+		(property "Manufacturer Part Number" "CRCW08057R50FKEAHP"
 			(at 121.92 63.5 0)
 			(effects
 				(font
@@ -7064,7 +7064,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 203.2 102.87 0)
 			(effects
 				(font
@@ -7073,7 +7073,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CRCW08057R50FKEAHP"
+		(property "Manufacturer Part Number" "CRCW08057R50FKEAHP"
 			(at 203.2 102.87 0)
 			(effects
 				(font
@@ -7179,7 +7179,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Toshiba Semiconductor and Storage"
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
 			(at 140.97 102.87 0)
 			(effects
 				(font
@@ -7188,7 +7188,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TPW1R306PL,L1Q"
+		(property "Manufacturer Part Number" "TPW1R306PL,L1Q"
 			(at 140.97 102.87 0)
 			(effects
 				(font
@@ -7312,7 +7312,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Toshiba Semiconductor and Storage"
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
 			(at 222.25 102.87 0)
 			(effects
 				(font
@@ -7321,7 +7321,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TPW1R306PL,L1Q"
+		(property "Manufacturer Part Number" "TPW1R306PL,L1Q"
 			(at 222.25 102.87 0)
 			(effects
 				(font
@@ -7522,7 +7522,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 69.85 95.25 0)
 			(effects
 				(font
@@ -7531,7 +7531,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 69.85 95.25 0)
 			(effects
 				(font
@@ -7779,7 +7779,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 40.64 59.69 0)
 			(effects
 				(font
@@ -7788,7 +7788,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 40.64 59.69 0)
 			(effects
 				(font
@@ -7908,7 +7908,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 69.85 71.12 0)
 			(effects
 				(font
@@ -7917,7 +7917,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 69.85 71.12 0)
 			(effects
 				(font
@@ -8025,7 +8025,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 224.79 127 0)
 			(effects
 				(font
@@ -8034,7 +8034,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HCS1206FTL500"
+		(property "Manufacturer Part Number" "HCS1206FTL500"
 			(at 224.79 127 0)
 			(effects
 				(font
@@ -8135,7 +8135,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 40.64 63.5 0)
 			(effects
 				(font
@@ -8144,7 +8144,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CRCW08057R50FKEAHP"
+		(property "Manufacturer Part Number" "CRCW08057R50FKEAHP"
 			(at 40.64 63.5 0)
 			(effects
 				(font
@@ -8246,7 +8246,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 203.2 59.69 0)
 			(effects
 				(font
@@ -8255,7 +8255,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 203.2 59.69 0)
 			(effects
 				(font
@@ -8439,7 +8439,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "KEMET"
+		(property "Manufacturer" "KEMET"
 			(at 81.28 88.9 0)
 			(effects
 				(font
@@ -8448,7 +8448,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "C1206C104K1RACAUTO"
+		(property "Manufacturer Part Number" "C1206C104K1RACAUTO"
 			(at 81.28 88.9 0)
 			(effects
 				(font
@@ -8554,7 +8554,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Toshiba Semiconductor and Storage"
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
 			(at 140.97 63.5 0)
 			(effects
 				(font
@@ -8563,7 +8563,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TPW1R306PL,L1Q"
+		(property "Manufacturer Part Number" "TPW1R306PL,L1Q"
 			(at 140.97 63.5 0)
 			(effects
 				(font
@@ -8683,7 +8683,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 40.64 102.87 0)
 			(effects
 				(font
@@ -8692,7 +8692,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CRCW08057R50FKEAHP"
+		(property "Manufacturer Part Number" "CRCW08057R50FKEAHP"
 			(at 40.64 102.87 0)
 			(effects
 				(font
@@ -8804,7 +8804,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 232.41 63.5 0)
 			(effects
 				(font
@@ -8813,7 +8813,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CSRT0603FT5R00"
+		(property "Manufacturer Part Number" "CSRT0603FT5R00"
 			(at 232.41 63.5 0)
 			(effects
 				(font
@@ -8923,7 +8923,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 121.92 99.06 0)
 			(effects
 				(font
@@ -8932,7 +8932,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 121.92 99.06 0)
 			(effects
 				(font
@@ -9042,7 +9042,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 121.92 102.87 0)
 			(effects
 				(font
@@ -9051,7 +9051,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CRCW08057R50FKEAHP"
+		(property "Manufacturer Part Number" "CRCW08057R50FKEAHP"
 			(at 121.92 102.87 0)
 			(effects
 				(font
@@ -9154,7 +9154,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 261.62 88.9 0)
 			(effects
 				(font
@@ -9163,7 +9163,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRJ31CZ72A475KE01L"
+		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
 			(at 261.62 88.9 0)
 			(effects
 				(font
@@ -9347,7 +9347,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 232.41 95.25 0)
 			(effects
 				(font
@@ -9356,7 +9356,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 232.41 95.25 0)
 			(effects
 				(font
@@ -9466,7 +9466,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Toshiba Semiconductor and Storage"
+		(property "Manufacturer" "Toshiba Semiconductor and Storage"
 			(at 59.69 63.5 0)
 			(effects
 				(font
@@ -9475,7 +9475,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TPW1R306PL,L1Q"
+		(property "Manufacturer Part Number" "TPW1R306PL,L1Q"
 			(at 59.69 63.5 0)
 			(effects
 				(font
@@ -9605,7 +9605,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 232.41 102.87 0)
 			(effects
 				(font
@@ -9614,7 +9614,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CSRT0603FT5R00"
+		(property "Manufacturer Part Number" "CSRT0603FT5R00"
 			(at 232.41 102.87 0)
 			(effects
 				(font
@@ -9734,7 +9734,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 151.13 95.25 0)
 			(effects
 				(font
@@ -9743,7 +9743,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 151.13 95.25 0)
 			(effects
 				(font
@@ -10074,7 +10074,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 151.13 63.5 0)
 			(effects
 				(font
@@ -10083,7 +10083,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CSRT0603FT5R00"
+		(property "Manufacturer Part Number" "CSRT0603FT5R00"
 			(at 151.13 63.5 0)
 			(effects
 				(font
@@ -10276,7 +10276,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 232.41 71.12 0)
 			(effects
 				(font
@@ -10285,7 +10285,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 232.41 71.12 0)
 			(effects
 				(font
@@ -10393,7 +10393,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 143.51 127 0)
 			(effects
 				(font
@@ -10402,7 +10402,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "HCS1206FTL500"
+		(property "Manufacturer Part Number" "HCS1206FTL500"
 			(at 143.51 127 0)
 			(effects
 				(font
@@ -10577,7 +10577,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 35.56 127 0)
 			(effects
 				(font
@@ -10586,7 +10586,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 35.56 127 0)
 			(effects
 				(font
@@ -10706,7 +10706,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 151.13 102.87 0)
 			(effects
 				(font
@@ -10715,7 +10715,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CSRT0603FT5R00"
+		(property "Manufacturer Part Number" "CSRT0603FT5R00"
 			(at 151.13 102.87 0)
 			(effects
 				(font
@@ -10835,7 +10835,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Stackpole Electronics Inc"
+		(property "Manufacturer" "Stackpole Electronics Inc"
 			(at 69.85 102.87 0)
 			(effects
 				(font
@@ -10844,7 +10844,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CSRT0603FT5R00"
+		(property "Manufacturer Part Number" "CSRT0603FT5R00"
 			(at 69.85 102.87 0)
 			(effects
 				(font
@@ -10955,7 +10955,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "KEMET"
+		(property "Manufacturer" "KEMET"
 			(at 162.56 88.9 0)
 			(effects
 				(font
@@ -10964,7 +10964,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "C1206C104K1RACAUTO"
+		(property "Manufacturer Part Number" "C1206C104K1RACAUTO"
 			(at 162.56 88.9 0)
 			(effects
 				(font
@@ -11067,7 +11067,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 180.34 88.9 0)
 			(effects
 				(font
@@ -11076,7 +11076,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRJ31CZ72A475KE01L"
+		(property "Manufacturer Part Number" "GRJ31CZ72A475KE01L"
 			(at 180.34 88.9 0)
 			(effects
 				(font
@@ -11178,7 +11178,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 203.2 99.06 0)
 			(effects
 				(font
@@ -11187,7 +11187,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 203.2 99.06 0)
 			(effects
 				(font
@@ -11297,7 +11297,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 40.64 99.06 0)
 			(effects
 				(font
@@ -11306,7 +11306,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 40.64 99.06 0)
 			(effects
 				(font
@@ -11418,7 +11418,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 116.84 127 0)
 			(effects
 				(font
@@ -11427,7 +11427,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 116.84 127 0)
 			(effects
 				(font
@@ -11538,7 +11538,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "KEMET"
+		(property "Manufacturer" "KEMET"
 			(at 243.84 88.9 0)
 			(effects
 				(font
@@ -11547,7 +11547,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "C1206C104K1RACAUTO"
+		(property "Manufacturer Part Number" "C1206C104K1RACAUTO"
 			(at 243.84 88.9 0)
 			(effects
 				(font
@@ -11649,7 +11649,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 203.2 63.5 0)
 			(effects
 				(font
@@ -11658,7 +11658,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CRCW08057R50FKEAHP"
+		(property "Manufacturer Part Number" "CRCW08057R50FKEAHP"
 			(at 203.2 63.5 0)
 			(effects
 				(font

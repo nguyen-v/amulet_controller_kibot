@@ -13,11 +13,13 @@ outputs:
   layers: ['copper', 'Edge.Cuts', 'F.Silkscreen', 'F.Mask', 'F.Paste', 'B.Silkscreen', 'B.Mask', 'B.Paste']
   options:
     subtract_mask_from_silk: true
-    plot_footprint_refs: false
+    plot_footprint_refs: @PLOT_REFS@
     plot_footprint_values: false
+    create_gerber_job_file: false
 
 ...
 definitions:
   NAME: gbr_gerbers
   COMMENT: Gerbers in GBR format
   DIR: Manufacturing/Fabrication/Gerbers
+  PLOT_REFS: true

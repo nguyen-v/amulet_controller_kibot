@@ -4491,6 +4491,246 @@
 				)
 			)
 		)
+		(symbol "SW_DPDT_x2_1"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_DPDT_x2"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Switch, dual pole double throw, separate symbols"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch dual-pole double-throw DPDT spdt ON-ON"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW*DPDT*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_DPDT_x2_1_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_DPDT_x2_1_0_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.5748 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_DPDT_x2_1_1_1"
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SW_DPDT_x2_1_2_1"
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Switch:SW_DPDT_x2"
 			(pin_names
 				(offset 0) hide)
@@ -4498,7 +4738,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 0 4.318 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4583,9 +4823,20 @@
 				)
 			)
 			(symbol "SW_DPDT_x2_0_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(polyline
 					(pts
-						(xy -1.524 0.254) (xy 1.651 2.286)
+						(xy -1.524 0.254) (xy 1.5748 2.286)
 					)
 					(stroke
 						(width 0)
@@ -38713,7 +38964,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 82.55 58.42 0)
 			(effects
 				(font
@@ -38722,7 +38973,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 82.55 58.42 0)
 			(effects
 				(font
@@ -38897,7 +39148,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Bourns Inc."
+		(property "Manufacturer" "Bourns Inc."
 			(at 279.4 220.98 0)
 			(effects
 				(font
@@ -38906,7 +39157,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CDSOT23-SM712"
+		(property "Manufacturer Part Number" "CDSOT23-SM712"
 			(at 279.4 220.98 0)
 			(effects
 				(font
@@ -39013,7 +39264,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 171.45 59.69 0)
 			(effects
 				(font
@@ -39022,7 +39273,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 171.45 59.69 0)
 			(effects
 				(font
@@ -39126,7 +39377,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 359.41 82.55 0)
 			(effects
 				(font
@@ -39135,7 +39386,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R72A472KA37D"
+		(property "Manufacturer Part Number" "GCM155R72A472KA37D"
 			(at 359.41 82.55 0)
 			(effects
 				(font
@@ -39239,7 +39490,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nexperia USA Inc."
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 111.76 100.33 0)
 			(effects
 				(font
@@ -39248,7 +39499,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "PESD4USB3U-TBSX"
+		(property "Manufacturer Part Number" "PESD4USB3U-TBSX"
 			(at 111.76 100.33 0)
 			(effects
 				(font
@@ -39376,7 +39627,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 156.21 67.31 0)
 			(effects
 				(font
@@ -39385,7 +39636,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF2001X"
+		(property "Manufacturer Part Number" "ERJ-2RKF2001X"
 			(at 156.21 67.31 0)
 			(effects
 				(font
@@ -39489,7 +39740,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Rohm Semiconductor"
+		(property "Manufacturer" "Rohm Semiconductor"
 			(at 344.17 83.82 0)
 			(effects
 				(font
@@ -39498,7 +39749,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ESR03EZPF60R4"
+		(property "Manufacturer Part Number" "ESR03EZPF60R4"
 			(at 344.17 83.82 0)
 			(effects
 				(font
@@ -39599,7 +39850,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 139.7 83.82 0)
 			(effects
 				(font
@@ -39608,7 +39859,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 139.7 83.82 0)
 			(effects
 				(font
@@ -39712,7 +39963,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "JST Sales America Inc."
+		(property "Manufacturer" "JST Sales America Inc."
 			(at 256.54 201.93 0)
 			(effects
 				(font
@@ -39721,7 +39972,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "SM06B-GHS-TB"
+		(property "Manufacturer Part Number" "SM06B-GHS-TB"
 			(at 256.54 201.93 0)
 			(effects
 				(font
@@ -39840,7 +40091,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 170.18 100.33 0)
 			(effects
 				(font
@@ -39849,7 +40100,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 170.18 100.33 0)
 			(effects
 				(font
@@ -40452,7 +40703,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 156.21 156.21 0)
 			(effects
 				(font
@@ -40461,7 +40712,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 156.21 156.21 0)
 			(effects
 				(font
@@ -40704,7 +40955,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nexperia USA Inc."
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 308.61 83.185 0)
 			(effects
 				(font
@@ -40713,7 +40964,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "PESD2CANFD24V-UX"
+		(property "Manufacturer Part Number" "PESD2CANFD24V-UX"
 			(at 308.61 83.185 0)
 			(effects
 				(font
@@ -40817,7 +41068,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nexperia USA Inc."
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 283.21 83.185 0)
 			(effects
 				(font
@@ -40826,7 +41077,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "PESD2CANFD24V-UX"
+		(property "Manufacturer Part Number" "PESD2CANFD24V-UX"
 			(at 283.21 83.185 0)
 			(effects
 				(font
@@ -40933,7 +41184,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "JST Sales America Inc."
+		(property "Manufacturer" "JST Sales America Inc."
 			(at 50.8 176.53 0)
 			(effects
 				(font
@@ -40942,7 +41193,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "SM07B-GHS-TB(LF)(SN)"
+		(property "Manufacturer Part Number" "SM07B-GHS-TB(LF)(SN)"
 			(at 50.8 176.53 0)
 			(effects
 				(font
@@ -41064,7 +41315,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 142.24 177.8 0)
 			(effects
 				(font
@@ -41073,7 +41324,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 142.24 177.8 0)
 			(effects
 				(font
@@ -41174,7 +41425,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 143.51 100.33 0)
 			(effects
 				(font
@@ -41183,7 +41434,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 143.51 100.33 0)
 			(effects
 				(font
@@ -41430,7 +41681,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 271.78 193.04 0)
 			(effects
 				(font
@@ -41439,7 +41690,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 271.78 193.04 0)
 			(effects
 				(font
@@ -41690,7 +41941,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 62.23 58.42 0)
 			(effects
 				(font
@@ -41699,7 +41950,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 62.23 58.42 0)
 			(effects
 				(font
@@ -41803,7 +42054,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nexperia USA Inc."
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 77.47 99.06 0)
 			(effects
 				(font
@@ -41812,7 +42063,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "PESD4USB5B-TBSX"
+		(property "Manufacturer Part Number" "PESD4USB5B-TBSX"
 			(at 77.47 99.06 0)
 			(effects
 				(font
@@ -41940,7 +42191,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 156.21 59.69 0)
 			(effects
 				(font
@@ -41949,7 +42200,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 156.21 59.69 0)
 			(effects
 				(font
@@ -42050,7 +42301,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 142.24 185.42 0)
 			(effects
 				(font
@@ -42059,7 +42310,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 142.24 185.42 0)
 			(effects
 				(font
@@ -42160,7 +42411,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Molex"
+		(property "Manufacturer" "Molex"
 			(at 260.35 67.31 0)
 			(effects
 				(font
@@ -42169,7 +42420,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "1054301203"
+		(property "Manufacturer Part Number" "1054301203"
 			(at 260.35 67.31 0)
 			(effects
 				(font
@@ -42276,7 +42527,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nexperia USA Inc."
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 308.61 160.02 0)
 			(effects
 				(font
@@ -42285,7 +42536,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "PESD4USB3U-TBSX"
+		(property "Manufacturer Part Number" "PESD4USB3U-TBSX"
 			(at 308.61 160.02 0)
 			(effects
 				(font
@@ -42410,7 +42661,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 149.86 193.04 0)
 			(effects
 				(font
@@ -42419,7 +42670,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 149.86 193.04 0)
 			(effects
 				(font
@@ -42523,7 +42774,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 171.45 165.1 0)
 			(effects
 				(font
@@ -42532,7 +42783,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF2001X"
+		(property "Manufacturer Part Number" "ERJ-2RKF2001X"
 			(at 171.45 165.1 0)
 			(effects
 				(font
@@ -42633,7 +42884,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 176.53 193.04 0)
 			(effects
 				(font
@@ -42642,7 +42893,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 176.53 193.04 0)
 			(effects
 				(font
@@ -42815,7 +43066,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 179.07 100.33 0)
 			(effects
 				(font
@@ -42824,7 +43075,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 179.07 100.33 0)
 			(effects
 				(font
@@ -42927,7 +43178,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 326.39 198.12 0)
 			(effects
 				(font
@@ -42936,7 +43187,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 326.39 198.12 0)
 			(effects
 				(font
@@ -43037,7 +43288,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 139.7 87.63 0)
 			(effects
 				(font
@@ -43046,7 +43297,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 139.7 87.63 0)
 			(effects
 				(font
@@ -43150,7 +43401,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 285.75 139.7 0)
 			(effects
 				(font
@@ -43159,7 +43410,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 285.75 139.7 0)
 			(effects
 				(font
@@ -43332,7 +43583,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 139.7 91.44 0)
 			(effects
 				(font
@@ -43341,7 +43592,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 139.7 91.44 0)
 			(effects
 				(font
@@ -43585,7 +43836,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 152.4 100.33 0)
 			(effects
 				(font
@@ -43594,7 +43845,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 152.4 100.33 0)
 			(effects
 				(font
@@ -43698,7 +43949,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 156.21 165.1 0)
 			(effects
 				(font
@@ -43707,7 +43958,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF2001X"
+		(property "Manufacturer Part Number" "ERJ-2RKF2001X"
 			(at 156.21 165.1 0)
 			(effects
 				(font
@@ -43811,7 +44062,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Rohm Semiconductor"
+		(property "Manufacturer" "Rohm Semiconductor"
 			(at 344.17 73.66 0)
 			(effects
 				(font
@@ -43820,7 +44071,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ESR03EZPF60R4"
+		(property "Manufacturer Part Number" "ESR03EZPF60R4"
 			(at 344.17 73.66 0)
 			(effects
 				(font
@@ -43921,7 +44172,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Molex"
+		(property "Manufacturer" "Molex"
 			(at 260.35 86.36 0)
 			(effects
 				(font
@@ -43930,7 +44181,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "1054301203"
+		(property "Manufacturer Part Number" "1054301203"
 			(at 260.35 86.36 0)
 			(effects
 				(font
@@ -44108,7 +44359,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 82.55 156.21 0)
 			(effects
 				(font
@@ -44117,7 +44368,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 82.55 156.21 0)
 			(effects
 				(font
@@ -44221,7 +44472,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 62.23 156.21 0)
 			(effects
 				(font
@@ -44230,7 +44481,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 62.23 156.21 0)
 			(effects
 				(font
@@ -44334,7 +44585,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nexperia USA Inc."
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 96.52 191.77 0)
 			(effects
 				(font
@@ -44343,7 +44594,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "PESD4USB5B-TBSX"
+		(property "Manufacturer Part Number" "PESD4USB5B-TBSX"
 			(at 96.52 191.77 0)
 			(effects
 				(font
@@ -44468,7 +44719,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 139.7 76.2 0)
 			(effects
 				(font
@@ -44477,7 +44728,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 139.7 76.2 0)
 			(effects
 				(font
@@ -44646,6 +44897,7 @@
 		)
 	)
 	(symbol
+		(lib_name "SW_DPDT_x2_1")
 		(lib_id "Switch:SW_DPDT_x2")
 		(at 334.01 69.85 0)
 		(unit 1)
@@ -44722,7 +44974,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nidec Components Corporation"
+		(property "Manufacturer" "Nidec Components Corporation"
 			(at 334.01 69.85 0)
 			(effects
 				(font
@@ -44731,7 +44983,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CAS-220TA"
+		(property "Manufacturer Part Number" "CAS-220TA"
 			(at 334.01 69.85 0)
 			(effects
 				(font
@@ -44859,7 +45111,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "JST Sales America Inc."
+		(property "Manufacturer" "JST Sales America Inc."
 			(at 271.78 148.59 0)
 			(effects
 				(font
@@ -44868,7 +45120,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "SM05B-GHS-TB"
+		(property "Manufacturer Part Number" "SM05B-GHS-TB"
 			(at 271.78 148.59 0)
 			(effects
 				(font
@@ -44984,7 +45236,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 161.29 100.33 0)
 			(effects
 				(font
@@ -44993,7 +45245,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 161.29 100.33 0)
 			(effects
 				(font
@@ -45098,7 +45350,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "JST Sales America Inc."
+		(property "Manufacturer" "JST Sales America Inc."
 			(at 55.88 254 0)
 			(effects
 				(font
@@ -45107,7 +45359,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "S2B-PH-SM4-TB"
+		(property "Manufacturer Part Number" "S2B-PH-SM4-TB"
 			(at 55.88 254 0)
 			(effects
 				(font
@@ -45214,7 +45466,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 142.24 181.61 0)
 			(effects
 				(font
@@ -45223,7 +45475,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 142.24 181.61 0)
 			(effects
 				(font
@@ -45327,7 +45579,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 171.45 156.21 0)
 			(effects
 				(font
@@ -45336,7 +45588,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "BAT41KFILM"
+		(property "Manufacturer Part Number" "BAT41KFILM"
 			(at 171.45 156.21 0)
 			(effects
 				(font
@@ -45509,7 +45761,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 142.24 173.99 0)
 			(effects
 				(font
@@ -45518,7 +45770,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 142.24 173.99 0)
 			(effects
 				(font
@@ -45691,7 +45943,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nidec Components Corporation"
+		(property "Manufacturer" "Nidec Components Corporation"
 			(at 334.01 87.63 0)
 			(effects
 				(font
@@ -45700,7 +45952,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CAS-220TA"
+		(property "Manufacturer Part Number" "CAS-220TA"
 			(at 334.01 87.63 0)
 			(effects
 				(font
@@ -45828,7 +46080,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 182.88 256.54 0)
 			(effects
 				(font
@@ -45837,7 +46089,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 182.88 256.54 0)
 			(effects
 				(font
@@ -45938,7 +46190,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 158.75 193.04 0)
 			(effects
 				(font
@@ -45947,7 +46199,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 158.75 193.04 0)
 			(effects
 				(font
@@ -46265,7 +46517,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Bourns Inc."
+		(property "Manufacturer" "Bourns Inc."
 			(at 308.61 220.98 0)
 			(effects
 				(font
@@ -46274,7 +46526,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CDSOT23-SM712"
+		(property "Manufacturer Part Number" "CDSOT23-SM712"
 			(at 308.61 220.98 0)
 			(effects
 				(font
@@ -46378,7 +46630,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 139.7 80.01 0)
 			(effects
 				(font
@@ -46387,7 +46639,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 139.7 80.01 0)
 			(effects
 				(font
@@ -46559,7 +46811,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 167.64 193.04 0)
 			(effects
 				(font
@@ -46568,7 +46820,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM155R72A332KA01D"
+		(property "Manufacturer Part Number" "GRM155R72A332KA01D"
 			(at 167.64 193.04 0)
 			(effects
 				(font
@@ -46672,7 +46924,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "JST Sales America Inc."
+		(property "Manufacturer" "JST Sales America Inc."
 			(at 50.8 78.74 0)
 			(effects
 				(font
@@ -46681,7 +46933,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "SM08B-GHS-TB"
+		(property "Manufacturer Part Number" "SM08B-GHS-TB"
 			(at 50.8 78.74 0)
 			(effects
 				(font
@@ -46809,7 +47061,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "JST Sales America Inc."
+		(property "Manufacturer" "JST Sales America Inc."
 			(at 161.29 254 0)
 			(effects
 				(font
@@ -46818,7 +47070,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "S2B-PH-SM4-TB"
+		(property "Manufacturer Part Number" "S2B-PH-SM4-TB"
 			(at 161.29 254 0)
 			(effects
 				(font
@@ -46928,7 +47180,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 288.29 154.94 0)
 			(effects
 				(font
@@ -46937,7 +47189,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 288.29 154.94 0)
 			(effects
 				(font
@@ -47041,7 +47293,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 171.45 67.31 0)
 			(effects
 				(font
@@ -47050,7 +47302,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF2001X"
+		(property "Manufacturer Part Number" "ERJ-2RKF2001X"
 			(at 171.45 67.31 0)
 			(effects
 				(font
@@ -47225,7 +47477,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 326.39 208.28 0)
 			(effects
 				(font
@@ -47234,7 +47486,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RCS0402100RFKED"
+		(property "Manufacturer Part Number" "RCS0402100RFKED"
 			(at 326.39 208.28 0)
 			(effects
 				(font

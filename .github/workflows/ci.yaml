@@ -4,19 +4,19 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - '[0-9]+.[0-9]+.[0-9]+'
-      # - '[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+' # Match semantic versioning tags
     branches:
       - master
       - dev
     paths-ignore:
       - '*.md'
 
+
 env:
   kibot_config: kibot_yaml/kibot_main.yaml
 
   # Used variant. We assume:
-  # DRAFT: only schematic in progress, will only generate schematic PDF and BoM
+  # DRAFT: only schematic in progress, will only generate schematic PDF, netlist and BoM
   # PRELIMINARY: will generate both schematic and PCB documents, but no ERC/DRC
   # CHECKED: will generate both schematic and PCB documents, with ERC/DRC
   # RELEASED: similar to CHECKED, automatically selected when pushing a tag to master
@@ -50,32 +50,6 @@ jobs:
         with:
           prerelease: true
 
-      # - name: Create Release
-      #   id: create_release
-      #   uses: actions/create-release@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     tag_name: ${{ github.ref }}
-      #     release_name: ${{ github.ref }}
-      #     body: ${{ steps.extract-release-notes.outputs.release_notes }}
-      #     draft: false
-      #     prerelease: false
-      # - name: Create Release
-      #   uses: softprops/action-gh-release@v2
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     body: ${{ steps.extract-release-notes.outputs.release_notes }}
-      #     name: ${{ github.ref }}
-      #     tag_name: ${{ github.ref }}
-      #     files: |
-      #       Schematic/*.pdf
-      #       Manufacturing/Assembly/*
-      #       Manufacturing/Fabrication/*
-      #       3D/*
-      #       Testing/Testpoints/*.csv
-
       - name: Update changelog
         uses: thomaseizinger/keep-a-changelog-new-release@v2
         with:
@@ -89,8 +63,7 @@ jobs:
           args: |
             Schematic/*.pdf
             Manufacturing/Assembly/*
-            Manufacturing/Fabrication/*.pdf
-            Manufacturing/Fabrication/*.zip
+            Manufacturing/Fabrication/*
             3D/*
             Testing/Testpoints/*.csv
 
@@ -104,6 +77,7 @@ jobs:
 
   generate_outputs:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'Merge pull request')" # Skip merge commits
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -133,13 +107,13 @@ jobs:
           # Determine additional_args based on the variant
           case "$kibot_variant" in
             "DRAFT")
-              additional_args="--skip-pre draw_fancy_stackup,erc,drc,include_table ${version_arg} draft_group"
+              additional_args="--skip-pre draw_fancy_stackup,erc,drc ${version_arg} draft_group"
               ;;
             "PRELIMINARY")
-              additional_args="--skip-pre erc,drc ${version_arg} -i testpoints xlsx_bom"
+              additional_args="--skip-pre erc,drc ${version_arg} all_group"
               ;;
             "CHECKED"|"RELEASED")
-              additional_args="${version_arg} -i testpoints xlsx_bom"
+              additional_args="${version_arg} all_group"
               ;;
             *)
               echo "Unknown variant: $kibot_variant"
@@ -151,11 +125,11 @@ jobs:
           echo "additional_args=${additional_args}" >> $GITHUB_ENV
 
 
-      - name: Generate testpoints (Skipped for PRELIMINARY variant)
-        if: ${{ env.kibot_variant != 'PRELIMINARY' }}
+      - name: Generate notes (Skipped for DRAFT variant)
+        if: ${{ env.kibot_variant != 'DRAFT' }}
         uses: INTI-CMNB/KiBot@v2_dk8
         with:
-          targets: testpoints
+          targets: notes
           skip: all
           variant: ${{ env.kibot_variant }}
           config: ${{ env.kibot_config }}
@@ -168,7 +142,7 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
-      - name: Pull latest changes and push outputs
+      - name: Pull latest changes
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
@@ -190,14 +164,11 @@ jobs:
             git pull origin ${{ github.ref_name }} --tags --force
           fi
 
-          # Make changes and commit
-          git commit -a -m "Update Outputs" || echo "No changes to commit"
+      - name: Discard changes to .kicad_pcb files
+        run: git checkout HEAD -- *.kicad_pcb
 
-          # Push changes to the appropriate target
-          if [[ "${{ github.ref_type }}" == "tag" ]]; then
-            echo "Pushing to master branch"
-            git push origin master
-          else
-            echo "Pushing to ${{ github.ref_name }}"
-            git push origin ${{ github.ref_name }}
-          fi
+      - name: Update Outputs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          branch: ${{ github.ref_name }}
+          commit_message: Update Outputs

@@ -7,23 +7,37 @@ kibot:
 outputs:
 - name: @NAME@
   comment: '@COMMENT@'
-  type: ibom
+  type: bom
+  category: '@DIR@'
   dir: '@DIR@'
   options:
-    # extra_data_file: '%F.net'
-    dark_mode: true
-    show_fields: 'Value,Footprint,Manufacturer Part Number'
-    group_fields: 'Value,Manufacturer Part Number'
-    show_fabrication: true
-    highlight_pin1: "selected"
-    exclude_filter: '@EXCLUDE_FILTER@'
-    hide_excluded: true
-    forced_name: '@TITLE@'
+    format: HTML
+    html:
+      title: 'Bill of Materials'
+      datasheet_as_link: "Datasheet"
+      lcsc_link: true
+      logo: false
+      style: modern-blue
+
+    group_fields: ['@MPN_FIELD@', 'Value']
+
+    columns:
+      - "Row"
+      - "Quantity Per PCB"
+      - "References"
+      - "Value"
+      - "Datasheet"
+      - "Footprint"
+      - "Description"
+      - "@MAN_FIELD@"
+      - "@MPN_FIELD@"
+      - "Supplier 1"
+      - "Supplier Part Number 1"
 
 ...
 definitions:
-  NAME: html_bom_interactive
-  COMMENT: Interactive BOM in HTML format
+  NAME: html_bom
+  COMMENT: BOM in HTML format
   DIR: Manufacturing/Assembly
-  EXCLUDE_FILTER: exclude_testpoints
-  TITLE: ""
+  MPN_FIELD: 'Manufacturer Part Number'
+  MAN_FIELD: 'Manufacturer'

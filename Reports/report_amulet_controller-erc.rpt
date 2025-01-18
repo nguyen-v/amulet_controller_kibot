@@ -1,4 +1,4 @@
-ERC report (2024-11-26T14:55:27+0000, Encoding UTF8)
+ERC report (2025-01-18T19:14:52+0000, Encoding UTF8)
 
 ***** Sheet /
 ***** Sheet /Block Diagram/
@@ -282,14 +282,6 @@ ERC report (2024-11-26T14:55:27+0000, Encoding UTF8)
     ; warning
     @(3.5941 mm, 0.8636 mm): Symbol #PWR089 [GND]
 
-[lib_symbol_issues]: Symbol 'SW_DPDT_x2' has been modified in library 'Switch'
-    ; warning
-    @(3.3401 mm, 0.6985 mm): Symbol SW1 [SW_DPDT_x2]
-
-[lib_symbol_issues]: Symbol 'SW_DPDT_x2' has been modified in library 'Switch'
-    ; warning
-    @(3.3401 mm, 0.8763 mm): Symbol SW1 [SW_DPDT_x2]
-
 [lib_symbol_issues]: Symbol '+3V3' has been modified in library 'power'
     ; warning
     @(2.8194 mm, 1.3716 mm): Symbol #PWR086 [+3V3]
@@ -373,4 +365,4 @@ ERC report (2024-11-26T14:55:27+0000, Encoding UTF8)
 
 ***** Sheet /Power - Sequencing/
 ***** Sheet /Revision History/
- ** ERC messages: 88  Errors 0  Warnings 88
+ ** ERC messages: 86  Errors 0  Warnings 86

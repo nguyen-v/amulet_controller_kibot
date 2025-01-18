@@ -25,15 +25,16 @@ outputs:
     ignore_dnf: false
     format: CSV
     footprint_type_values: 'SMT,THRU,'
+    right_digits: 2
     columns:
       - field: References
         name: Ref.
       - field: Net Label
         name: Net 
       - field: Footprint X
-        name: X
+        name: X [mm]
       - field: Footprint Y
-        name: Y
+        name: Y [mm]
 
 ...
 definitions:

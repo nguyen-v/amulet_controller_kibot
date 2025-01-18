@@ -23,11 +23,12 @@ outputs:
       - from_output: @FABRICATION_OUTPUT@
         dest: '/'
 
+...
 definitions:
   NAME: zip_compress_fab
   COMMENT: Generates a ZIP file with gerbers, drill and fabrication document
   DIR: Manufacturing/Fabrication
   GERBER_OUTPUT: gbr_gerbers
-  DRILL_MAP_OUTPUT: dxf_drill_map
-  DRILL_OUTPUT: drl_pth_npth
+  DRILL_MAP_OUTPUT: pdf_drill_map
+  DRILL_OUTPUT: drl_excellon
   FABRICATION_OUTPUT: pdf_fabrication

@@ -1,0 +1,1151 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Bill of Materials</title>
+<style>
+ .cell-title { vertical-align: bottom; }
+ .cell-info { vertical-align: top; padding: 1em;}
+ .cell-extra-info { vertical-align: top; padding: 1em;}
+ .cell-stats { vertical-align: top; padding: 1em;}
+ .title { font-size:2.5em; font-weight: bold; }
+ .subtitle { font-size:1.5em; font-weight: bold; }
+ .h2 { font-size:1.5em; font-weight: bold; }
+ .td-empty0 { text-align: center; background-color: #F57676;}
+ .td-gen0 { text-align: center; background-color: #DCF5E4;}
+ .td-kicad0 { text-align: center; background-color: #F5DCA9;}
+ .td-user0 { text-align: center; background-color: #DCEFF5;}
+ .td-empty1 { text-align: center; background-color: #FF8080;}
+ .td-gen1 { text-align: center; background-color: #E6FFEE;}
+ .td-kicad1 { text-align: center; background-color: #FFE6B3;}
+ .td-user1 { text-align: center; background-color: #E6F9FF;}
+ .td-nocolor { text-align: center; }
+ .color-ref { margin: 25px 0; }
+ .color-ref th { text-align: left }
+ .color-ref td { padding: 5px 20px; }
+ .head-table { margin-bottom: 2em; }
+ .tg-sort-header::-moz-selection{background:0 0}
+ .tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}
+ .tg-sort-header:after{content:'';float:right;border-width:0 5px 5px;border-style:solid;
+                       border-color:#ffffff transparent;visibility:hidden;opacity:.6}
+ .tg-sort-header:hover:after{visibility:visible}
+ .tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:1}
+ .tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}
+
+ .content-table {
+   border-collapse:
+   collapse;
+   margin-top: 5px;
+   margin-bottom: 4em;
+   font-size: 0.9em;
+   font-family: sans-serif;
+   min-width: 400px;
+   border-radius: 5px 5px 0 0;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+ }
+ .content-table thead tr { background-color: #0e4e8e; color: #ffffff; text-align: left; }
+ .content-table th, .content-table td { padding: 12px 15px; }
+ .content-table tbody tr { border-bottom: 1px solid #dddddd; }
+ .content-table tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
+ .content-table tbody tr:last-of-type { border-bottom: 2px solid #0e4e8e; }
+ .content-table * tr:hover > td { background-color: @bgl@ !important }
+
+ .content-table {
+   border-collapse:
+   collapse;
+   margin-top: 5px;
+   margin-bottom: 4em;
+   font-size: 0.9em;
+   font-family: sans-serif;
+   min-width: 400px;
+   border-radius: 5px 5px 0 0;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+ }
+ .content-table thead tr { background-color: @bg@; color: #ffffff; text-align: left; }
+ .content-table th, .content-table td { padding: 12px 15px; }
+ .content-table tbody tr { border-bottom: 1px solid #dddddd; }
+ .content-table tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
+ .content-table tbody tr:last-of-type { border-bottom: 2px solid @bg@; }
+ .content-table * tr:hover > td { background-color: #3e7ebe !important }
+</style>
+</head>
+<body>
+<table class="head-table">
+<tr>
+ <td rowspan="2">
+ </td>
+ <td colspan="2" class="cell-title">
+  <div class="title">Bill of Materials</div>
+ </td>
+</tr>
+<tr>
+ <td class="cell-info">
+   <b>Schematic</b>: amulet_controller<br>
+   <b>Variant</b>: CHECKED<br>
+   <b>Revision</b>: 1.1.1+ (Unreleased)<br>
+   <b>Date</b>: 2024-04-13<br>
+   <b>KiCad Version</b>: 8.0.6+1<br>
+ </td>
+ <td class="cell-stats">
+   <b>Component Groups</b>: 70<br>
+   <b>Component Count</b>: 253 (per PCB)<br>
+
+   <b>Fitted Components</b>: 253 (per PCB)<br>
+   <b>Number of PCBs</b>: 1<br>
+   <b>Total Components</b>: 253 (for 1 PCBs)<br>
+ </td>
+</tr>
+</table>
+<h2>Component Groups</h2>
+<table class="content-table">
+ <thead>
+  <tr>
+   <th class="th-gen">Row</th>
+   <th class="th-gen">Quantity Per PCB</th>
+   <th class="th-kicad">References</th>
+   <th class="th-kicad">Value</th>
+   <th class="th-kicad">Datasheet</th>
+   <th class="th-kicad">Footprint</th>
+   <th class="th-user">Description</th>
+   <th class="th-user">Manufacturer</th>
+   <th class="th-user">Manufacturer Part Number</th>
+   <th class="th-user">Supplier 1</th>
+   <th class="th-user">Supplier Part Number 1</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr id="0">
+   <td class="td-gen0">1</td>
+   <td class="td-gen0">3</td>
+   <td class="td-kicad0"><div id="C14"></div><div id="C13"></div><div id="C12"></div>C12 C13 C14</td>
+   <td class="td-kicad0">1n X7R 25V</td>
+   <td class="td-kicad0"><a href="https://www.yageo.com/upload/media/product/app/datasheet/mlcc/upy-ac_np0x7rx7s_6_3v-to-2kv.pdf">https://www.yageo.com/upload/media/product/app/datasheet/mlcc/upy-ac_np0x7rx7s_6_3v-to-2kv.pdf</a></td>
+   <td class="td-kicad0">C_0402_1005_DensityHigh</td>
+   <td class="td-user0">1000 pF ±10% 25V Ceramic Capacitor X7R 0402 (1005 Metric)</td>
+   <td class="td-user0">YAGEO</td>
+   <td class="td-user0">AC0402KRX7R8BB102</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">311-3065-1-ND</td>
+  </tr>
+  <tr id="1">
+   <td class="td-gen1">2</td>
+   <td class="td-gen1">6</td>
+   <td class="td-kicad1"><div id="C138"></div><div id="C137"></div><div id="C136"></div><div id="C135"></div><div id="C134"></div><div id="C133"></div>C133 C134 C135 C136 C137 C138</td>
+   <td class="td-kicad1">3n3 X7R 100V</td>
+   <td class="td-kicad1"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R72A332KA01-01.pdf</a></td>
+   <td class="td-kicad1">C_0402_1005_DensityHigh</td>
+   <td class="td-user1">3300 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)</td>
+   <td class="td-user1">Murata Electronics</td>
+   <td class="td-user1">GRM155R72A332KA01D</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">490-8261-1-ND</td>
+  </tr>
+  <tr id="2">
+   <td class="td-gen0">3</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="C129"></div>C129</td>
+   <td class="td-kicad0">4n7 X7R 100V</td>
+   <td class="td-kicad0"><a href="https://www.murata.com/-/media/webrenewal/support/library/catalog/products/k35e.ashx?la=en-us&cvid=20200508021757000000">https://www.murata.com/-/media/webrenewal/support/library/catalog/products/k35e.ashx?la=en-us&cvid=20200508021757000000</a></td>
+   <td class="td-kicad0">C_0402_1005_DensityHigh</td>
+   <td class="td-user0">4700 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)</td>
+   <td class="td-user0">Murata Electronics</td>
+   <td class="td-user0">GCM155R72A472KA37D</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">490-4765-1-ND</td>
+  </tr>
+  <tr id="3">
+   <td class="td-gen1">4</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="C76"></div>C76</td>
+   <td class="td-kicad1">10n X7R 100V</td>
+   <td class="td-kicad1"><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2615/HMR105B7103KV-F_SS.pdf">https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2615/HMR105B7103KV-F_SS.pdf</a></td>
+   <td class="td-kicad1">C_0402_1005_DensityHigh</td>
+   <td class="td-user1">10000 pF ±10% 100V Ceramic Capacitor X7R 0402 (1005 Metric)</td>
+   <td class="td-user1">Taiyo Yuden</td>
+   <td class="td-user1">HMR105B7103KV-F</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">587-HMR105B7103KV-FCT-ND</td>
+  </tr>
+  <tr id="4">
+   <td class="td-gen0">5</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="C91"></div>C91</td>
+   <td class="td-kicad0">47n X7R 100V</td>
+   <td class="td-kicad0"><a href="https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C473K1RECAUTO">https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C473K1RECAUTO</a></td>
+   <td class="td-kicad0">C_0603_1608_DensityHigh</td>
+   <td class="td-user0">0.047 µF ±10% 100V Ceramic Capacitor X7R 0603 (1608 Metric)</td>
+   <td class="td-user0">KEMET</td>
+   <td class="td-user0">C0603C473K1RECAUTO</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">399-14764-1-ND</td>
+  </tr>
+  <tr id="5">
+   <td class="td-gen1">6</td>
+   <td class="td-gen1">26</td>
+   <td class="td-kicad1"><div id="C128"></div><div id="C127"></div><div id="C126"></div><div id="C125"></div><div id="C115"></div><div id="C114"></div><div id="C113"></div><div id="C112"></div><div id="C111"></div><div id="C109"></div><div id="C108"></div><div id="C107"></div><div id="C105"></div><div id="C104"></div><div id="C103"></div><div id="C102"></div><div id="C101"></div><div id="C29"></div><div id="C28"></div><div id="C27"></div><div id="C11"></div><div id="C10"></div><div id="C8"></div><div id="C5"></div><div id="C4"></div><div id="C3"></div>C3 C4 C5 C8 C10 C11 C27 C28 C29 C101 C102 C103 C104 C105 C107 C108 C109 C111 C112 C113 C114 C115 C125 C126 C127 C128</td>
+   <td class="td-kicad1">100n X7R 50V</td>
+   <td class="td-kicad1"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71H104KE02-01.pdf</a></td>
+   <td class="td-kicad1">C_0402_1005_DensityHigh</td>
+   <td class="td-user1">0.1 µF ±10% 50V Ceramic Capacitor X7R 0402 (1005 Metric)</td>
+   <td class="td-user1">Murata Electronics</td>
+   <td class="td-user1">GCM155R71H104KE02J</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">490-14514-1-ND</td>
+  </tr>
+  <tr id="6">
+   <td class="td-gen0">7</td>
+   <td class="td-gen0">2</td>
+   <td class="td-kicad0"><div id="C92"></div><div id="C22"></div>C22 C92</td>
+   <td class="td-kicad0">100n X7R 100V</td>
+   <td class="td-kicad0"><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/21/HMK107B7104KAHT_SS.pdf">https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/21/HMK107B7104KAHT_SS.pdf</a></td>
+   <td class="td-kicad0">C_0603_1608_DensityHigh</td>
+   <td class="td-user0">0.1 µF ±10% 100V Ceramic Capacitor X7R 0603 (1608 Metric)</td>
+   <td class="td-user0">Taiyo Yuden</td>
+   <td class="td-user0">HMK107B7104KAHT</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">587-6009-1-ND</td>
+  </tr>
+  <tr id="7">
+   <td class="td-gen1">8</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="C90"></div>C90</td>
+   <td class="td-kicad1">100n X7R 16V</td>
+   <td class="td-kicad1"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GCM155R71C104KA55-01.pdf</a></td>
+   <td class="td-kicad1">C_0402_1005_DensityHigh</td>
+   <td class="td-user1">0.1 µF ±10% 16V Ceramic Capacitor X7R 0402 (1005 Metric)</td>
+   <td class="td-user1">Murata Electronics</td>
+   <td class="td-user1">GCM155R71C104KA55D</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">490-4759-1-ND</td>
+  </tr>
+  <tr id="8">
+   <td class="td-gen0">9</td>
+   <td class="td-gen0">3</td>
+   <td class="td-kicad0"><div id="C99"></div><div id="C97"></div><div id="C95"></div>C95 C97 C99</td>
+   <td class="td-kicad0">100n X7R 100V</td>
+   <td class="td-kicad0"><a href="https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C1206C104K1RACAUTO">https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C1206C104K1RACAUTO</a></td>
+   <td class="td-kicad0">C_1206_3216_DensityHighest</td>
+   <td class="td-user0">0.1 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)</td>
+   <td class="td-user0">KEMET</td>
+   <td class="td-user0">C1206C104K1RACAUTO</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">399-7008-1-ND</td>
+  </tr>
+  <tr id="9">
+   <td class="td-gen1">10</td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="C25"></div><div id="C23"></div>C23 C25</td>
+   <td class="td-kicad1">220n X7S 100V</td>
+   <td class="td-kicad1"><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2249/TMK105B7224KV-FR_SS.pdf">https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2249/TMK105B7224KV-FR_SS.pdf</a></td>
+   <td class="td-kicad1">C_0603_1608_DensityHigh</td>
+   <td class="td-user1">0.22 µF ±10% 100V Ceramic Capacitor X7S 0603 (1608 Metric)</td>
+   <td class="td-user1">Taiyo Yuden</td>
+   <td class="td-user1">HMK107C7224KAHTE</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">587-5012-1-ND</td>
+  </tr>
+  <tr id="10">
+   <td class="td-gen0">11</td>
+   <td class="td-gen0">5</td>
+   <td class="td-kicad0"><div id="C26"></div><div id="C24"></div><div id="C9"></div><div id="C6"></div><div id="C2"></div>C2 C6 C9 C24 C26</td>
+   <td class="td-kicad0">1u X7R 10V</td>
+   <td class="td-kicad0"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155Z71A105KE01-01A.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155Z71A105KE01-01A.pdf</a></td>
+   <td class="td-kicad0">C_0402_1005_DensityHigh</td>
+   <td class="td-user0">1 µF ±10% 10V Ceramic Capacitor X7R 0402 (1005 Metric)</td>
+   <td class="td-user0">Murata Electronics</td>
+   <td class="td-user0">GRM155Z71A105KE01J</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">490-GRM155Z71A105KE01JCT-ND</td>
+  </tr>
+  <tr id="11">
+   <td class="td-gen1">12</td>
+   <td class="td-gen1">3</td>
+   <td class="td-kicad1"><div id="C93"></div><div id="C88"></div><div id="C60"></div>C60 C88 C93</td>
+   <td class="td-kicad1">1u X7R 25V</td>
+   <td class="td-kicad1"><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2146/TMK107AB7105KAHT_SS.pdf">https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/2146/TMK107AB7105KAHT_SS.pdf</a></td>
+   <td class="td-kicad1">C_0603_1608_DensityHigh</td>
+   <td class="td-user1">1 µF ±10% 25V Ceramic Capacitor X7R 0603 (1608 Metric)</td>
+   <td class="td-user1">Taiyo Yuden</td>
+   <td class="td-user1">TMK107AB7105KAHT</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">587-3467-1-ND</td>
+  </tr>
+  <tr id="12">
+   <td class="td-gen0">13</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="C94"></div>C94</td>
+   <td class="td-kicad0">1u X7R 6.3V</td>
+   <td class="td-kicad0"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT155R70J105KE01-01.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT155R70J105KE01-01.pdf</a></td>
+   <td class="td-kicad0">C_0402_1005_DensityHigh</td>
+   <td class="td-user0">1 µF ±10% 6.3V Ceramic Capacitor X7R 0402 (1005 Metric)</td>
+   <td class="td-user0">Murata Electronics</td>
+   <td class="td-user0">GRT155R70J105KE01D</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">490-18216-1-ND</td>
+  </tr>
+  <tr id="13">
+   <td class="td-gen1">14</td>
+   <td class="td-gen1">7</td>
+   <td class="td-kicad1"><div id="C52"></div><div id="C45"></div><div id="C20"></div><div id="C18"></div><div id="C17"></div><div id="C16"></div><div id="C15"></div>C15 C16 C17 C18 C20 C45 C52</td>
+   <td class="td-kicad1">2u2 X7R 100V</td>
+   <td class="td-kicad1"><a href="https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_midvoltage_en.pdf">https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_midvoltage_en.pdf</a></td>
+   <td class="td-kicad1">R_0805_2012_DensityHigh</td>
+   <td class="td-user1">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0805 100VDC 2.2uF 10% 1.25mm AEC-Q200</td>
+   <td class="td-user1">TDK Corporation</td>
+   <td class="td-user1">CGA4J1X7R2A225K125AC</td>
+   <td class="td-user1">Mouser</td>
+   <td class="td-user1">810-CGA4J7R2A225K125</td>
+  </tr>
+  <tr id="14">
+   <td class="td-gen0">15</td>
+   <td class="td-gen0">3</td>
+   <td class="td-kicad0"><div id="C110"></div><div id="C84"></div><div id="C1"></div>C1 C84 C110</td>
+   <td class="td-kicad0">4u7 X7R 16V</td>
+   <td class="td-kicad0"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf</a></td>
+   <td class="td-kicad0">C_0603_1608_DensityHigh</td>
+   <td class="td-user0">4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)</td>
+   <td class="td-user0">Murata Electronics</td>
+   <td class="td-user0">GRM188Z71C475KE21J</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">490-GRM188Z71C475KE21JCT-ND</td>
+  </tr>
+  <tr id="15">
+   <td class="td-gen1">16</td>
+   <td class="td-gen1">54</td>
+   <td class="td-kicad1"><div id="C100"></div><div id="C98"></div><div id="C96"></div><div id="C89"></div><div id="C87"></div><div id="C86"></div><div id="C85"></div><div id="C82"></div><div id="C81"></div><div id="C80"></div><div id="C79"></div><div id="C78"></div><div id="C77"></div><div id="C75"></div><div id="C74"></div><div id="C73"></div><div id="C72"></div><div id="C71"></div><div id="C70"></div><div id="C69"></div><div id="C68"></div><div id="C67"></div><div id="C66"></div><div id="C65"></div><div id="C64"></div><div id="C63"></div><div id="C62"></div><div id="C61"></div><div id="C59"></div><div id="C58"></div><div id="C57"></div><div id="C55"></div><div id="C54"></div><div id="C53"></div><div id="C51"></div><div id="C50"></div><div id="C49"></div><div id="C48"></div><div id="C47"></div><div id="C46"></div><div id="C44"></div><div id="C43"></div><div id="C42"></div><div id="C41"></div><div id="C40"></div><div id="C39"></div><div id="C36"></div><div id="C35"></div><div id="C34"></div><div id="C33"></div><div id="C32"></div><div id="C31"></div><div id="C21"></div><div id="C19"></div>C19 C21 C31 C32 C33 C34 C35 C36 C39 C40 C41 C42 C43 C44 C46 C47 C48 C49 C50 C51 C53 C54 C55 C57 C58 C59 C61 C62 C63 C64 C65 C66 C67 C68 C69 C70 C71 C72 C73 C74 C75 C77 C78 C79 C80 C81 C82 C85 C86 C87 C89 C96 C98 C100</td>
+   <td class="td-kicad1">4u7 X7R 100V</td>
+   <td class="td-kicad1"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRJ31CZ72A475KE01-01.pdf</a></td>
+   <td class="td-kicad1">C_1206_3216_DensityHigh</td>
+   <td class="td-user1">4.7 µF ±10% 100V Ceramic Capacitor X7R 1206 (3216 Metric)</td>
+   <td class="td-user1">Murata Electronics</td>
+   <td class="td-user1">GRJ31CZ72A475KE01L</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">490-GRJ31CZ72A475KE01LCT-ND</td>
+  </tr>
+  <tr id="16">
+   <td class="td-gen0">17</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="C7"></div>C7</td>
+   <td class="td-kicad0">4u7 X5R 25V</td>
+   <td class="td-kicad0"><a href="https://www.mouser.ch/datasheet/2/40/CM_Series_e-2835982.pdf">https://www.mouser.ch/datasheet/2/40/CM_Series_e-2835982.pdf</a></td>
+   <td class="td-kicad0">C_0402_1005_DensityHigh</td>
+   <td class="td-user0">4.7 µF ±20% 25V Ceramic Capacitor X5R 0402 (1005 Metric)</td>
+   <td class="td-user0">KYOCERA AVX</td>
+   <td class="td-user0">CM05X5R475M25AH</td>
+   <td class="td-user0">Mouser</td>
+   <td class="td-user0">581-CM05X5R475M25AH</td>
+  </tr>
+  <tr id="17">
+   <td class="td-gen1">18</td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="C106"></div><div id="C56"></div>C56 C106</td>
+   <td class="td-kicad1">10u X7R 25V</td>
+   <td class="td-kicad1"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71E106KE15-01.pdf</a></td>
+   <td class="td-kicad1">C_0805_2012_DensityHighest</td>
+   <td class="td-user1">10 µF ±10% 25V Ceramic Capacitor X7R 0805 (2012 Metric)</td>
+   <td class="td-user1">Murata Electronics</td>
+   <td class="td-user1">GRM21BZ71E106KE15L</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">490-GRM21BZ71E106KE15LCT-ND</td>
+  </tr>
+  <tr id="18">
+   <td class="td-gen0">19</td>
+   <td class="td-gen0">2</td>
+   <td class="td-kicad0"><div id="C38"></div><div id="C30"></div>C30 C38</td>
+   <td class="td-kicad0">15u X7R 25V</td>
+   <td class="td-kicad0"><a href="https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf">https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_automotive_general_en.pdf</a></td>
+   <td class="td-kicad0">C_1210_3225_DensityHigh</td>
+   <td class="td-user0">15 µF ±20% 25V Ceramic Capacitor X7R 1210 (3225 Metric)</td>
+   <td class="td-user0">TDK Corporation</td>
+   <td class="td-user0">CGA6M3X7R1E156M200AB</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">445-175431-1-ND</td>
+  </tr>
+  <tr id="19">
+   <td class="td-gen1">20</td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="C83"></div><div id="C37"></div>C37 C83</td>
+   <td class="td-kicad1">22u X7R 10V</td>
+   <td class="td-kicad1"><a href="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01.pdf">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01.pdf</a></td>
+   <td class="td-kicad1">C_0805_2012_DensityHighest</td>
+   <td class="td-user1">22 µF ±20% 10V Ceramic Capacitor X7R 0805 (2012 Metric)</td>
+   <td class="td-user1">Murata Electronics</td>
+   <td class="td-user1">GRM21BZ71A226ME15L</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">490-GRM21BZ71A226ME15LCT-ND</td>
+  </tr>
+  <tr id="20">
+   <td class="td-gen0">21</td>
+   <td class="td-gen0">3</td>
+   <td class="td-kicad0"><div id="C132"></div><div id="C131"></div><div id="C130"></div>C130 C131 C132</td>
+   <td class="td-kicad0">1n X7R 1kV</td>
+   <td class="td-kicad0"><a href="https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867">https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/C0603V102KDRAC7867</a></td>
+   <td class="td-kicad0">C_0603_1608_DensityHigh</td>
+   <td class="td-user0">1000 pF ±10% 1000V (1kV) Ceramic Capacitor X7R 0603 (1608 Metric)</td>
+   <td class="td-user0">KEMET</td>
+   <td class="td-user0">C0603V102KDRAC7867</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">399-12306-1-ND</td>
+  </tr>
+  <tr id="21">
+   <td class="td-gen1">22</td>
+   <td class="td-gen1">15</td>
+   <td class="td-kicad1"><div id="D22"></div><div id="D21"></div><div id="D20"></div><div id="D19"></div><div id="D15"></div><div id="D14"></div><div id="D11"></div><div id="D10"></div><div id="D9"></div><div id="D8"></div><div id="D7"></div><div id="D6"></div><div id="D5"></div><div id="D4"></div><div id="D3"></div>D3 D4 D5 D6 D7 D8 D9 D10 D11 D14 D15 D19 D20 D21 D22</td>
+   <td class="td-kicad1">BAT41KFILM</td>
+   <td class="td-kicad1"><a href="https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf">https://www.st.com/content/ccc/resource/technical/document/datasheet/5b/cd/d8/0a/45/56/41/6c/CD00130227.pdf/files/CD00130227.pdf/jcr:content/translations/en.CD00130227.pdf</a></td>
+   <td class="td-kicad1">D_SOD-523</td>
+   <td class="td-user1">Diode 100 V 200mA Surface Mount SOD-523</td>
+   <td class="td-user1">STMicroelectronics</td>
+   <td class="td-user1">BAT41KFILM</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">497-5556-1-ND</td>
+  </tr>
+  <tr id="22">
+   <td class="td-gen0">23</td>
+   <td class="td-gen0">2</td>
+   <td class="td-kicad0"><div id="D27"></div><div id="D23"></div>D23 D27</td>
+   <td class="td-kicad0">CDSOT23-SM712</td>
+   <td class="td-kicad0"><a href="https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SM712.pdf">https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SM712.pdf</a></td>
+   <td class="td-kicad0">SOT95P230X110-3N</td>
+   <td class="td-user0">26V, 14V Clamp 17A (8/20µs) Ipp Tvs Diode Surface Mount SOT-23-3</td>
+   <td class="td-user0">Bourns Inc.</td>
+   <td class="td-user0">CDSOT23-SM712</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">CDSOT23-SM712CT-ND</td>
+  </tr>
+  <tr id="23">
+   <td class="td-gen1">24</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="D13"></div>D13</td>
+   <td class="td-kicad1">GREEN</td>
+   <td class="td-kicad1"><a href="https://www.bivar.com/parts_content/Datasheets/SM1206NPGC-IL.pdf">https://www.bivar.com/parts_content/Datasheets/SM1206NPGC-IL.pdf</a></td>
+   <td class="td-kicad1">LED_SM1206</td>
+   <td class="td-user1">Green 525nm LED Indication - Discrete 3V 1206 (3216 Metric)</td>
+   <td class="td-user1">Bivar Inc.</td>
+   <td class="td-user1">SM1206NPGC-IL</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">492-1945-1-ND</td>
+  </tr>
+  <tr id="24">
+   <td class="td-gen0">25</td>
+   <td class="td-gen0">2</td>
+   <td class="td-kicad0"><div id="D25"></div><div id="D24"></div>D24 D25</td>
+   <td class="td-kicad0">PESD2CANFD24V-UX</td>
+   <td class="td-kicad0"><a href="https://assets.nexperia.com/documents/data-sheet/PESD2CANFD24V-U.pdf">https://assets.nexperia.com/documents/data-sheet/PESD2CANFD24V-U.pdf</a></td>
+   <td class="td-kicad0">SOT95P230X117-3N</td>
+   <td class="td-user0">42V Clamp 2.6A (8/20µs) Ipp Tvs Diode Surface Mount SOT-323</td>
+   <td class="td-user0">Nexperia USA Inc.</td>
+   <td class="td-user0">PESD2CANFD24V-UX</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">1727-PESD2CANFD24V-UXCT-ND</td>
+  </tr>
+  <tr id="25">
+   <td class="td-gen1">26</td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="D26"></div><div id="D18"></div>D18 D26</td>
+   <td class="td-kicad1">PESD4USB3U-TBSX</td>
+   <td class="td-kicad1"><a href="https://assets.nexperia.com/documents/data-sheet/PESD4USB3U-TBS.pdf">https://assets.nexperia.com/documents/data-sheet/PESD4USB3U-TBS.pdf</a></td>
+   <td class="td-kicad1">SOT1176D</td>
+   <td class="td-user1">3.5V (Typ) Clamp 7A (8/20µs) Ipp Tvs Diode Surface Mount, Wettable Flank DFN2510D-10</td>
+   <td class="td-user1">Nexperia USA Inc.</td>
+   <td class="td-user1">PESD4USB3U-TBSX</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">1727-PESD4USB3U-TBSXCT-ND</td>
+  </tr>
+  <tr id="26">
+   <td class="td-gen0">27</td>
+   <td class="td-gen0">2</td>
+   <td class="td-kicad0"><div id="D17"></div><div id="D16"></div>D16 D17</td>
+   <td class="td-kicad0">PESD4USB5B-TBSX</td>
+   <td class="td-kicad0"><a href="https://assets.nexperia.com/documents/data-sheet/PESD4USB5B-TBS.pdf">https://assets.nexperia.com/documents/data-sheet/PESD4USB5B-TBS.pdf</a></td>
+   <td class="td-kicad0">SOT1176D</td>
+   <td class="td-user0">5.5V (Typ) Clamp 7A (8/20µs) Ipp Tvs Diode Surface Mount, Wettable Flank DFN2510D-10</td>
+   <td class="td-user0">Nexperia USA Inc.</td>
+   <td class="td-user0">PESD4USB5B-TBSX</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">1727-PESD4USB5B-TBSXCT-ND</td>
+  </tr>
+  <tr id="27">
+   <td class="td-gen1">28</td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="D2"></div><div id="D1"></div>D1 D2</td>
+   <td class="td-kicad1">SMBJ51CD-M3/H</td>
+   <td class="td-kicad1"><a href="https://www.vishay.com/docs/87606/smbj5cdthrusmbj120cd.pdf">https://www.vishay.com/docs/87606/smbj5cdthrusmbj120cd.pdf</a></td>
+   <td class="td-kicad1">DIOM4336X24N</td>
+   <td class="td-user1">Surface-Mount TRANSZORB® Transient Voltage Suppressors</td>
+   <td class="td-user1">Vishay</td>
+   <td class="td-user1">SMBJ51CD-M3/H</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">SMBJ51CD-M3/HGICT-ND</td>
+  </tr>
+  <tr id="28">
+   <td class="td-gen0">29</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="D12"></div>D12</td>
+   <td class="td-kicad0">YELLOW</td>
+   <td class="td-kicad0"><a href="https://www.bivar.com/parts_content/Datasheets/SM1206NYC-IL.pdf">https://www.bivar.com/parts_content/Datasheets/SM1206NYC-IL.pdf</a></td>
+   <td class="td-kicad0">LED_SM1206</td>
+   <td class="td-user0">Yellow 592nm LED Indication - Discrete 2V 1206 (3216 Metric)</td>
+   <td class="td-user0">Bivar Inc.</td>
+   <td class="td-user0">SM1206NYC-IL</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">492-1947-1-ND</td>
+  </tr>
+  <tr id="29">
+   <td class="td-gen1">30</td>
+   <td class="td-gen1">4</td>
+   <td class="td-kicad1"><div id="FB4"></div><div id="FB3"></div><div id="FB2"></div><div id="FB1"></div>FB1 FB2 FB3 FB4</td>
+   <td class="td-kicad1">1k @ 100MHz</td>
+   <td class="td-kicad1"><a href="https://www.we-online.com/katalog/datasheet/742792096.pdf">https://www.we-online.com/katalog/datasheet/742792096.pdf</a></td>
+   <td class="td-kicad1">R_0805_2012_DensityHigh</td>
+   <td class="td-user1">1 kOhms @ 100 MHz 1 Signal Line Ferrite Bead 0805 (2012 Metric) 1A 300mOhm</td>
+   <td class="td-user1">Würth Elektronik</td>
+   <td class="td-user1">742792096</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">732-4648-1-ND</td>
+  </tr>
+  <tr id="30">
+   <td class="td-gen0">31</td>
+   <td class="td-gen0">2</td>
+   <td class="td-kicad0"><div id="J13"></div><div id="J12"></div>J12 J13</td>
+   <td class="td-kicad0">Nano-Fit 1x03</td>
+   <td class="td-kicad0"><a href="https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF">https://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF</a></td>
+   <td class="td-kicad0">1054301203</td>
+   <td class="td-user0">Connector Header Surface Mount, Right Angle 3 position 0.098" (2.50mm)</td>
+   <td class="td-user0">Molex</td>
+   <td class="td-user0">1054301203</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">WM26098CT-ND</td>
+  </tr>
+  <tr id="31">
+   <td class="td-gen1">32</td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="J9"></div><div id="J8"></div>J8 J9</td>
+   <td class="td-kicad1">S2B-PH-SM4-TB</td>
+   <td class="td-kicad1"><a href="https://www.jst-mfg.com/product/pdf/eng/ePH.pdf">https://www.jst-mfg.com/product/pdf/eng/ePH.pdf</a></td>
+   <td class="td-kicad1">JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</td>
+   <td class="td-user1">Connector Header Surface Mount, Right Angle 2 position 0.079" (2.00mm)</td>
+   <td class="td-user1">JST Sales America Inc.</td>
+   <td class="td-user1">S2B-PH-SM4-TB</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">455-S2B-PH-SM4-TBCT-ND</td>
+  </tr>
+  <tr id="32">
+   <td class="td-gen0">33</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="J14"></div>J14</td>
+   <td class="td-kicad0">SM05B-GHS-TB</td>
+   <td class="td-kicad0"><a href="https://www.jst-mfg.com/product/pdf/eng/eGH.pdf">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</a></td>
+   <td class="td-kicad0">JST_GH_SM05B-GHS-TB_1x05-1MP_P1.25mm_Horizontal</td>
+   <td class="td-user0">Connector Header Surface Mount, Right Angle 5 position 0.049" (1.25mm)</td>
+   <td class="td-user0">JST Sales America Inc.</td>
+   <td class="td-user0">SM05B-GHS-TB</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">455-SM05B-GHS-TBCT-ND</td>
+  </tr>
+  <tr id="33">
+   <td class="td-gen1">34</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="J10"></div>J10</td>
+   <td class="td-kicad1">SM06B-GHS-TB</td>
+   <td class="td-kicad1"><a href="https://www.jst-mfg.com/product/pdf/eng/eGH.pdf">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</a></td>
+   <td class="td-kicad1">JST_GH_SM06B-GHS-TB_1x06-1MP_P1.25mm_Horizontal</td>
+   <td class="td-user1">Connector Header Surface Mount, Right Angle 6 position 0.049" (1.25mm)</td>
+   <td class="td-user1">JST Sales America Inc.</td>
+   <td class="td-user1">SM06B-GHS-TB</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">455-1568-1-ND</td>
+  </tr>
+  <tr id="34">
+   <td class="td-gen0">35</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="J7"></div>J7</td>
+   <td class="td-kicad0">SM07B-GHS-TB</td>
+   <td class="td-kicad0"><a href="https://www.jst-mfg.com/product/pdf/eng/eGH.pdf">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</a></td>
+   <td class="td-kicad0">JST_GH_SM07B-GHS-TB_1x07-1MP_P1.25mm_Horizontal</td>
+   <td class="td-user0">Connector Header Surface Mount, Right Angle 7 position 0.049" (1.25mm)</td>
+   <td class="td-user0">JST Sales America Inc.</td>
+   <td class="td-user0">SM07B-GHS-TB(LF)(SN)</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">455-1569-1-ND</td>
+  </tr>
+  <tr id="35">
+   <td class="td-gen1">36</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="J6"></div>J6</td>
+   <td class="td-kicad1">SM08B-GHS-TB</td>
+   <td class="td-kicad1"><a href="https://www.jst-mfg.com/product/pdf/eng/eGH.pdf">https://www.jst-mfg.com/product/pdf/eng/eGH.pdf</a></td>
+   <td class="td-kicad1">JST_GH_SM08B-GHS-TB_1x08-1MP_P1.25mm_Horizontal</td>
+   <td class="td-user1">Connector Header Surface Mount, Right Angle 8 position 0.049" (1.25mm)</td>
+   <td class="td-user1">JST Sales America Inc.</td>
+   <td class="td-user1">SM08B-GHS-TB</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">455-1570-1-ND</td>
+  </tr>
+  <tr id="36">
+   <td class="td-gen0">37</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="J1"></div>J1</td>
+   <td class="td-kicad0">XT60PW-F</td>
+   <td class="td-kicad0"><a href="https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf">https://www.tme.eu/Document/1191bc2fa3aee3c446e5a895fd8f7983/XT60PW-F.pdf</a></td>
+   <td class="td-kicad0">AMASS_XT60PW-F_1x02_P7.20mm_Horizontal</td>
+   <td class="td-user0">Socket; DC supply; XT60; female; PIN: 2; on PCBs; THT; yellow; 30A</td>
+   <td class="td-user0">AMASS</td>
+   <td class="td-user0">XT60PW-F</td>
+   <td class="td-user0">Transfer Multisort Elektronik</td>
+   <td class="td-user0">XT60PW-F</td>
+  </tr>
+  <tr id="37">
+   <td class="td-gen1">38</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="J2"></div>J2</td>
+   <td class="td-kicad1">XT60PW-M</td>
+   <td class="td-kicad1"><a href="https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf">https://www.tme.eu/Document/b13629717d44ae038681dba08d18c0b6/XT60PW-M.pdf</a></td>
+   <td class="td-kicad1">AMASS_XT60PW-M_1x02_P7.20mm_Horizontal</td>
+   <td class="td-user1">Socket; DC supply; XT60; male; PIN: 2; on PCBs; THT; yellow; 30A; 500V</td>
+   <td class="td-user1">AMASS</td>
+   <td class="td-user1">XT60PW-M</td>
+   <td class="td-user1">Transfer Multisort Elektronik</td>
+   <td class="td-user1">XT60PW-M</td>
+  </tr>
+  <tr id="38">
+   <td class="td-gen0">39</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="L3"></div>L3</td>
+   <td class="td-kicad0">2u2</td>
+   <td class="td-kicad0"><a href="https://www.coilcraft.com/getmedia/3ba581dc-6d87-4be6-9dea-9167ac97554d/lps3314.pdf">https://www.coilcraft.com/getmedia/3ba581dc-6d87-4be6-9dea-9167ac97554d/lps3314.pdf</a></td>
+   <td class="td-kicad0">L_Coilcraft_LPS3314</td>
+   <td class="td-user0">Power Inductors - SMD 2.2uH Shld 20% 1.2A 100 mOhms</td>
+   <td class="td-user0">Coilcraft</td>
+   <td class="td-user0">LPS3314-222MRC</td>
+   <td class="td-user0">Mouser</td>
+   <td class="td-user0">994-LPS3314-222MRC</td>
+  </tr>
+  <tr id="39">
+   <td class="td-gen1">40</td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="L2"></div><div id="L1"></div>L1 L2</td>
+   <td class="td-kicad1">22u</td>
+   <td class="td-kicad1"><a href="https://www.coilcraft.com/getmedia/31b05c96-4c4c-4498-8dbb-fe092de76bad/lps4018.pdf">https://www.coilcraft.com/getmedia/31b05c96-4c4c-4498-8dbb-fe092de76bad/lps4018.pdf</a></td>
+   <td class="td-kicad1">L_Coilcraft_LPS4018</td>
+   <td class="td-user1">Power Inductors - SMD 22uH Shld 20% 830mA 360 mOhms</td>
+   <td class="td-user1">Coilcraft</td>
+   <td class="td-user1">LPS4018-223MRC</td>
+   <td class="td-user1">Mouser</td>
+   <td class="td-user1">994-LPS4018-223MRC</td>
+  </tr>
+  <tr id="40">
+   <td class="td-gen0">41</td>
+   <td class="td-gen0">3</td>
+   <td class="td-kicad0"><div id="Q9"></div><div id="Q8"></div><div id="Q7"></div>Q7 Q8 Q9</td>
+   <td class="td-kicad0">PMV90ENER</td>
+   <td class="td-kicad0"><a href="https://assets.nexperia.com/documents/data-sheet/PMV90ENE.pdf">https://assets.nexperia.com/documents/data-sheet/PMV90ENE.pdf</a></td>
+   <td class="td-kicad0">SOT-23-3</td>
+   <td class="td-user0">N-Channel 30 V 3A (Ta) 460mW (Ta) Surface Mount TO-236AB</td>
+   <td class="td-user0">Nexperia USA Inc.</td>
+   <td class="td-user0">PMV90ENER</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">1727-2735-1-ND</td>
+  </tr>
+  <tr id="41">
+   <td class="td-gen1">42</td>
+   <td class="td-gen1">6</td>
+   <td class="td-kicad1"><div id="Q6"></div><div id="Q5"></div><div id="Q4"></div><div id="Q3"></div><div id="Q2"></div><div id="Q1"></div>Q1 Q2 Q3 Q4 Q5 Q6</td>
+   <td class="td-kicad1">TPW1R306PL,L1Q</td>
+   <td class="td-kicad1"><a href="https://toshiba.semicon-storage.com/info/TPW1R306PL_datasheet_en_20191021.pdf?did=55843&prodName=TPW1R306PL">https://toshiba.semicon-storage.com/info/TPW1R306PL_datasheet_en_20191021.pdf?did=55843&prodName=TPW1R306PL</a></td>
+   <td class="td-kicad1">2-5S1A</td>
+   <td class="td-user1">N-Channel 60 V 260A (Tc) 960mW (Ta), 170W (Tc) Surface Mount 8-DSOP Advance</td>
+   <td class="td-user1">Toshiba Semiconductor and Storage</td>
+   <td class="td-user1">TPW1R306PL,L1Q</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">TPW1R306PLL1QCT-ND</td>
+  </tr>
+  <tr id="42">
+   <td class="td-gen0">43</td>
+   <td class="td-gen0">3</td>
+   <td class="td-kicad0"><div id="R18"></div><div id="R15"></div><div id="R12"></div>R12 R15 R18</td>
+   <td class="td-kicad0">0m5 1% 2W</td>
+   <td class="td-kicad0"><a href="https://www.seielect.com/catalog/sei-hcs.pdf">https://www.seielect.com/catalog/sei-hcs.pdf</a></td>
+   <td class="td-kicad0">HCS1206FTL500</td>
+   <td class="td-user0">0.5 mOhms ±1% 2W Chip Resistor 1206 (3216 Metric) Automotive AEC-Q200, Current Sense, Moisture Resistant Metal Element</td>
+   <td class="td-user0">Stackpole Electronics Inc</td>
+   <td class="td-user0">HCS1206FTL500</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">HCS1206FTL500CT-ND</td>
+  </tr>
+  <tr id="43">
+   <td class="td-gen1">44</td>
+   <td class="td-gen1">3</td>
+   <td class="td-kicad1"><div id="R32"></div><div id="R31"></div><div id="R4"></div>R4 R31 R32</td>
+   <td class="td-kicad1">0R</td>
+   <td class="td-kicad1"><a href="https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2GE0R00X">https://industrial.panasonic.com/ww/products/pt/general-purpose-chip-resistors/models/ERJ2GE0R00X</a></td>
+   <td class="td-kicad1">R_0402_1005_DensityHigh</td>
+   <td class="td-user1">0 Ohms Jumper Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film</td>
+   <td class="td-user1">Panasonic Electronic Components</td>
+   <td class="td-user1">ERJ-2GE0R00X</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">P0.0JCT-ND</td>
+  </tr>
+  <tr id="44">
+   <td class="td-gen0">45</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="R53"></div>R53</td>
+   <td class="td-kicad0">0R</td>
+   <td class="td-kicad0"><a href="https://www.vishay.com/docs/20043/crcwhpe3.pdf">https://www.vishay.com/docs/20043/crcwhpe3.pdf</a></td>
+   <td class="td-kicad0">R_0603_1608_DensityHigh</td>
+   <td class="td-user0">0 Ohms Jumper Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film</td>
+   <td class="td-user0">Vishay</td>
+   <td class="td-user0">CRCW06030000Z0EAHP</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">541-0.0SBCT-ND</td>
+  </tr>
+  <tr id="45">
+   <td class="td-gen1">46</td>
+   <td class="td-gen1">6</td>
+   <td class="td-kicad1"><div id="R60"></div><div id="R59"></div><div id="R58"></div><div id="R57"></div><div id="R56"></div><div id="R55"></div>R55 R56 R57 R58 R59 R60</td>
+   <td class="td-kicad1">5R 1% 0.4W</td>
+   <td class="td-kicad1"><a href="https://www.seielect.com/catalog/sei-csrt.pdf">https://www.seielect.com/catalog/sei-csrt.pdf</a></td>
+   <td class="td-kicad1">R_0603_1608_DensityHigh</td>
+   <td class="td-user1">5 Ohms ±1% 0.4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Current Sense Thin Film</td>
+   <td class="td-user1">Stackpole Electronics Inc</td>
+   <td class="td-user1">CSRT0603FT5R00</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">738-CSRT0603FT5R00CT-ND</td>
+  </tr>
+  <tr id="46">
+   <td class="td-gen0">47</td>
+   <td class="td-gen0">6</td>
+   <td class="td-kicad0"><div id="R17"></div><div id="R16"></div><div id="R14"></div><div id="R13"></div><div id="R11"></div><div id="R10"></div>R10 R11 R13 R14 R16 R17</td>
+   <td class="td-kicad0">7R5 1% 1/2W</td>
+   <td class="td-kicad0"><a href="https://www.vishay.com/docs/20043/crcwhpe3.pdf">https://www.vishay.com/docs/20043/crcwhpe3.pdf</a></td>
+   <td class="td-kicad0">R_0805_2012_DensityHigh</td>
+   <td class="td-user0">7.5 Ohms ±1% 0.5W, 1/2W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film</td>
+   <td class="td-user0">Vishay</td>
+   <td class="td-user0">CRCW08057R50FKEAHP</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">541-7.50TCT-ND</td>
+  </tr>
+  <tr id="47">
+   <td class="td-gen1">48</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="R34"></div>R34</td>
+   <td class="td-kicad1">10R 1%</td>
+   <td class="td-kicad1"><a href="https://www.vishay.com/docs/20043/crcwhpe3.pdf">https://www.vishay.com/docs/20043/crcwhpe3.pdf</a></td>
+   <td class="td-kicad1">R_0603_1608_DensityHigh</td>
+   <td class="td-user1">10 Ohms ±1% 0.333W, 1/3W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film</td>
+   <td class="td-user1">Vishay</td>
+   <td class="td-user1">CRCW060310R0FKEAHP</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">541-10.0SCT-ND</td>
+  </tr>
+  <tr id="48">
+   <td class="td-gen0">49</td>
+   <td class="td-gen0">3</td>
+   <td class="td-kicad0"><div id="R3"></div><div id="R2"></div><div id="R1"></div>R1 R2 R3</td>
+   <td class="td-kicad0">22R 1%</td>
+   <td class="td-kicad0"><a href="https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</a></td>
+   <td class="td-kicad0">R_0402_1005_DensityHigh</td>
+   <td class="td-user0">22 Ohms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film</td>
+   <td class="td-user0">Panasonic Electronic Components</td>
+   <td class="td-user0">ERJ-2RKF22R0X</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">P22.0LCT-ND</td>
+  </tr>
+  <tr id="49">
+   <td class="td-gen1">50</td>
+   <td class="td-gen1">2</td>
+   <td class="td-kicad1"><div id="R51"></div><div id="R50"></div>R50 R51</td>
+   <td class="td-kicad1">60R4 1% 1/4W</td>
+   <td class="td-kicad1"><a href="https://www.rohm.com/datasheet?p=ESR01MZPF&dist=Digi-key&media=referral&source=digi-key.com&campaign=Digi-key">https://www.rohm.com/datasheet?p=ESR01MZPF&dist=Digi-key&media=referral&source=digi-key.com&campaign=Digi-key</a></td>
+   <td class="td-kicad1">R_0603_1608_DensityHigh</td>
+   <td class="td-user1">60.4 Ohms ±1% 0.25W, 1/4W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film</td>
+   <td class="td-user1">Rohm Semiconductor</td>
+   <td class="td-user1">ESR03EZPF60R4</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">511-ESR03EZPF60R4CT-ND</td>
+  </tr>
+  <tr id="50">
+   <td class="td-gen0">51</td>
+   <td class="td-gen0">14</td>
+   <td class="td-kicad0"><div id="R49"></div><div id="R48"></div><div id="R43"></div><div id="R42"></div><div id="R41"></div><div id="R40"></div><div id="R39"></div><div id="R38"></div><div id="R37"></div><div id="R36"></div><div id="R35"></div><div id="R25"></div><div id="R23"></div><div id="R22"></div>R22 R23 R25 R35 R36 R37 R38 R39 R40 R41 R42 R43 R48 R49</td>
+   <td class="td-kicad0">100R 1% 1/5W</td>
+   <td class="td-kicad0"><a href="https://www.vishay.com/docs/20065/rcse3.pdf">https://www.vishay.com/docs/20065/rcse3.pdf</a></td>
+   <td class="td-kicad0">R_0402_1005_DensityHigh</td>
+   <td class="td-user0">100 Ohms ±1% 0.2W, 1/5W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film</td>
+   <td class="td-user0">Vishay</td>
+   <td class="td-user0">RCS0402100RFKED</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">541-2886-1-ND</td>
+  </tr>
+  <tr id="51">
+   <td class="td-gen1">52</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="R26"></div>R26</td>
+   <td class="td-kicad1">150R 1% 1/5W</td>
+   <td class="td-kicad1"><a href="https://www.vishay.com/docs/20065/rcse3.pdf">https://www.vishay.com/docs/20065/rcse3.pdf</a></td>
+   <td class="td-kicad1">R_0402_1005_DensityHigh</td>
+   <td class="td-user1">150 Ohms ±1% 0.2W, 1/5W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film</td>
+   <td class="td-user1">Vishay</td>
+   <td class="td-user1">RCS0402150RFKED</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">541-4373-1-ND</td>
+  </tr>
+  <tr id="52">
+   <td class="td-gen0">53</td>
+   <td class="td-gen0">7</td>
+   <td class="td-kicad0"><div id="R47"></div><div id="R46"></div><div id="R45"></div><div id="R44"></div><div id="R28"></div><div id="R9"></div><div id="R8"></div>R8 R9 R28 R44 R45 R46 R47</td>
+   <td class="td-kicad0">2k 1%</td>
+   <td class="td-kicad0"><a href="https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</a></td>
+   <td class="td-kicad0">R_0402_1005_DensityHigh</td>
+   <td class="td-user0">2 kOhms ±1% 0.1W, 1/10W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200 Thick Film</td>
+   <td class="td-user0">Vishay</td>
+   <td class="td-user0">ERJ-2RKF2001X</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">P2.00KLCT-ND</td>
+  </tr>
+  <tr id="53">
+   <td class="td-gen1">54</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="R30"></div>R30</td>
+   <td class="td-kicad1">4k7 1%</td>
+   <td class="td-kicad1"><a href="https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf">https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf</a></td>
+   <td class="td-kicad1">R_0402_1005_DensityHigh</td>
+   <td class="td-user1">4.7 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Moisture Resistant Thin Film</td>
+   <td class="td-user1">YAGEO</td>
+   <td class="td-user1">RT0402FRE134K7L</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">13-RT0402FRE134K7LCT-ND</td>
+  </tr>
+  <tr id="54">
+   <td class="td-gen0">55</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="R6"></div>R6</td>
+   <td class="td-kicad0">9k09 1%</td>
+   <td class="td-kicad0"><a href="https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf">https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf</a></td>
+   <td class="td-kicad0">R_0402_1005_DensityHigh</td>
+   <td class="td-user0">9.09 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thin Film</td>
+   <td class="td-user0">YAGEO</td>
+   <td class="td-user0">RT0402FRE079K09L</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">13-RT0402FRE079K09LCT-ND</td>
+  </tr>
+  <tr id="55">
+   <td class="td-gen1">56</td>
+   <td class="td-gen1">3</td>
+   <td class="td-kicad1"><div id="R33"></div><div id="R27"></div><div id="R7"></div>R7 R27 R33</td>
+   <td class="td-kicad1">10k 1%</td>
+   <td class="td-kicad1"><a href="https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf">https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf</a></td>
+   <td class="td-kicad1">R_0402_1005_DensityHigh</td>
+   <td class="td-user1">10 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thin Film</td>
+   <td class="td-user1">YAGEO</td>
+   <td class="td-user1">RT0402FRE0710KL</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">YAG1233CT-ND</td>
+  </tr>
+  <tr id="56">
+   <td class="td-gen0">57</td>
+   <td class="td-gen0">6</td>
+   <td class="td-kicad0"><div id="R29"></div><div id="R24"></div><div id="R21"></div><div id="R20"></div><div id="R19"></div><div id="R5"></div>R5 R19 R20 R21 R24 R29</td>
+   <td class="td-kicad0">100k 1%</td>
+   <td class="td-kicad0"><a href="https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf">https://www.yageo.com/upload/media/product/app/datasheet/rchip/pyu-rt_1-to-0.01_rohs_l.pdf</a></td>
+   <td class="td-kicad0">R_0402_1005_DensityHigh</td>
+   <td class="td-user0">100 kOhms ±1% 0.063W, 1/16W Chip Resistor 0402 (1005 Metric) Thin Film</td>
+   <td class="td-user0">YAGEO</td>
+   <td class="td-user0">RT0402FRE07100KL</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">YAG2307CT-ND</td>
+  </tr>
+  <tr id="57">
+   <td class="td-gen1">58</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="SW1"></div>SW1</td>
+   <td class="td-kicad1">CAS-220TA</td>
+   <td class="td-kicad1"><a href="https://www.nidec-copal-electronics.com/e/catalog/switch/cas.pdf">https://www.nidec-copal-electronics.com/e/catalog/switch/cas.pdf</a></td>
+   <td class="td-kicad1">CAS-220A_NDC-L</td>
+   <td class="td-user1">SWITCH SLIDE DPDT 100MA 6V</td>
+   <td class="td-user1">Nidec Components Corporation</td>
+   <td class="td-user1">CAS-220TA</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">CAS220JCT-ND</td>
+  </tr>
+  <tr id="58">
+   <td class="td-gen0">59</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="TH1"></div>TH1</td>
+   <td class="td-kicad0">47k 1% NTC</td>
+   <td class="td-kicad0"><a href="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/thermistor/r01e.ashx">https://www.murata.com/~/media/webrenewal/support/library/catalog/products/thermistor/r01e.ashx</a></td>
+   <td class="td-kicad0">R_0402_1005_DensityHigh</td>
+   <td class="td-user0">NTC Thermistor 47k 4050K 0402 (1005 Metric)</td>
+   <td class="td-user0">Murata Electronics</td>
+   <td class="td-user0">NCP15WB473F03RC</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">490-4802-1-ND</td>
+  </tr>
+  <tr id="59">
+   <td class="td-gen1">60</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="U7"></div>U7</td>
+   <td class="td-kicad1">AS5047P</td>
+   <td class="td-kicad1"><a href="https://ams.com/documents/20143/36005/AS5047P_DS000324_3-00.pdf">https://ams.com/documents/20143/36005/AS5047P_DS000324_3-00.pdf</a></td>
+   <td class="td-kicad1">SOP-14_4.4x5mm_P0.65mm_H1.2mm</td>
+   <td class="td-user1">14-Bit On-Axis Magnetic Rotary Position Sensor with 12-Bit Decimal and Binary Incremental Pulse Count for 28krpm High Speed Capability</td>
+   <td class="td-user1">ams-OSRAM USA INC.</td>
+   <td class="td-user1">AS5047P-ATSM</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">AS5047P-ATSMCT-ND</td>
+  </tr>
+  <tr id="60">
+   <td class="td-gen0">61</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="U8"></div>U8</td>
+   <td class="td-kicad0">AS5048B</td>
+   <td class="td-kicad0"><a href="https://ams.com/documents/20143/36005/AS5048_DS000298_4-00.pdf">https://ams.com/documents/20143/36005/AS5048_DS000298_4-00.pdf</a></td>
+   <td class="td-kicad0">SOP-14_4.4x5mm_P0.65mm_H1.2mm</td>
+   <td class="td-user0">14-bit Magnetic Rotary Encoder, I2C Interface</td>
+   <td class="td-user0">ams-OSRAM USA INC.</td>
+   <td class="td-user0">AS5048B-HTSP-500</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">AS5048B-HTSP-500CT-ND</td>
+  </tr>
+  <tr id="61">
+   <td class="td-gen1">62</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="U11"></div>U11</td>
+   <td class="td-kicad1">DGD0216WT-7</td>
+   <td class="td-kicad1"><a href="https://www.diodes.com/assets/Datasheets/DGD0215-0216.pdf">https://www.diodes.com/assets/Datasheets/DGD0215-0216.pdf</a></td>
+   <td class="td-kicad1">SOT-23-5</td>
+   <td class="td-user1">1.9A HIGH SPEED SINGLE GATE DRIVER</td>
+   <td class="td-user1">Diodes Incorporated</td>
+   <td class="td-user1">DGD0216WT-7</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">DGD0216WT-7DICT-ND</td>
+  </tr>
+  <tr id="62">
+   <td class="td-gen0">63</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="U6"></div>U6</td>
+   <td class="td-kicad0">DRV8353FS</td>
+   <td class="td-kicad0"><a href="https://www.ti.com/lit/ds/symlink/drv8353f.pdf">https://www.ti.com/lit/ds/symlink/drv8353f.pdf</a></td>
+   <td class="td-kicad0">WQFN-40-1EP_6x6mm_P0.5mm_EP4.15x4.15mm_ThermalVias</td>
+   <td class="td-user0">DRV835xF 100-V Three-Phase Smart Gate Driver</td>
+   <td class="td-user0">Texas Instruments</td>
+   <td class="td-user0">DRV8353FSRTAR</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">296-DRV8353FSRTARCT-ND</td>
+  </tr>
+  <tr id="63">
+   <td class="td-gen1">64</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="U3"></div>U3</td>
+   <td class="td-kicad1">LMR36006FSCQ</td>
+   <td class="td-kicad1"><a href="https://www.ti.com/lit/ds/symlink/lmr36006-q1.pdf">https://www.ti.com/lit/ds/symlink/lmr36006-q1.pdf</a></td>
+   <td class="td-kicad1">LMR36006</td>
+   <td class="td-user1">LMR36006-Q1 4.2-V to 60-V, 0.6-A Ultra-Small Synchronous Step-Down Converter</td>
+   <td class="td-user1">Texas Instruments</td>
+   <td class="td-user1">LMR36006FSCQRNXTQ1</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">296-LMR36006FSCQRNXTQ1CT-ND</td>
+  </tr>
+  <tr id="64">
+   <td class="td-gen0">65</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="U2"></div>U2</td>
+   <td class="td-kicad0">LMR36506MSC5RPERQ1</td>
+   <td class="td-kicad0"><a href="https://www.ti.com/lit/ds/symlink/lmr36506-q1.pdf">https://www.ti.com/lit/ds/symlink/lmr36506-q1.pdf</a></td>
+   <td class="td-kicad0">LMR36503</td>
+   <td class="td-user0">LMR36506-Q1 3-V to 65-V, 0.6-A Synchronous Buck Converter Optimized for Size and Light Load Efficiency</td>
+   <td class="td-user0">Texas Instruments</td>
+   <td class="td-user0">LMR36503MSC5RPERQ1</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">296-LMR36506MSC5RPERQ1CT-ND</td>
+  </tr>
+  <tr id="65">
+   <td class="td-gen1">66</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="U5"></div>U5</td>
+   <td class="td-kicad1">LP2992IM5-3.3/NOPB</td>
+   <td class="td-kicad1"><a href="https://www.ti.com/lit/ds/symlink/lp2992.pdf">https://www.ti.com/lit/ds/symlink/lp2992.pdf</a></td>
+   <td class="td-kicad1">SOT95P280X145-5N</td>
+   <td class="td-user1">LP2992 Micropower 250-mA Low-Noise Ultra-Low-Dropout Regulator in SOT-23 and WSON Packages Designed for Use With Very Low-ESR Output Capacitors</td>
+   <td class="td-user1">Texas Instruments</td>
+   <td class="td-user1">LP2992IM5-3.3/NOPB</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">LP2992IM5-3.3/NOPBCT-ND</td>
+  </tr>
+  <tr id="66">
+   <td class="td-gen0">67</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="U9"></div>U9</td>
+   <td class="td-kicad0">SN65HVD35DR</td>
+   <td class="td-kicad0"><a href="https://www.ti.com/lit/ds/symlink/sn65hvd30.pdf">https://www.ti.com/lit/ds/symlink/sn65hvd30.pdf</a></td>
+   <td class="td-kicad0">SOIC-14 5.4mm</td>
+   <td class="td-user0">SN65HVD3x 3.3-V Full-Duplex RS-485 Drivers and Receivers</td>
+   <td class="td-user0">Texas Instruments</td>
+   <td class="td-user0">SN65HVD35DR</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">296-18706-1-ND</td>
+  </tr>
+  <tr id="67">
+   <td class="td-gen1">68</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="U1"></div>U1</td>
+   <td class="td-kicad1">STM32G474RET3</td>
+   <td class="td-kicad1"><a href="https://www.st.com/resource/en/datasheet/stm32g474re.pdf">https://www.st.com/resource/en/datasheet/stm32g474re.pdf</a></td>
+   <td class="td-kicad1">LQFP-64_10x10mm_P0.5mm</td>
+   <td class="td-user1">Arm® Cortex®-M4 32-bit MCU+FPU, 170 MHz / 213 DMIPS, 128 KB SRAM, rich analog, math acc, 184 ps 12 chan Hi-res timer</td>
+   <td class="td-user1">STMicroelectronics</td>
+   <td class="td-user1">STM32G474RET3</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">497-STM32G474RET3-ND</td>
+  </tr>
+  <tr id="68">
+   <td class="td-gen0">69</td>
+   <td class="td-gen0">1</td>
+   <td class="td-kicad0"><div id="U10"></div>U10</td>
+   <td class="td-kicad0">TCAN1051HGVDRBRQ1</td>
+   <td class="td-kicad0"><a href="https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftcan1051-q1">https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftcan1051-q1</a></td>
+   <td class="td-kicad0">HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm_ThermalVias</td>
+   <td class="td-user0">TCAN1051-Q1 Automotive Fault Protected CAN Transceiver with CAN FD</td>
+   <td class="td-user0">Texas Instruments</td>
+   <td class="td-user0">TCAN1051HGVDRBRQ1</td>
+   <td class="td-user0">Digikey</td>
+   <td class="td-user0">296-TCAN1051HGVDRBRQ1CT-ND</td>
+  </tr>
+  <tr id="69">
+   <td class="td-gen1">70</td>
+   <td class="td-gen1">1</td>
+   <td class="td-kicad1"><div id="U4"></div>U4</td>
+   <td class="td-kicad1">TPS62172DSG</td>
+   <td class="td-kicad1"><a href="http://www.ti.com/lit/ds/symlink/tps62170.pdf">http://www.ti.com/lit/ds/symlink/tps62170.pdf</a></td>
+   <td class="td-kicad1">WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias</td>
+   <td class="td-user1">TPS6217x 3-V to 17-V, 0.5-A Step-Down Converters with DCS-Control™</td>
+   <td class="td-user1">Texas Instruments</td>
+   <td class="td-user1">TPS62172DSGR</td>
+   <td class="td-user1">Digikey</td>
+   <td class="td-user1">296-39449-1-ND</td>
+  </tr>
+ </tbody>
+</table>
+<table class="color-ref">
+<tr><th>Color reference for columns:</th></tr>
+<tr><td class="td-kicad0">KiCad Fields (default)</td></tr>
+<tr><td class="td-gen0">Generated Fields</td></tr>
+<tr><td class="td-user0">User Fields</td></tr>
+<tr><td class="td-empty0">Empty Fields</td></tr>
+</table>
+<script charset="utf-8">
+  var TGSort = window.TGSort || function(n) {
+    "use strict";
+    function r(n) { return n ? n.length : 0 }
+    function t(n, t, e, o = 0) { for (e = r(n); o < e; ++o) t(n[o], o) }
+    function e(n) { return n.split("").reverse().join("") }
+    function o(n) {
+      var e = n[0];
+      return t(n, function(n) {
+        for (; !n.startsWith(e);) e = e.substring(0, r(e) - 1)
+      }), r(e)
+    }
+    function u(n, r, e = []) {
+      return t(n, function(n) {
+        r(n) && e.push(n)
+      }), e
+    }
+    var a = parseFloat;
+    function i(n, r) {
+      return function(t) {
+        var e = "";
+        return t.replace(n, function(n, t, o) {
+          return e = t.replace(r, "") + "." + (o || "").substring(1)
+        }), a(e)
+      }
+    }
+    var s = i(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g, /,/g),
+      c = i(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g, /\./g);
+    function f(n) {
+      var t = a(n);
+      return !isNaN(t) && r("" + t) + 1 >= r(n) ? t : NaN
+    }
+    function d(n) {
+      var e = [],
+        o = n;
+      return t([f, s, c], function(u) {
+        var a = [],
+          i = [];
+        t(n, function(n, r) {
+          r = u(n), a.push(r), r || i.push(n)
+        }), r(i) < r(o) && (o = i, e = a)
+      }), r(u(o, function(n) {
+        return n == o[0]
+      })) == r(o) ? e : []
+    }
+    function v(n) {
+      if ("TABLE" == n.nodeName) {
+        for (var a = function(r) {
+            var e, o, u = [],
+              a = [];
+            return function n(r, e) {
+              e(r), t(r.childNodes, function(r) {
+                n(r, e)
+              })
+            }(n, function(n) {
+              "TR" == (o = n.nodeName) ? (e = [], u.push(e), a.push(n)) : "TD" != o && "TH" != o || e.push(n)
+            }), [u, a]
+          }(), i = a[0], s = a[1], c = r(i), f = c > 1 && r(i[0]) < r(i[1]) ? 1 : 0, v = f + 1, p = i[f], h = r(p), l = [], g = [], N = [], m = v; m < c; ++m) {
+          for (var T = 0; T < h; ++T) {
+            r(g) < h && g.push([]);
+            var C = i[m][T],
+              L = C.textContent || C.innerText || "";
+            g[T].push(L.trim())
+          }
+          N.push(m - v)
+        }
+        t(p, function(n, t) {
+          l[t] = 0;
+          var a = n.classList;
+          a.add("tg-sort-header"), n.addEventListener("click", function() {
+            var n = l[t];
+            ! function() {
+              for (var n = 0; n < h; ++n) {
+                var r = p[n].classList;
+                r.remove("tg-sort-asc"), r.remove("tg-sort-desc"), l[n] = 0
+              }
+            }(), (n = 1 == n ? -1 : +!n) && a.add(n > 0 ? "tg-sort-asc" : "tg-sort-desc"), l[t] = n;
+            var i, f = g[t],
+              m = function(r, t) {
+                return n * f[r].localeCompare(f[t]) || n * (r - t)
+              },
+              T = function(n) {
+                var t = d(n);
+                if (!r(t)) {
+                  var u = o(n),
+                    a = o(n.map(e));
+                  t = d(n.map(function(n) {
+                    return n.substring(u, r(n) - a)
+                  }))
+                }
+                return t
+              }(f);
+            (r(T) || r(T = r(u(i = f.map(Date.parse), isNaN)) ? [] : i)) && (m = function(r, t) {
+              var e = T[r],
+                o = T[t],
+                u = isNaN(e),
+                a = isNaN(o);
+              return u && a ? 0 : u ? -n : a ? n : e > o ? n : e < o ? -n : n * (r - t)
+            });
+            var C, L = N.slice();
+            L.sort(m);
+            for (var E = v; E < c; ++E)(C = s[E].parentNode).removeChild(s[E]);
+            for (E = v; E < c; ++E) C.appendChild(s[v + L[E - v]])
+          })
+        })
+      }
+    }
+    n.addEventListener("DOMContentLoaded", function() {
+      for (var t = n.getElementsByClassName("content-table"), e = 0; e < r(t); ++e) try {
+        v(t[e])
+      } catch (n) {}
+    })
+  }(document)
+</script>
+</body></html>

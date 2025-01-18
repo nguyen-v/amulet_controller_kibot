@@ -8,22 +8,32 @@ global:
   out_dir: '@OUTPUT_DIR@'
   dnp_cross_top_layer: '@LAYER_DNP_TOP@'
   dnp_cross_bottom_layer: '@LAYER_DNP_BOTTOM@'
+  extra_pth_drill: 0 # for annular ring computation.
   filters:
-    # - filter: 'Ignore environment.vars missing. kibot#528'
+    # 'KiCad config without environment.vars section'
     - number: 9
-    # - filter: Ignore missing KiCad 3D models, not in docker images
+    # 'Unable to find KiCad 3D models'
     - number: 10
-    # - filter: 'Ignore multiple schematics warning (hierarchical schematic). kibot#594'
-    - number: 44
-    # - filter: 'Ignore malformed values.'
+    # 'Malformed value'
     - number: 20
-    # - filter: 'Ignore value field mismatch (for BoM)'
-    - number: 135
-    # - filter: 'Ignore use blender_export instead of KiCad's 3d viewer'
+    # 'More than one SCH file found in ...'
+    - number: 44
+    # Invalid column name
+    - number: 62
+    # 3D models downloaded or cached
+    - number: 98
+    # 'Avoid adding extra information in the component value, use separated fields'
+    - number: 133
+    # 'This output depends on KiCad version, use blender_export instead'
     - number: 143
-    # - filter: 'Ignore no information found at Distributor for Part (all information available in KiCost).'
-    - number: 1007
-    # - filter: 'Ignore can't enable <Distributor> without a key'
+    # 'Not including component <ref> in filters because it has a malformed reference'
+    - number: 147
+    # 'No output to handle <output>'
+    - number: 168
+    # 'Please only use simple data types for definitions'
+    - number: 172
+    # Can't enable <distributor> without a key
+    - number: 1008
 
 ...
 definitions:
