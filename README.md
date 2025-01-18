@@ -4,7 +4,11 @@
 
 <h1 align="center">Λmulet Motion Controller</h1>
 
-[![CI](https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml/badge.svg?branch=dev)](https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml)
+<p align="center" width="100%">
+  <a href="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml">
+    <img alt="CI Badge" src="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml/badge.svg?branch=dev">
+  </a>
+</p>
 
 ΛMULET is a high-power brushless motor controller, compatible with the [moteus firmware](https://github.com/mjbots/moteus). It was specifically designed to be integrated in [EPFL Xplore](https://github.com/EPFLXplore)'s Legged Robot actuators.
 
@@ -15,9 +19,14 @@
 ***
 
 <p align="center">
-  <img alt="3D Top Angled" src="Images/amulet_controller-angled_top.png" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="3D Bottom Angled" src="Images/amulet_controller-angled_bottom.png" width="45%">
+  <div style="display: inline-block; text-align: center; margin-right: 2%;">
+    <p style="margin: 0; font-weight: bold;">Top View</p>
+    <img alt="3D Top Angled" src="Images/amulet_controller-angled_top.png" width="45%">
+  </div>
+  <div style="display: inline-block; text-align: center;">
+    <p style="margin: 0; font-weight: bold;">Bottom View</p>
+    <img alt="3D Bottom Angled" src="Images/amulet_controller-angled_bottom.png" width="45%">
+  </div>
 </p>
 
 ***
