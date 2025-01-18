@@ -1,0 +1,33 @@
+0|L1 (Sig, PWR)
+1|L2 (GND)
+2|L3 (Sig, PWR)
+3|L4 (Sig, PWR)
+4|L5 (GND)
+31|L6 (Sig, PWR)
+32|B.Adhesive
+33|F.Adhesive
+34|B.Paste
+35|F.Paste
+36|B.Silkscreen
+37|F.Silkscreen
+38|B.Mask
+39|F.Mask
+40|TitlePage
+41|User.Comments
+42|F.DNP
+43|B.DNP
+44|Edge.Cuts
+45|Margin
+46|B.Courtyard
+47|F.Courtyard
+48|B.Fab
+49|F.Fab
+50|DrillMap
+51|F.TestPoint
+52|B.TestPoint
+53|F.AssemblyText
+54|B.AssemblyText
+55|F.Dimensions
+56|B.Dimensions
+57|F.TestPointList
+58|B.TestPointList

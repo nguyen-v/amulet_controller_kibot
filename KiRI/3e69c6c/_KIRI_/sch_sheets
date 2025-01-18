@@ -1,0 +1,21 @@
+amulet_controller|amulet_controller.kicad_sch||amulet_controller|amulet_controller
+Block Diagram|Block Diagram.kicad_sch||Block Diagram|amulet_controller-Block Diagram
+Power - Sequencing|Power - Sequencing.kicad_sch||Power - Sequencing|amulet_controller-Power - Sequencing
+Project Architecture|Project Architecture.kicad_sch||Project Architecture|amulet_controller-Project Architecture
+Interface - FD-CAN|Interface - FD-CAN.kicad_sch||Interface - FD-CAN|amulet_controller-Project Architecture-Interface - FD-CAN
+Interface - Fan Control|Interface - Fan Control.kicad_sch||Interface - Fan Control|amulet_controller-Project Architecture-Interface - Fan Control
+Interface - Interconnects|Interface - Interconnects.kicad_sch||Interface - Interconnects|amulet_controller-Project Architecture-Interface - Interconnects
+Interface - RS-422|Interface - RS-422.kicad_sch||Interface - RS-422|amulet_controller-Project Architecture-Interface - RS-422
+MCU - IOs|MCU - IOs.kicad_sch||MCU - IOs|amulet_controller-Project Architecture-MCU - IOs
+MCU - Power|MCU - Power.kicad_sch||MCU - Power|amulet_controller-Project Architecture-MCU - Power
+Misc - Board Version DAC|Misc - Board Version DAC.kicad_sch||Misc - Board Version, DAC|amulet_controller-Project Architecture-Misc - Board Version, DAC
+Misc - Holes Fiducials|Misc - Holes Fiducials.kicad_sch||Misc - Holes, Fiducials|amulet_controller-Project Architecture-Misc - Holes, Fiducials
+Motor Control - Top Level|Motor Control - Top Level.kicad_sch||Motor Control - Top Level|amulet_controller-Project Architecture-Motor Control - Top Level
+Motor Control - Inverter|Motor Control - Inverter.kicad_sch||Motor Control - Inverter|amulet_controller-Project Architecture-Motor Control - Top Level-Motor Control - Inverter
+Power - Connectors|Power - Connectors.kicad_sch||Power - Connectors|amulet_controller-Project Architecture-Power - Connectors
+Power - Generation|Power - Generation.kicad_sch||Power - Generation|amulet_controller-Project Architecture-Power - Generation
+Sensing - Battery|Sensing - Battery.kicad_sch||Sensing - Battery|amulet_controller-Project Architecture-Sensing - Battery
+Sensing - Position|Sensing - Position.kicad_sch||Sensing - Position|amulet_controller-Project Architecture-Sensing - Position
+Sensing - Temperature|Sensing - Temperature.kicad_sch||Sensing - Temperature|amulet_controller-Project Architecture-Sensing - Temperature
+User - LED Indicators|User - LED Indicators.kicad_sch||User - LED Indicators|amulet_controller-Project Architecture-User - LED Indicators
+Revision History|Revision History.kicad_sch||Revision History|amulet_controller-Revision History

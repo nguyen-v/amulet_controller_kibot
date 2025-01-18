@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">84449e5</textvar>
+    <textvar name="GIT_HASH_PCB">ea51f7d</textvar>
     <textvar name="GIT_HASH_SCH">386a12d</textvar>
     <textvar name="GIT_URL">https://github.com/nguyen-v/amulet_controller_kibot</textvar>
     <textvar name="PROJECT_NAME">Chienpanzé</textvar>
