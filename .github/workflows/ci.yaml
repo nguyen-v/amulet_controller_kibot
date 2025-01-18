@@ -10,6 +10,8 @@ on:
       - dev
     paths-ignore:
       - '*.md'
+    types:
+      - pushed # Exclude pull request events, only trigger on direct pushes
 
 env:
   kibot_config: kibot_yaml/kibot_main.yaml
@@ -140,7 +142,7 @@ jobs:
           config: ${{ env.kibot_config }}
           cache3D: YES
 
-      - name: Pull latest changes and push outputs
+      - name: Pull latest changes
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
@@ -167,3 +169,4 @@ jobs:
         with:
           branch: ${{ github.ref_name }}
           commit_message: Update Outputs
+          push_options: '--exclude *.kicad_pcb' # to avoid conflicts
