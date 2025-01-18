@@ -63,8 +63,10 @@ jobs:
           args: |
             Schematic/*.pdf
             Manufacturing/Assembly/*
-            Manufacturing/Fabrication/*
-            3D/*
+            Manufacturing/Fabrication/*.pdf
+            Manufacturing/Fabrication/*.zip
+            Manufacturing/Fabrication/*.txt
+            3D/*.step
             Testing/Testpoints/*.csv
 
       - name: Commit updated CHANGELOG
@@ -159,6 +161,8 @@ jobs:
 
             echo "Merging detached HEAD commit into master"
             git merge --no-ff $DETACHED_COMMIT -m "Merge outputs from tag-triggered workflow" -X theirs
+            echo "Pushing to master branch"
+            git push origin master
           else
             echo "Triggered by a branch, using the current branch"
             git pull origin ${{ github.ref_name }} --tags --force
