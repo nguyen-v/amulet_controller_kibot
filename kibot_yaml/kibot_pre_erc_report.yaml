@@ -6,7 +6,7 @@ kibot:
 
 preflight:
   erc:
-    category: '@CATEGORY@'
+    category: '@DIR@'
     dir: '@DIR@'
     format: 'HTML, RPT'
     output: 'report_%f-%i%I%v.%x'

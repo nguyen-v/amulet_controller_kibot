@@ -20,9 +20,59 @@ outputs:
     realistic_solder_mask: false
     dpi: 1200
     dnf_filter: _kibom_dnf_Config
-    # dnf_filter: '_null'
     frame_plot_mechanism: 'internal' 
     sheet_reference_layout: '@SHEET_WKS@'
+    drill:
+      unify_pth_and_npth: '@PTH_NPTH@'
+      group_slots_and_round_holes: @GROUP_ROUND_SLOTS@
+    include_table:
+      outputs:
+        - name: '@NAME_TP_TOP@'
+          text_alignment: 'left'
+          invert_columns_order: false
+          border_width: 0.4
+          header_rule_width: 0.2
+          horizontal_rule_width: 0
+          vertical_rule_width: 0.2
+          top_rule_width: 0.2
+          bottom_rule_width: 0.2
+          column_spacing: 2
+          force_font_width: 1.27 # mm
+        - name: '@NAME_TP_BOTTOM@'
+          text_alignment: 'right'
+          invert_columns_order: true
+          border_width: 0.4
+          header_rule_width: 0.2
+          horizontal_rule_width: 0
+          vertical_rule_width: 0.2
+          top_rule_width: 0.2
+          bottom_rule_width: 0.2
+          column_spacing: 2
+          force_font_width: 1.27 # mm
+        - name: '@NAME_IMPEDANCE_TABLE@'
+          text_alignment: 'left'
+          invert_columns_order: false
+          border_width: 0.4
+          header_rule_width: 0.2
+          horizontal_rule_width: 0
+          vertical_rule_width: 0.2
+          top_rule_width: 0.2
+          bottom_rule_width: 0.2
+          row_spacing: 3
+          column_spacing: 2
+          row_spacing: 3
+        - name: '@NAME_DRILL_TABLE@'
+          text_alignment: 'left'
+          invert_columns_order: false
+          border_width: 0.4
+          header_rule_width: 0.2
+          horizontal_rule_width: 0
+          vertical_rule_width: 0.2
+          top_rule_width: 0.2
+          bottom_rule_width: 0.2
+          row_spacing: 3
+          column_spacing: 2
+          force_font_width: 1 # mm
 
     pages:
       - scaling: @SCALING@
@@ -77,18 +127,18 @@ outputs:
           - layer: B.Dimensions
             color: '#000000'
 
-      - scaling: @SCALING@
-        title: '@DOC_TITLE@'
-        sheet: 'Drill Drawing Top View (Scale @SCALING@:1)'
-        layer_var: 'Drill Drawing Top View (Scale @SCALING@:1)'
-        sheet_reference_color: '#000000'
-        colored_holes: true
-        holes_color: "#FFFFFF"
-        layers:
-          - layer: Edge.Cuts
-            color: '#000000'
-          - layer: '@LAYER_DRILL_MAP@'
-            color: '#000000'
+      # - scaling: @SCALING@
+      #   title: '@DOC_TITLE@'
+      #   sheet: 'Drill Drawing (%lp)'
+      #   layer_var: 'Drill Drawing %lp (Scale @SCALING@:1)'
+      #   sheet_reference_color: '#000000'
+      #   colored_holes: true
+      #   holes_color: "#FFFFFF"
+      #   repeat_for_layer: '@LAYER_DRILL_MAP@'
+      #   repeat_layers: 'drill_pairs'
+      #   layers:
+      #     - layer: '@LAYER_DRILL_MAP@'
+      #       color: '#000000'
 
       - scaling: @SCALING@
         title: '@DOC_TITLE@'
@@ -163,9 +213,15 @@ definitions:
   DIR: Manufacturing/Fabrication
   DOC_TITLE: Fabrication
   COLOR_THEME: Altium_Theme
-  SHEET_WKS: ${KIPRJMOD}/Templates/XRE_Legged_Template_PCB.kicad_wks
+  SHEET_WKS: ${KIPRJMOD}/Templates/KDT_Template_PCB_GIT_A4.kicad_wks
   SCALING: 1.0
   FAB_EXCLUDE_FILTER: only_testpoints
   LAYER_DRILL_MAP: DrillMap
   LAYER_TP_LIST_TOP: F.TestPointList
   LAYER_TP_LIST_BOTTOM: B.TestPointList
+  PTH_NPTH: 'yes'
+  GROUP_ROUND_SLOTS: true 
+  NAME_TP_TOP: csv_testpoints_top
+  NAME_TP_BOTTOM: csv_testpoints_bottom
+  NAME_IMPEDANCE_TABLE: csv_impedance_table
+  NAME_DRILL_TABLE: csv_drill_table

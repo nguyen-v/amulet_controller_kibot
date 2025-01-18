@@ -15,7 +15,8 @@ outputs:
     csv:
       hide_pcb_info: true
       hide_stats_info: true
-    group_fields: ['manf#']
+      
+    group_fields: ['@MPN_FIELD@', 'Value']
 
     columns:
       - "Row"
@@ -25,8 +26,8 @@ outputs:
       - "Datasheet"
       - "Footprint"
       - "Description"
-      - "manf"
-      - "manf#"
+      - "@MAN_FIELD@"
+      - "@MPN_FIELD@"
       - "Supplier 1"
       - "Supplier Part Number 1"
 
@@ -35,3 +36,5 @@ definitions:
   NAME: csv_bom
   COMMENT: Bill of Materials in CSV format
   DIR: Manufacturing/Assembly
+  MPN_FIELD: 'Manufacturer Part Number'
+  MAN_FIELD: 'Manufacturer'

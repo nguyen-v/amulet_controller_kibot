@@ -9884,7 +9884,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "YAGEO"
+		(property "Manufacturer" "YAGEO"
 			(at 170.18 173.99 0)
 			(effects
 				(font
@@ -9893,7 +9893,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "AC0402KRX7R8BB102"
+		(property "Manufacturer Part Number" "AC0402KRX7R8BB102"
 			(at 170.18 173.99 0)
 			(effects
 				(font
@@ -11130,7 +11130,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Panasonic Electronic Components"
+		(property "Manufacturer" "Panasonic Electronic Components"
 			(at 185.42 165.1 0)
 			(effects
 				(font
@@ -11139,7 +11139,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF22R0X"
+		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
 			(at 185.42 165.1 0)
 			(effects
 				(font
@@ -11241,7 +11241,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "YAGEO"
+		(property "Manufacturer" "YAGEO"
 			(at 175.26 173.99 0)
 			(effects
 				(font
@@ -11250,7 +11250,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "AC0402KRX7R8BB102"
+		(property "Manufacturer Part Number" "AC0402KRX7R8BB102"
 			(at 175.26 173.99 0)
 			(effects
 				(font
@@ -11422,7 +11422,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Panasonic Electronic Components"
+		(property "Manufacturer" "Panasonic Electronic Components"
 			(at 185.42 167.64 0)
 			(effects
 				(font
@@ -11431,7 +11431,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF22R0X"
+		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
 			(at 185.42 167.64 0)
 			(effects
 				(font
@@ -12032,7 +12032,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "YAGEO"
+		(property "Manufacturer" "YAGEO"
 			(at 180.34 173.99 0)
 			(effects
 				(font
@@ -12041,7 +12041,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "AC0402KRX7R8BB102"
+		(property "Manufacturer Part Number" "AC0402KRX7R8BB102"
 			(at 180.34 173.99 0)
 			(effects
 				(font
@@ -12214,7 +12214,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "STMicroelectronics"
+		(property "Manufacturer" "STMicroelectronics"
 			(at 88.9 91.44 0)
 			(effects
 				(font
@@ -12223,7 +12223,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "STM32G474RET3"
+		(property "Manufacturer Part Number" "STM32G474RET3"
 			(at 88.9 91.44 0)
 			(effects
 				(font
@@ -12936,7 +12936,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Panasonic Electronic Components"
+		(property "Manufacturer" "Panasonic Electronic Components"
 			(at 185.42 170.18 0)
 			(effects
 				(font
@@ -12945,7 +12945,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2RKF22R0X"
+		(property "Manufacturer Part Number" "ERJ-2RKF22R0X"
 			(at 185.42 170.18 0)
 			(effects
 				(font

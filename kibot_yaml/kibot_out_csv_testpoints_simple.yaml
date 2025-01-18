@@ -32,9 +32,9 @@ outputs:
       - field: Net Label
         name: Net 
       - field: Footprint X
-        name: X
+        name: X [mm]
       - field: Footprint Y
-        name: Y
+        name: Y [mm]
 
 ...
 definitions:

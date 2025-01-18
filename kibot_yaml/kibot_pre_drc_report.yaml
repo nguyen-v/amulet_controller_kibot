@@ -5,8 +5,9 @@ kibot:
   version: 1
 
 preflight:
+  check_zone_fills: @CHECK_ZONE_FILLS@
   drc:
-    category: '@CATEGORY@'
+    category: '@DIR@'
     dir: '@DIR@'
     dont_stop: true
     format: 'HTML, RPT'
@@ -14,5 +15,6 @@ preflight:
 
 ...
 definitions:
+  CHECK_ZONE_FILLS: true
   CATEGORY: Schematic
   DIR: Reports

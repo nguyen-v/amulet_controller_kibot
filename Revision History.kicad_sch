@@ -57,8 +57,8 @@
 	)
 	(text_box "${RELEASE_BODY_1.1.0}"
 		(exclude_from_sim no)
-		(at 220.98 34.29 0)
-		(size 58.42 85.09)
+		(at 220.98 35.56 0)
+		(size 58.42 81.28)
 		(stroke
 			(width -0.0001)
 			(type default)
@@ -100,8 +100,8 @@
 	)
 	(text_box "${RELEASE_BODY_1.0.0}"
 		(exclude_from_sim no)
-		(at 22.86 34.29 0)
-		(size 58.42 149.86)
+		(at 22.86 35.56 0)
+		(size 58.42 146.05)
 		(stroke
 			(width -0.0001)
 			(type default)
@@ -143,8 +143,8 @@
 	)
 	(text_box "${RELEASE_BODY_1.1.1}"
 		(exclude_from_sim no)
-		(at 220.98 123.19 0)
-		(size 58.42 27.94)
+		(at 220.98 124.46 0)
+		(size 58.42 24.13)
 		(stroke
 			(width -0.0001)
 			(type default)
@@ -186,8 +186,8 @@
 	)
 	(text_box "${RELEASE_BODY_1.0.2}"
 		(exclude_from_sim no)
-		(at 154.94 34.29 0)
-		(size 58.42 115.57)
+		(at 154.94 35.56 0)
+		(size 58.42 111.76)
 		(stroke
 			(width -0.0001)
 			(type default)
@@ -207,8 +207,8 @@
 	)
 	(text_box "${RELEASE_BODY_1.0.1}"
 		(exclude_from_sim no)
-		(at 88.9 34.29 0)
-		(size 58.42 109.22)
+		(at 88.9 35.56 0)
+		(size 57.15 105.41)
 		(stroke
 			(width -0.0001)
 			(type default)

@@ -20,6 +20,8 @@ preflight:
       command: 'git log -1 --format="%h" $KIBOT_SCH_NAME'
     - variable: 'GIT_HASH_PCB'
       command: 'git log -1 --format="%h" $KIBOT_PCB_NAME'
+    - variable: 'GIT_URL'
+      text: '@GIT_URL@'
 
     # Metadata
     - variable: 'PROJECT_NAME'
@@ -64,9 +66,20 @@ preflight:
     - variable: '@RELEASE_BODY_VAR@UNRELEASED'
       command: '@GET_BODY_CMD@ Unreleased'
 
+    # Fabrication notes
+    - variable: 'FABRICATION_NOTES'
+      expand_in_command: true
+      command: '[ -f "@FABRICATION_DIR@/%f-fabrication_notes%v.txt" ] && cat "@FABRICATION_DIR@/%f-fabrication_notes%v.txt" || echo ""'
+
+
+    # Fabrication notes
+    - variable: 'ASSEMBLY_NOTES'
+      expand_in_command: true
+      command: '[ -f "@ASSEMBLY_DIR@/%f-assembly_notes%v.txt" ] && cat "@ASSEMBLY_DIR@/%f-assembly_notes%v.txt" || echo ""'
+
     # Page titles for automatic ToC
     - variable: '@SHEET_NAME_VAR@1'
-      command: '@GET_SHEET_CMD@ 1'
+      text: 'Cover Page'
     - variable: '@SHEET_NAME_VAR@2'
       command: '@GET_SHEET_CMD@ 2'
     - variable: '@SHEET_NAME_VAR@3'
@@ -155,9 +168,13 @@ definitions:
   REVISION: ""
   RELEASE_DATE: ""
   RELEASE_DATE_NUM: ""
+  GIT_URL: ""
   SHEET_NAME_VAR: SHEET_NAME_
   RELEASE_TITLE_VAR: RELEASE_TITLE_
   RELEASE_BODY_VAR: RELEASE_BODY_
-  GET_SHEET_CMD: python3 scripts/get_sheet_title.py -f "${KIBOT_SCH_NAME%.kicad_sch}.xml" -p
-  GET_TITLE_CMD: python3 scripts/get_changelog.py -f CHANGELOG.md -t -e
-  GET_BODY_CMD: python3 scripts/get_changelog.py -f CHANGELOG.md -s 70 -e
+  SCRIPTS_DIR: kibot_resources/scripts
+  GET_SHEET_CMD: python3 @SCRIPTS_DIR@/get_sheet_title.py -f "${KIBOT_SCH_NAME%.kicad_sch}.xml" --dots-number 38 -p
+  GET_TITLE_CMD: python3 @SCRIPTS_DIR@/get_changelog.py -f CHANGELOG.md --title-only --version
+  GET_BODY_CMD: python3 @SCRIPTS_DIR@/get_changelog.py -f CHANGELOG.md --extra-spaces --separators 35 --version
+  FABRICATION_DIR: Manufacturing/Fabrication
+  ASSEMBLY_DIR: Manufacturing/Assembly

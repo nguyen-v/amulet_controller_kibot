@@ -2753,7 +2753,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 50.8 92.71 0)
 			(effects
 				(font
@@ -2762,7 +2762,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 50.8 92.71 0)
 			(effects
 				(font
@@ -2864,7 +2864,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Panasonic Electronic Components"
+		(property "Manufacturer" "Panasonic Electronic Components"
 			(at 74.93 68.58 0)
 			(effects
 				(font
@@ -2873,7 +2873,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2GE0R00X"
+		(property "Manufacturer Part Number" "ERJ-2GE0R00X"
 			(at 74.93 68.58 0)
 			(effects
 				(font
@@ -2976,7 +2976,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 220.98 74.93 0)
 			(effects
 				(font
@@ -2985,7 +2985,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM21BZ71E106KE15L"
+		(property "Manufacturer Part Number" "GRM21BZ71E106KE15L"
 			(at 220.98 74.93 0)
 			(effects
 				(font
@@ -3304,7 +3304,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "ams-OSRAM USA INC."
+		(property "Manufacturer" "ams-OSRAM USA INC."
 			(at 78.74 93.98 0)
 			(effects
 				(font
@@ -3313,7 +3313,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "AS5047P-ATSM"
+		(property "Manufacturer Part Number" "AS5047P-ATSM"
 			(at 78.74 93.98 0)
 			(effects
 				(font
@@ -3525,7 +3525,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "ams-OSRAM USA INC."
+		(property "Manufacturer" "ams-OSRAM USA INC."
 			(at 204.47 93.98 0)
 			(effects
 				(font
@@ -3534,7 +3534,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "AS5048B-HTSP-500"
+		(property "Manufacturer Part Number" "AS5048B-HTSP-500"
 			(at 204.47 93.98 0)
 			(effects
 				(font
@@ -3672,7 +3672,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Panasonic Electronic Components"
+		(property "Manufacturer" "Panasonic Electronic Components"
 			(at 201.93 68.58 0)
 			(effects
 				(font
@@ -3681,7 +3681,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "ERJ-2GE0R00X"
+		(property "Manufacturer Part Number" "ERJ-2GE0R00X"
 			(at 201.93 68.58 0)
 			(effects
 				(font
@@ -4000,7 +4000,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 175.26 92.71 0)
 			(effects
 				(font
@@ -4009,7 +4009,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 175.26 92.71 0)
 			(effects
 				(font

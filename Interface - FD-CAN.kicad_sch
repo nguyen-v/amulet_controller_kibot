@@ -1559,7 +1559,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Texas Instruments"
+		(property "Manufacturer" "Texas Instruments"
 			(at 152.4 95.25 0)
 			(effects
 				(font
@@ -1568,7 +1568,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "TCAN1051HGVDRBRQ1"
+		(property "Manufacturer Part Number" "TCAN1051HGVDRBRQ1"
 			(at 152.4 95.25 0)
 			(effects
 				(font
@@ -1979,7 +1979,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 170.18 73.66 0)
 			(effects
 				(font
@@ -1988,7 +1988,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 170.18 73.66 0)
 			(effects
 				(font
@@ -2163,7 +2163,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 134.62 73.66 0)
 			(effects
 				(font
@@ -2172,7 +2172,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 134.62 73.66 0)
 			(effects
 				(font
@@ -2276,7 +2276,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "YAGEO"
+		(property "Manufacturer" "YAGEO"
 			(at 129.54 105.41 0)
 			(effects
 				(font
@@ -2285,7 +2285,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "RT0402FRE0710KL"
+		(property "Manufacturer Part Number" "RT0402FRE0710KL"
 			(at 129.54 105.41 0)
 			(effects
 				(font

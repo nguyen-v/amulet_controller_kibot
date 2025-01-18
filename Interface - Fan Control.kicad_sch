@@ -1787,7 +1787,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 104.14 72.39 0)
 			(effects
 				(font
@@ -1796,7 +1796,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GRM188Z71C475KE21J"
+		(property "Manufacturer Part Number" "GRM188Z71C475KE21J"
 			(at 104.14 72.39 0)
 			(effects
 				(font
@@ -1898,7 +1898,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Vishay"
+		(property "Manufacturer" "Vishay"
 			(at 160.02 91.44 0)
 			(effects
 				(font
@@ -1907,7 +1907,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "CRCW060310R0FKEAHP"
+		(property "Manufacturer Part Number" "CRCW060310R0FKEAHP"
 			(at 160.02 91.44 0)
 			(effects
 				(font
@@ -2225,7 +2225,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Diodes Incorporated"
+		(property "Manufacturer" "Diodes Incorporated"
 			(at 135.89 91.44 0)
 			(effects
 				(font
@@ -2234,7 +2234,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "DGD0216WT-7"
+		(property "Manufacturer Part Number" "DGD0216WT-7"
 			(at 135.89 91.44 0)
 			(effects
 				(font
@@ -2425,7 +2425,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Nexperia USA Inc."
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 179.07 91.44 0)
 			(effects
 				(font
@@ -2434,7 +2434,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "PMV90ENER"
+		(property "Manufacturer Part Number" "PMV90ENER"
 			(at 179.07 91.44 0)
 			(effects
 				(font
@@ -2540,7 +2540,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf" "Murata Electronics"
+		(property "Manufacturer" "Murata Electronics"
 			(at 120.65 72.39 0)
 			(effects
 				(font
@@ -2549,7 +2549,7 @@
 				(hide yes)
 			)
 		)
-		(property "manf#" "GCM155R71H104KE02J"
+		(property "Manufacturer Part Number" "GCM155R71H104KE02J"
 			(at 120.65 72.39 0)
 			(effects
 				(font
