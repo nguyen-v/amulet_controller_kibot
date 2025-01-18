@@ -74,7 +74,7 @@
 11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.
 
 12)	CONFIRM SPACE WIDTHS AND SPACINGS.</textvar>
-    <textvar name="GIT_HASH_PCB">1ce4b6d</textvar>
+    <textvar name="GIT_HASH_PCB">e6e10e6</textvar>
     <textvar name="GIT_HASH_SCH">386a12d</textvar>
     <textvar name="GIT_URL">https://github.com/nguyen-v/amulet_controller_kibot</textvar>
     <textvar name="PROJECT_NAME">Chienpanzé</textvar>
@@ -174,7 +174,11 @@ ___________________________________
 Changed
 
 -   Motor thermistor resistor divider to 2kOhm for a 10k 3950K thermistor.</textvar>
-    <textvar name="RELEASE_BODY_1.1.1">Version 1.1.1 not found.</textvar>
+    <textvar name="RELEASE_BODY_1.1.1">___________________________________
+
+Fixed
+
+-   Replace non-stocked components.</textvar>
     <textvar name="RELEASE_BODY_UNRELEASED">Version Unreleased not found.</textvar>
     <textvar name="RELEASE_DATE">18-Jan-2025</textvar>
     <textvar name="RELEASE_DATE_NUM">2025-01-18</textvar>
@@ -182,9 +186,9 @@ Changed
     <textvar name="RELEASE_TITLE_1.0.1">Version 1.0.1 - 2024-01-25</textvar>
     <textvar name="RELEASE_TITLE_1.0.2">Version 1.0.2 - 2024-03-12</textvar>
     <textvar name="RELEASE_TITLE_1.1.0">Version 1.1.0 - 2024-04-13</textvar>
-    <textvar name="RELEASE_TITLE_1.1.1">Version 1.1.1 not found.</textvar>
+    <textvar name="RELEASE_TITLE_1.1.1">Version 1.1.1 - 2025-01-18</textvar>
     <textvar name="RELEASE_TITLE_UNRELEASED">Version Unreleased not found.</textvar>
-    <textvar name="REVISION">1.1.1</textvar>
+    <textvar name="REVISION">1.1.1+ (Unreleased)</textvar>
     <textvar name="SHEET_NAME_1">Cover Page</textvar>
     <textvar name="SHEET_NAME_10">Misc - Board Version, DAC</textvar>
     <textvar name="SHEET_NAME_11">User - LED Indicators</textvar>
@@ -225,12 +229,12 @@ Changed
     <textvar name="SHEET_NAME_7">Power - Connectors</textvar>
     <textvar name="SHEET_NAME_8">Motor Control - Top Level</textvar>
     <textvar name="SHEET_NAME_9">Motor Control - Inverter</textvar>
-    <textvar name="VARIANT">RELEASED</textvar>
+    <textvar name="VARIANT">CHECKED</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Cover Page</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>amulet_controller.kicad_sch</source>
         <comment number="1" value=""/>
@@ -248,7 +252,7 @@ Changed
       <title_block>
         <title>Block Diagram</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Block Diagram.kicad_sch</source>
         <comment number="1" value=""/>
@@ -266,7 +270,7 @@ Changed
       <title_block>
         <title>Project Architecture</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Project Architecture.kicad_sch</source>
         <comment number="1" value=""/>
@@ -284,7 +288,7 @@ Changed
       <title_block>
         <title>MCU - Power</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>MCU - Power.kicad_sch</source>
         <comment number="1" value=""/>
@@ -302,7 +306,7 @@ Changed
       <title_block>
         <title>MCU - I/Os</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>MCU - IOs.kicad_sch</source>
         <comment number="1" value=""/>
@@ -320,7 +324,7 @@ Changed
       <title_block>
         <title>Power - Generation</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Power - Generation.kicad_sch</source>
         <comment number="1" value="+12V (600 mA): Fan power"/>
@@ -338,7 +342,7 @@ Changed
       <title_block>
         <title>Power - Connectors</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Power - Connectors.kicad_sch</source>
         <comment number="1" value=""/>
@@ -356,7 +360,7 @@ Changed
       <title_block>
         <title>Motor Control - Top Level</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Motor Control - Top Level.kicad_sch</source>
         <comment number="1" value=""/>
@@ -374,7 +378,7 @@ Changed
       <title_block>
         <title>Motor Control - Inverter</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Motor Control - Inverter.kicad_sch</source>
         <comment number="1" value=""/>
@@ -392,7 +396,7 @@ Changed
       <title_block>
         <title>Misc - Board Version, DAC</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Misc - Board Version DAC.kicad_sch</source>
         <comment number="1" value=""/>
@@ -410,7 +414,7 @@ Changed
       <title_block>
         <title>User - LED Indicators</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>User - LED Indicators.kicad_sch</source>
         <comment number="1" value=""/>
@@ -428,7 +432,7 @@ Changed
       <title_block>
         <title>Sensing - Temperature</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Sensing - Temperature.kicad_sch</source>
         <comment number="1" value=""/>
@@ -446,7 +450,7 @@ Changed
       <title_block>
         <title>Sensing - Battery</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Sensing - Battery.kicad_sch</source>
         <comment number="1" value=""/>
@@ -464,7 +468,7 @@ Changed
       <title_block>
         <title>Sensing - Position</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Sensing - Position.kicad_sch</source>
         <comment number="1" value=""/>
@@ -482,7 +486,7 @@ Changed
       <title_block>
         <title>Interface - RS-422</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Interface - RS-422.kicad_sch</source>
         <comment number="1" value=""/>
@@ -500,7 +504,7 @@ Changed
       <title_block>
         <title>Interface - FD-CAN</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Interface - FD-CAN.kicad_sch</source>
         <comment number="1" value=""/>
@@ -518,7 +522,7 @@ Changed
       <title_block>
         <title>Interface - Fan Control</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Interface - Fan Control.kicad_sch</source>
         <comment number="1" value=""/>
@@ -536,7 +540,7 @@ Changed
       <title_block>
         <title>Interface - Interconnects</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Interface - Interconnects.kicad_sch</source>
         <comment number="1" value=""/>
@@ -554,7 +558,7 @@ Changed
       <title_block>
         <title>Misc - Holes, Fiducials</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Misc - Holes Fiducials.kicad_sch</source>
         <comment number="1" value=""/>
@@ -572,7 +576,7 @@ Changed
       <title_block>
         <title>Power - Sequencing</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Power - Sequencing.kicad_sch</source>
         <comment number="1" value=""/>
@@ -590,7 +594,7 @@ Changed
       <title_block>
         <title>Revision History</title>
         <company>EPFL Xplore Research</company>
-        <rev>1.1.1</rev>
+        <rev>1.1.1+ (Unreleased)</rev>
         <date>Date2</date>
         <source>Revision History.kicad_sch</source>
         <comment number="1" value=""/>

@@ -8,7 +8,7 @@
     (textvar (name "COMPANY") "EPFL Xplore Research")
     (textvar (name "DESIGNER") "Vincent Nguyen")
     (textvar (name "FABRICATION_NOTES") "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)	FABRICATE PER IPC-6012A CLASS 2.\n\n2)	OUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n	\"Edge_Cuts.GBR\" SUFFIX.\n\n	DIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n	DRAWING FOR REFERENCE ONLY.\n\n3)	SEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n	FOR HOLE LOCATIONS.\n\n	SELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n	FOR REFERENCE ONLY.\n\n4)	SURFACE FINISH: IMMERSION GOLD\n\n5)	SOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n	BE LPI, COLOR BLACK.\n\n6)	SILK SCREEN LEGEND TO BE APPLIED PER LAYER \n	STACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)	ALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n	SOLDERMASK OPENED IN GERBER.\n\n8)	VENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n	AND Pb FREE FOR MANUFACTURING\n\n9)	PCB MATERIAL REQUIREMENTS:\n\n	A.	FLAMMABILITY RATING MUST MEET OR EXCEED \n		UL94V-0 REQUIREMENTS.\n	B.	Tg 170 C OR EQUIVALENT.\n	C.	EQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n		HALOGEN FREE AND APPROVED BY EPFL XPLORE RESEARCH.\n\n10)	DESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n	BOARD SIZE				69.666 × 76.700 mm\n	BOARD THICKNESS		1.660 mm\n	TRACE WIDTH			0.200 mm\n	TRACE TO TRACE		0.200 mm\n	MIN. HOLE (PTH)			0.250 mm\n	MIN. HOLE (NPTH)		0.700 mm\n	ANNULAR RING			0.150 mm\n	COPPER TO HOLE		0.254 mm\n	COPPER TO EDGE		0.250 mm\n	HOLE TO HOLE			0.254 mm\n\n11)	REFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)	CONFIRM SPACE WIDTHS AND SPACINGS.")
-    (textvar (name "GIT_HASH_PCB") "1ce4b6d")
+    (textvar (name "GIT_HASH_PCB") "e6e10e6")
     (textvar (name "GIT_HASH_SCH") "386a12d")
     (textvar (name "GIT_URL") "https://github.com/nguyen-v/amulet_controller_kibot")
     (textvar (name "PROJECT_NAME") "Chienpanzé")
@@ -16,7 +16,7 @@
     (textvar (name "RELEASE_BODY_1.0.1") "___________________________________\n\nAdded\n\n-   Controller target specifications.\n\n-   Credits to moteus on cover page.\n\n-   Optional RC-Snubber to power stage.\n\n___________________________________\n\nFixed\n\n-   Chassis guard ring to go around the board.\n\n-   CAN and power TVS diodes now go to chassis.\n\n-   Clearance between nets to respect IEC60664-1 where possible.\n\n-   Comment on precharge.\n\n-   Power TVS diode reference designator from \"U\" to \"D\".\n\n___________________________________\n\nChanged\n\n-   5V 300 mA buck converter with 600 mA version.\n\n-   Chassis-GND capacitor by 1nF 1kV.")
     (textvar (name "RELEASE_BODY_1.0.2") "___________________________________\n\nChanged\n\n-   Power sequencing graph according to experimental data.")
     (textvar (name "RELEASE_BODY_1.1.0") "___________________________________\n\nAdded\n\n-   RC snubber passive values.\n\n___________________________________\n\nFixed\n\n-   More vias for VBUS and LMR36006 GND pads.\n\n-   Board version voltage reference from +3V3 to +A3V3.\n\n___________________________________\n\nChanged\n\n-   Motor thermistor resistor divider to 2kOhm for a 10k 3950K thermistor.")
-    (textvar (name "RELEASE_BODY_1.1.1") "Version 1.1.1 not found.")
+    (textvar (name "RELEASE_BODY_1.1.1") "___________________________________\n\nFixed\n\n-   Replace non-stocked components.")
     (textvar (name "RELEASE_BODY_UNRELEASED") "Version Unreleased not found.")
     (textvar (name "RELEASE_DATE") "18-Jan-2025")
     (textvar (name "RELEASE_DATE_NUM") "2025-01-18")
@@ -24,9 +24,9 @@
     (textvar (name "RELEASE_TITLE_1.0.1") "Version 1.0.1 - 2024-01-25")
     (textvar (name "RELEASE_TITLE_1.0.2") "Version 1.0.2 - 2024-03-12")
     (textvar (name "RELEASE_TITLE_1.1.0") "Version 1.1.0 - 2024-04-13")
-    (textvar (name "RELEASE_TITLE_1.1.1") "Version 1.1.1 not found.")
+    (textvar (name "RELEASE_TITLE_1.1.1") "Version 1.1.1 - 2025-01-18")
     (textvar (name "RELEASE_TITLE_UNRELEASED") "Version Unreleased not found.")
-    (textvar (name "REVISION") "1.1.1")
+    (textvar (name "REVISION") "1.1.1+ (Unreleased)")
     (textvar (name "SHEET_NAME_1") "Cover Page")
     (textvar (name "SHEET_NAME_10") "Misc - Board Version, DAC")
     (textvar (name "SHEET_NAME_11") "User - LED Indicators")
@@ -67,12 +67,12 @@
     (textvar (name "SHEET_NAME_7") "Power - Connectors")
     (textvar (name "SHEET_NAME_8") "Motor Control - Top Level")
     (textvar (name "SHEET_NAME_9") "Motor Control - Inverter")
-    (textvar (name "VARIANT") "RELEASED")
+    (textvar (name "VARIANT") "CHECKED")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block
         (title "Cover Page")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "amulet_controller.kicad_sch")
         (comment (number "1") (value ""))
@@ -88,7 +88,7 @@
       (title_block
         (title "Block Diagram")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Block Diagram.kicad_sch")
         (comment (number "1") (value ""))
@@ -104,7 +104,7 @@
       (title_block
         (title "Project Architecture")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Project Architecture.kicad_sch")
         (comment (number "1") (value ""))
@@ -120,7 +120,7 @@
       (title_block
         (title "MCU - Power")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "MCU - Power.kicad_sch")
         (comment (number "1") (value ""))
@@ -136,7 +136,7 @@
       (title_block
         (title "MCU - I/Os")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "MCU - IOs.kicad_sch")
         (comment (number "1") (value ""))
@@ -152,7 +152,7 @@
       (title_block
         (title "Power - Generation")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Power - Generation.kicad_sch")
         (comment (number "1") (value "+12V (600 mA): Fan power"))
@@ -168,7 +168,7 @@
       (title_block
         (title "Power - Connectors")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Power - Connectors.kicad_sch")
         (comment (number "1") (value ""))
@@ -184,7 +184,7 @@
       (title_block
         (title "Motor Control - Top Level")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Motor Control - Top Level.kicad_sch")
         (comment (number "1") (value ""))
@@ -200,7 +200,7 @@
       (title_block
         (title "Motor Control - Inverter")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Motor Control - Inverter.kicad_sch")
         (comment (number "1") (value ""))
@@ -216,7 +216,7 @@
       (title_block
         (title "Misc - Board Version, DAC")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Misc - Board Version DAC.kicad_sch")
         (comment (number "1") (value ""))
@@ -232,7 +232,7 @@
       (title_block
         (title "User - LED Indicators")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "User - LED Indicators.kicad_sch")
         (comment (number "1") (value ""))
@@ -248,7 +248,7 @@
       (title_block
         (title "Sensing - Temperature")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Sensing - Temperature.kicad_sch")
         (comment (number "1") (value ""))
@@ -264,7 +264,7 @@
       (title_block
         (title "Sensing - Battery")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Sensing - Battery.kicad_sch")
         (comment (number "1") (value ""))
@@ -280,7 +280,7 @@
       (title_block
         (title "Sensing - Position")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Sensing - Position.kicad_sch")
         (comment (number "1") (value ""))
@@ -296,7 +296,7 @@
       (title_block
         (title "Interface - RS-422")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Interface - RS-422.kicad_sch")
         (comment (number "1") (value ""))
@@ -312,7 +312,7 @@
       (title_block
         (title "Interface - FD-CAN")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Interface - FD-CAN.kicad_sch")
         (comment (number "1") (value ""))
@@ -328,7 +328,7 @@
       (title_block
         (title "Interface - Fan Control")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Interface - Fan Control.kicad_sch")
         (comment (number "1") (value ""))
@@ -344,7 +344,7 @@
       (title_block
         (title "Interface - Interconnects")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Interface - Interconnects.kicad_sch")
         (comment (number "1") (value ""))
@@ -360,7 +360,7 @@
       (title_block
         (title "Misc - Holes, Fiducials")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Misc - Holes Fiducials.kicad_sch")
         (comment (number "1") (value ""))
@@ -376,7 +376,7 @@
       (title_block
         (title "Power - Sequencing")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Power - Sequencing.kicad_sch")
         (comment (number "1") (value ""))
@@ -392,7 +392,7 @@
       (title_block
         (title "Revision History")
         (company "EPFL Xplore Research")
-        (rev "1.1.1")
+        (rev "1.1.1+ (Unreleased)")
         (date "Date")
         (source "Revision History.kicad_sch")
         (comment (number "1") (value ""))

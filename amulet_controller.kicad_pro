@@ -1235,7 +1235,7 @@
     "COMPANY": "EPFL Xplore Research",
     "DESIGNER": "Vincent Nguyen",
     "FABRICATION_NOTES": "FABRICATION NOTES (UNLESS OTHERWISE SPECIFIED)\n\n1)\tFABRICATE PER IPC-6012A CLASS 2.\n\n2)\tOUTLINE DEFINED IN SEPARATE GERBER FILE WITH\n\t\"Edge_Cuts.GBR\" SUFFIX.\n\n\tDIMENSIONS OF CIRCUMSIZED RECTANGLE SHOWN ON THIS\n\tDRAWING FOR REFERENCE ONLY.\n\n3)\tSEE SEPARATE DRILL FILES WITH \".DRL\" SUFFIX \n\tFOR HOLE LOCATIONS.\n\n\tSELECTED HOLE LOCATIONS SHOWN ON THIS DRAWING \n\tFOR REFERENCE ONLY.\n\n4)\tSURFACE FINISH: IMMERSION GOLD\n\n5)\tSOLDERMASK ON BOTH SIDES OF THE BOARD SHALL \n\tBE LPI, COLOR BLACK.\n\n6)\tSILK SCREEN LEGEND TO BE APPLIED PER LAYER \n\tSTACKUP USING YELLOW NON-CONDUCTIVE EPOXY INK.\n\n7)\tALL VIAS ARE TENTED ON BOTH SIDES UNLESS \n\tSOLDERMASK OPENED IN GERBER.\n\n8)\tVENDOR SHOULD FOLLOW ROHS COMPLIANT PROCESS \n\tAND Pb FREE FOR MANUFACTURING\n\n9)\tPCB MATERIAL REQUIREMENTS:\n\n\tA.\tFLAMMABILITY RATING MUST MEET OR EXCEED \n\t\tUL94V-0 REQUIREMENTS.\n\tB.\tTg 170 C OR EQUIVALENT.\n\tC.\tEQUIVALENT MATERIAL SHALL BE RoHS COMPLIANT, \n\t\tHALOGEN FREE AND APPROVED BY EPFL XPLORE RESEARCH.\n\n10)\tDESIGN GEOMETRY MINIMUM FEATURE SIZES:\n\n\tBOARD SIZE\t\t\t\t69.666 \u00d7 76.700 mm\n\tBOARD THICKNESS\t\t1.660 mm\n\tTRACE WIDTH\t\t\t0.200 mm\n\tTRACE TO TRACE\t\t0.200 mm\n\tMIN. HOLE (PTH)\t\t\t0.250 mm\n\tMIN. HOLE (NPTH)\t\t0.700 mm\n\tANNULAR RING\t\t\t0.150 mm\n\tCOPPER TO HOLE\t\t0.254 mm\n\tCOPPER TO EDGE\t\t0.250 mm\n\tHOLE TO HOLE\t\t\t0.254 mm\n\n11)\tREFER TO IMPEDANCE TABLE FOR IMPEDANCE CONTROL REQUIREMENTS.\n\n12)\tCONFIRM SPACE WIDTHS AND SPACINGS.",
-    "GIT_HASH_PCB": "1ce4b6d",
+    "GIT_HASH_PCB": "e6e10e6",
     "GIT_HASH_SCH": "386a12d",
     "GIT_URL": "https://github.com/nguyen-v/amulet_controller_kibot",
     "PROJECT_NAME": "Chienpanz\u00e9",
@@ -1243,7 +1243,7 @@
     "RELEASE_BODY_1.0.1": "___________________________________\n\nAdded\n\n-   Controller target specifications.\n\n-   Credits to moteus on cover page.\n\n-   Optional RC-Snubber to power stage.\n\n___________________________________\n\nFixed\n\n-   Chassis guard ring to go around the board.\n\n-   CAN and power TVS diodes now go to chassis.\n\n-   Clearance between nets to respect IEC60664-1 where possible.\n\n-   Comment on precharge.\n\n-   Power TVS diode reference designator from \"U\" to \"D\".\n\n___________________________________\n\nChanged\n\n-   5V 300 mA buck converter with 600 mA version.\n\n-   Chassis-GND capacitor by 1nF 1kV.",
     "RELEASE_BODY_1.0.2": "___________________________________\n\nChanged\n\n-   Power sequencing graph according to experimental data.",
     "RELEASE_BODY_1.1.0": "___________________________________\n\nAdded\n\n-   RC snubber passive values.\n\n___________________________________\n\nFixed\n\n-   More vias for VBUS and LMR36006 GND pads.\n\n-   Board version voltage reference from +3V3 to +A3V3.\n\n___________________________________\n\nChanged\n\n-   Motor thermistor resistor divider to 2kOhm for a 10k 3950K thermistor.",
-    "RELEASE_BODY_1.1.1": "Version 1.1.1 not found.",
+    "RELEASE_BODY_1.1.1": "___________________________________\n\nFixed\n\n-   Replace non-stocked components.",
     "RELEASE_BODY_UNRELEASED": "Version Unreleased not found.",
     "RELEASE_DATE": "18-Jan-2025",
     "RELEASE_DATE_NUM": "2025-01-18",
@@ -1251,9 +1251,9 @@
     "RELEASE_TITLE_1.0.1": "Version 1.0.1 - 2024-01-25",
     "RELEASE_TITLE_1.0.2": "Version 1.0.2 - 2024-03-12",
     "RELEASE_TITLE_1.1.0": "Version 1.1.0 - 2024-04-13",
-    "RELEASE_TITLE_1.1.1": "Version 1.1.1 not found.",
+    "RELEASE_TITLE_1.1.1": "Version 1.1.1 - 2025-01-18",
     "RELEASE_TITLE_UNRELEASED": "Version Unreleased not found.",
-    "REVISION": "1.1.1",
+    "REVISION": "1.1.1+ (Unreleased)",
     "SHEET_NAME_1": "Cover Page",
     "SHEET_NAME_10": "Misc - Board Version, DAC",
     "SHEET_NAME_11": "User - LED Indicators",
@@ -1294,6 +1294,6 @@
     "SHEET_NAME_7": "Power - Connectors",
     "SHEET_NAME_8": "Motor Control - Top Level",
     "SHEET_NAME_9": "Motor Control - Inverter",
-    "VARIANT": "RELEASED"
+    "VARIANT": "CHECKED"
   }
 }

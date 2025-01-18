@@ -1,5 +1,5 @@
 ** Drc report for amulet_controller.kicad_pcb **
-** Created on 2025-01-18T22:04:14+0000 **
+** Created on 2025-01-18T22:40:42+0000 **
 
 ** Found 33 DRC violations **
 [clearance]: Clearance violation (board minimum clearance 0.2000 mm; actual 0.0379 mm)

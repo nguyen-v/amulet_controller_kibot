@@ -6,7 +6,7 @@
 
 <p align="center" width="100%">
   <a href="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml">
-    <img alt="CI Badge" src="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml/badge.svg?branch=dev">
+    <img alt="CI Badge" src="https://github.com/nguyen-v/amulet_controller_kibot/actions/workflows/ci.yaml/badge.svg?branch=">
   </a>
 </p>
 
